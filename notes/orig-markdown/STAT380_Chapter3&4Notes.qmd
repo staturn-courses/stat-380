@@ -1,185 +1,164 @@
-## Chapter 3 & Chapter 4 {#slide-1}
+---
+date: today
+date-format: "[Fall 2026]"
+format:
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 380}
+        \chead{Handout 3}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
 
-Random Variables and Probability Distributions
+## Random Variables
 
-Mathematical expectation
+Suppose you are a quality manager at a chips manufacturing plant. The quality of a batch is checked by picking 3 bags at random and checking the quality of each one. The sample space for this experiment can be expressed as:
+$$
+𝑆={PPP,PPF,PFP,FPP,FFP,FPF,PFF,FFF}
+$$
+
+As the quality manager, one natural concern would be: “how many bags fail the quality test?” To each element in the sample space, we can assign a number that represents the number of failed bags:
+
+\
+\
+\
+\
+\
+\
+\
+
+A random variable (RV) is a real – valued function defined over a sample space. A RV assigns a value to each outcome in the sample space. Typically, capital letters at the END of the alphabet are used to denote a RV. The corresponding lower case letter is then used to denote a specific value.
+
+The probability that $X$ takes on the value $x$, $P(X=x)$ is defined as the sum of the probabilities of all sample points in $S$ that are assigned the value $x$. We will sometimes denote $P(X=x)$ by $f(x)$.
+
+Using the previous example, we can find $P(X=0)$, $P(X=1)$, $P(X=2)$, and $P(X=3)$.
+
+\
+\
+\
+\
+\
+\
+\
 
-Random Variables (RV)
+
+## Discrete Random Variables
+
+A discrete random variable can assume only a finite or countably infinite number of values (counting numbers). Most often interest lies in how the probabilities are distributed over all possible values of the sample space. This probability distribution can be given in the form of a table, graph, or formula.
+
+Example: workers consist of 3 men and 3 women. Suppose 2 workers are chosen at random. Note wanting to show bias, the foreman is interested in $X=$ number of women selected. Find the probability distribution of $X$.
+
+- What are the possible values of $X$?
+
+\
+\
+\
+
+- How many elements are in $S$?
 
-Discrete Random Variables ( PMF / CDF / Expectation / Variance )
+\
+\
+\
 
-Continuous random variables ( PDF / CDF / Expectation / Variance )
+- What are the probabilities of each outcome in $X$ occurring? 
 
-Joint probability distributions
 
-Covariance & Correlation
+\
+\
+\
 
-## Random Variables {#slide-2}
+- Table
 
-## Random Variables: Introduction {#slide-3}
+\
+\
+\
+\
+\
+\
+\
 
-## Random Variables {#slide-4}
+- Graph
 
-A  random variable (RV)   is a real -- valued function defined over a sample space. A RV assigns a value to each outcome in the sample space.
+\
+\
+\
+\
+\
+\
+\
 
-Typically, capital letters at the END of the alphabet are used to denote a RV.
+- Formula
 
-The corresponding lower case letter is then used to denote a specific value.
+\
+\
+\
+\
+\
+\
+\
 
-## Random variables (Continued) {#slide-5}
+A probability mass function (pmf) is a set of ordered pairs $(x,f(x))$ of the discrete random variable $X$ if, for all possible values of $x$:
 
-## Discrete random variables {#slide-6}
+- $P(X=x)=f(x)$
+- $0\leq f(x) \leq 1$
+- $\sum_x f(x)=1$
 
-## Discrete random variables {#slide-7}
+Example: find the value of $c$ so that $f(x)$ is a pmf for a random variable $X$. 
 
-## Example 1 {#slide-8}
+$$
+f(x)=\frac{x}{c} \text{ where } x=1,2,3,4
+$$
 
-## Example 1 (Continued) {#slide-9}
+\
+\
+\
+\
+\
+\
+\
 
-## Example 1 (Continued) {#slide-10}
+Example: is $f(x)$ a valid pmf?
 
-## Example 1 (Continued) {#slide-11}
+$$
+f(x)=0.3^x\times0.7^{1-x}; \quad x=0,1
+$$
 
-## Probability mass function ( pmf ) {#slide-12}
+\
+\
+\
+\
+\
+\
+\
 
-## Example 2 {#slide-13}
+The cumulative distribution function (cdf), $F(x)$ of a disrete random variable with pmf $f(x)$ is 
 
-## Example 3 {#slide-14}
+$$
+F(x)=P(X\leq x)=\sum_{t\leq x}f(t); \quad -\infty \leq x \leq \infty
+$$
 
-## Slide 15
+Example: let $X=1,2,3,4$ and $f(1)=0.1$, $f(2)=0.3$, $f(3)=0.25$, $f(4)=0.35$. Create a table and graph for $F(x)$. 
 
-## Cumulative distribution function (CDF) {#slide-16}
+\
+\
+\
+\
+\
+\
+\
 
-## Example 4 {#slide-17}
+The **expectation** of a random variable $X$ is a weighted average, denoted $E[X]$, of the possible values that $X$ can assume.
 
-## Expected value of Discrete  rv's  (Average) {#slide-18}
+Formal Definition: If $X$ is a discrete random variable having probability mass function $f(x)$, then the expectation (expected value or mean) of $X$, denoted $E[X]$, is defined by:
 
-## Example 5 {#slide-19}
+$$
+\mu_x=E[X]=\sum_{f(x)>0} x\cdot f(x)
+$$
 
-## Example 6 {#slide-20}
-
-## Expected Value of Discrete  rv's (Continued) {#slide-21}
-
-## Example 6 (Continued) {#slide-22}
-
-## Expected value of Discrete RV's (Continued) {#slide-23}
-
-## Example 7 {#slide-24}
-
-## Variance of Discrete  Rv's {#slide-25}
-
-## Variance: Proof {#slide-26}
-
-## Example 8 {#slide-27}
-
-## Variance of Discrete RV's (Continued) {#slide-28}
-
-## Example 9 {#slide-29}
-
-## In-class problem {#slide-30}
-
-In roulette, a ball rolls around a roulette wheel. 18 are red, 18 are black, and 2 are green.  A bet on "red" costs \$1 to play.  If it lands red, you win \$1.  If not, you lose your \$1.
-
-What are your expected winnings with this strategy?
-
-Show your work!
-
-![Image result for roulette](ppt/media/image57.png "Picture 5")
-
-## Continuous random variables {#slide-31}
-
-## continuous random variable {#slide-32}
-
-32
-
-## Probability distribution function (PDF) {#slide-33}
-
-## Example 1 {#slide-34}
-
-## Cumulative distribution function (CDF) {#slide-35}
-
-## Example 2 {#slide-36}
-
-## Expected value of Continuous RV's {#slide-37}
-
-## Example 3 {#slide-38}
-
-## Expected value of Continuous  rv's {#slide-39}
-
-## Example 4 {#slide-40}
-
-## Variance of Continuous RV's {#slide-41}
-
-## Example 5 {#slide-42}
-
-## Joint probability distributions {#slide-43}
-
-## Joint probability distribution {#slide-44}
-
-Up until this point, we've been looking at just one random variable at a time. Often, we are interested in the simultaneous outcomes of several random variables
-
-Examples:
-
-For heart patients, we might be interested in heart rate, blood pressure (this could be broken down into systolic and diastolic), and cholesterol (again, could break down to HDL and LDL).
-
-For college applicants, we may want to look at high school GPA, class rank, and ACT/SAT score.
-
-The white blood cell count for patients at times: 0, 1, and 2 hours after a medicine is administered.
-
-## Joint probability distribution of Discrete RV {#slide-45}
-
-## Example 1 {#slide-46}
-
-## Example 1 {#slide-47}
-
-## Marginal distribution of discrete  rv's   {#slide-48}
-
-## Example 2 {#slide-49}
-
-## Joint probability distribution of Continuous RV {#slide-50}
-
-## Example 3 {#slide-51}
-
-## Marginal distribution of Continuous RV {#slide-52}
-
-## Example 4 {#slide-53}
-
-## Conditional distributions {#slide-54}
-
-## Example 5 {#slide-55}
-
-## Independence {#slide-56}
-
-## Example 6 {#slide-57}
-
-## Choose notation {#slide-58}
-
-## Double Integration & Boundaries {#slide-59}
-
-## Double Integration & Boundaries {#slide-60}
-
-## Double Integration & Boundaries {#slide-61}
-
-## Covariance & correlation {#slide-62}
-
-## Expected value and variance review {#slide-63}
-
-## Covariance {#slide-64}
-
-## Example 7 {#slide-65}
-
-## Correlation {#slide-66}
-
-## Correlation {#slide-67}
-
-![https://cdn-images-1.medium.com/max/2000/1\*T40Se1iQZKEVGe4q4MTWPw.png](ppt/media/image115.png "Picture 4")
-
-## Correlation {#slide-68}
-
-## Example 8 {#slide-69}
-
-## Example 9 {#slide-70}
-
-## Linear combinations of random variables {#slide-71}
-
-## Example 10 {#slide-72}
+ENDED AT SLIDE 18

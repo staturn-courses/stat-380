@@ -11,7 +11,7 @@ format:
         \lhead{STAT 380}
         \chead{Handout 2}
         \rhead{Fall 2026}
-        \cfoot{\thepage}
+        \rfoot{\thepage}
         \setlength{\headheight}{14pt}
     fig-align: center
 ---
@@ -375,10 +375,3 @@ Example: let a standard six-sided die be tossed, and $A$ be an observed odd numb
 \
 
 - Are $A$ and $C$ independent?
-\
-\
-\
-\
-\
-\
-\

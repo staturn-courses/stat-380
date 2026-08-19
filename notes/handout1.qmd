@@ -11,7 +11,7 @@ format:
         \lhead{STAT 380}
         \chead{Handout 1}
         \rhead{Fall 2026}
-        \cfoot{\thepage}
+        \rfoot{\thepage}
         \setlength{\headheight}{14pt}
     fig-align: center
 ---
