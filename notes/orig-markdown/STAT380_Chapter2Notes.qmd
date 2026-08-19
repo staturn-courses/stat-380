@@ -180,7 +180,7 @@ In many cases, some of the objects in the set are identical. For example, the co
 If there are $r$ kinds of objects, the number of permutations is given by 
 
 $$
-\frac{n!}{n_1!n_2!\dotsn_r!}
+\frac{n!}{n_1!n_2!\dots n_r!}
 $$
 
 Example: suppose that you are arranging the letters of MINNESOTA. How many distinct ways can the letters be arranged? 
@@ -204,26 +204,181 @@ $$
 
 Using the club example, there are $\frac{30!}{(30-3)!}$ permutations of club officers.
 
+## Combinations
+
+When the ordering of objects is not important, the selections of some objects from the set of objects are called combinations. This is the counting of unordered sets and subsets.
+
+The number of combinations of $r$ objects from a set of $n$ objects is:
+
+$$
+{n\choose r}=\frac{n!}{(n-r)!r!}
+$$
+
+Example: suppose that your grandma has an envelope of each common denomination of dollar bill (\$1, \$5, \$10, \$20, \$50, \$100). She let's you select three of the dollar bills at random. How many possible combinations of bills can you draw from the envelope?
+
+\newpage
+
+## Counting Summary
+
+To recap, we covered the following scenarios:
+
+- Multiplication (different independent operations)
+
+\
+\
+\
+
+- Ordered, without replacement
+
+\
+\
+\
+
+- Ordered, with replacement
+
+
+\
+\
+\
+
+- Unordered with unique objects, without replacement
+
+\
+\
+\
+
+## Probability
+
+Probability is the likelihood of an event occurring, usually denoted for event $A$ as $P(A)$. This measures the percent of times that $A$ occurs out of an infinite number of repeated experiments.
+
+For example, let $S=\{\text{Rain}, \text{No Rain}\}$, where $A=\text{Rain}$. If there is a 20% chance of rain, then $P(A)=0.2$ and $P(A^\prime)=0.8$
+
+Let $A\subset S$ be a feasible event. Then
+
+$$
+P(A)=\sum_{\omega\in A}p(\omega)
+$$
+
+That is, the mass of $A$ is the sum of the masses of the outcomes in $A$. If all outcomes in $S$ are equally likely, this is simply:
+
+\
+\
+\
+\
+\
+
+Example: consider a production line producing a certain type of fuse. Select two fuses for close examination and classify each as non-defective (N) or defective (D). 
+
+- What is the sample space?
+- If $A$ is the event with no defective fuses, $B$ is the event that at least one fuse is defective, and $C$ is the event where no more than 1 fuse is defective, find $P(A)$, $P(B)$, and $P(C)$
 
 
 
+\
+\
+\
+\
+\
+\
+\
+
+There are three essential properties of probabilities:
+
+- $P(A)\geq 0$
+- $P(A)\leq 1$
+- $P(S)=1$
 
 
+In addition, we also have the following properties:
 
+- Complements: $P(A^C)=1-P(A)$
+- Empty Set: $P(\phi)=0$
+- Subsets: $A\subseteq B \rightarrow P(A)\leq P(B)$
+- Unions: $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
 
+In class exercises: 
 
+Let two standard six-sided dice be tossed, and $A=\{\text{Sum is even}\}$, $B=\{\text{Sum is less than 5}\}$, and $C=\{\text{Sum is odd}\}$. Find the following probabilities:
 
+- $P(A)$
 
+\
+\
+\
 
+- $P(B)$
 
+\
+\
+\
 
+- $P(A\cup B)$
 
+\
+\
+\
 
+- $P(A\cap B)$
 
+\
+\
+\
 
+- $P(A^\prime\cup B)$
 
+\
+\
+\
 
+- $P(A\cup C)$
 
+\
+\
+\
 
+- $P(A\cap C)$
 
+\
+\
+\
 
+## Conditional Probability and Independence
+
+In conditional probabilities, some information about the outcome is known. Probability is calculated conditional on that knowledge. Let $P(A|B)$ denote the probability of an event $A$ given that we know $B$. Then:
+
+$$
+P(A|B)=\frac{P(A\cap B)}{P(B)}
+$$
+
+Example: suppose that in a population, 60% of people have brown hair, 40% have brown eyes, and 30% have both. If you randomly sample a brown-haired person, what is the probability that this person will have brown eyes?
+
+\
+\
+\
+\
+\
+\
+\
+
+Two events, $A$ and $B$, are said to be **independent** if they satisfy $P(A|B)=P(A)$. In our class, showing independence must be through showing that this property holds. 
+
+Example: let a standard six-sided die be tossed, and $A$ be an observed odd number, $B$ be an observed even number, and $C$ be an observed 1 or 2.
+
+- Are $A$ and $B$ independent?
+
+\
+\
+\
+\
+\
+\
+\
+
+- Are $A$ and $C$ independent?
+\
+\
+\
+\
+\
+\
+\
