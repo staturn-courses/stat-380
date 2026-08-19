@@ -1,0 +1,229 @@
+---
+date: today
+date-format: "[Fall 2026]"
+format:
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 380}
+        \chead{Handout 2}
+        \rhead{Fall 2026}
+        \cfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
+## Sample space & Events {#slide-2}
+
+## Terminology {#slide-3}
+
+**Experiment**: an activity or process with an uncertain outcome. This can be repeated any number of times.
+
+**Sample Outcome** ($s, \omega$) is any possible outcome.
+
+**Sample Space** ($S, \Omega$) is the collection of all possible outcomes of the experiment.
+
+**Event** ($A\subseteq S$) is any designated subset of $S$.
+
+## Experiment {#slide-4}
+
+All statistical experiments have three things in common:
+
+- The experiment can have more than one possible outcome.
+- Each possible outcome can be specified in advance.
+- The outcome of the experiment depends on chance.
+
+For example, consider flipping a coin. What are the possible outcomes? If the flip is fair, would you know what side of the coin is shown?
+
+\
+\
+\
+\
+\
+\
+\
+
+## Sample space {#slide-6}
+
+The sample space is the collection of all possible outcomes of the experiment. What are the outcomes for the following scenarios?
+
+1. Flipping a coin three times.
+\
+\
+\
+\
+\
+2. A deck of cards only containing clubs.
+\
+\
+\
+\
+\
+3. Completion time of a mile run.
+\
+\
+\
+\
+\
+
+## Event
+
+An event is a subset of the sample space. It is usually denoted by a capital letter. If a coin is tossed and you observe the top face, which of the following are a valid event?
+
+- $A=\{H\}$
+- $A=\{T\}$
+- $A=\{3\}$
+- $A=\{TT\}$
+
+A **Null Set** is an event with no elements and is denoted by $\phi$, or sometimes by $\{\}$
+
+## Set Operations
+
+Consider two events $A$ and $B$. 
+
+Union (“or”)
+
+- Elements in one or both sets
+- $\omega\in A\cup B$ provided $\omega\in A$ or $\omega\in B$
+
+Intersection (“and”)
+
+- Elements in both sets
+- $\omega\in A\cap B$ provided $\omega\in A$ and $\omega\in B$
+
+Complement (“not”)
+
+- Elements not in the set
+- $\omega\in A^C$ or $A^\prime$ provided $\omega\notin A$
+
+\newpage
+
+Consider only the clubs from a standard 52-card deck (A,2,3,...,10,J,Q,K) and the following events.
+
+- $A=$ numeric and even cards (2,4,6,8,10)
+- $B=$ face cards (J,Q,K)
+
+What are the unions, intersections, and complements of $A$ and $B$?
+
+\newpage
+
+## Set Properties
+
+The following are set properties and 
+
+- $A\cap\phi$
+\
+- $A\cup\phi$
+\
+- $A\cap A^\prime$
+\
+- $A\cup A^\prime$
+\
+- $S^\prime$
+\
+- $(A^\prime)^\prime$
+\
+- $\phi'$
+\
+
+Events $A$ and $B$ are mutually exclusive (disjoint) if an only if $A\cap B=\phi$.
+
+DeMorgan's Laws
+
+- $(A\cap B)^\prime$
+\
+- $(A\cup B)^\prime$
+
+## Counting {#slide-21}
+
+In many experiments, it is not feasible to list all possible elements in a sample space or an event. Yet to compute probabilities, we need to know how many elements there are. The rules in this section will help us count the number of elements in a sample space.
+
+Toss a coin twice then the first toss can result in \_\_\_\_ different ways and the second toss can result in \_\_\_\_ different ways. Two tosses of a coin can result in \_\_\_\_\_\_\_\_\_\_\_different ways.
+
+The fundamental principle we look at is called the multiplication rule. If an operation can be performed in $n_1$ ways, and if for each of these ways a second operation can be performed in $n_2$ ways, then the two operations can be performed together in $n_1\times n_2$ ways. If there are $k$ such operations, the total number of operations can be performed together in $n_1\times n_2\times\dots n_k$ ways. An assumption of the multiplication rule is that each operation does not have an effect on the outcome of the other operations.
+
+How many outcomes are in the sample space of the following operations?
+
+- Rolling two standard six-sided dice.
+
+\
+\
+\
+
+- Outfits between 5 shirts, 3 pants, and 2 pairs of shoes.
+
+\
+\
+\
+
+## Permutations
+
+Permutation is an arrangement of all or part of a set of objects. For example, the letters a, b, and c can be arranged as 
+
+\
+\
+\
+\
+\
+
+The number of permutations of $n$ different objects is $n$ factorial, denoted by $n!$, where
+
+$$
+n!=n\times(n-1)\times(n-2)\times\dots\times 3\times 2 \times 1
+$$
+
+In many cases, some of the objects in the set are identical. For example, the collection $\{a,a,b\}$ could be arranged as $\{aab,aba,baa\}$. To count the number of unique arrangements with identical objects, we divide the total number of arrangements by the factorial of each kind of object.
+
+If there are $r$ kinds of objects, the number of permutations is given by 
+
+$$
+\frac{n!}{n_1!n_2!\dotsn_r!}
+$$
+
+Example: suppose that you are arranging the letters of MINNESOTA. How many distinct ways can the letters be arranged? 
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+Permutations do not need to select every object. For example, in a club of 30 students and three officer positions (president, vice president, and treasurer), the ordering of non-officer students is not considered. For $r$ objects from a set of $n$ objects, the number of permutations is
+
+$$
+\frac{n!}{(n-r)!}
+$$
+
+Using the club example, there are $\frac{30!}{(30-3)!}$ permutations of club officers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

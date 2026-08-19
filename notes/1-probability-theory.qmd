@@ -1,0 +1,110 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 380}
+        \chead{Handout 1}
+        \rhead{Fall 2026}
+        \cfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
+## Set Theory
+
+Suppose that you roll a standard 6-sided die. 
+
+1. On a given roll, what values could you expect to see?
+\
+\
+\
+2. How often would you expect to see even numbers? 
+\
+\
+\
+3. If another die was rolled, 
+\
+\
+\
+
+The previous example illustrates several components of *Set Theory*, which forms the foundations of probability. 
+
+:::{.callout-note icon=false}
+## Definition
+
+The *sample space* of an experiment, $S$, is a collection of all possible outcomes of the experiment.
+
+:::
+
+Using a single die toss, the set sample space is 
+
+\
+$S=$
+\
+
+Now suppose that two identical 6-sided dice are tossed. The new sample space is given by
+
+\
+$S=$
+
+\newpage
+
+:::{.callout-note icon=false}
+
+
+
+## Definition
+
+An *event* can be defined as any subset of the sample space, including the entire sample space itself. 
+
+:::
+
+Events can be defined as any combination of elements within the sample space. For example, when rolling two dice, the events could be defined as $\{1,2\}$ or when the sum of the dice is greater than 10. 
+
+
+Given any two or more events, there are several set operators that we need to know.
+
+
+
+:::{.callout-note icon=false}
+
+## Definitions
+
+Let $A$ and $B$ be two events within $S$. 
+
+If $A$ is a **subset** of $B$, $A\subseteq B$, then all elements within $A$ are also within $B$.
+
+The **union** of $A$ and $B$, $A\cup B$, is the set of elements belonging to either $A$ or $B$. 
+
+The **intersection** of $A$ and $B$, $A\cap B$, is the set of elements belonging to both $A$ and $B$.
+
+The **complement** of $A$, written as $A^c$, is the set of all elements that are not in $A$.
+
+:::
+
+**Sketch of operators**
+
+\newpage
+
+
+
+## In-class Exercises
+
+
+
+## Probability Theory
+
+:::{.callout-note icon=false}
+
+Given a sample space $S$, a probability function is a function $P$ such that all of the following are satisfied: 
+
+1. $P(A)\geq 0$ for all events $A$ in the sample space.
+2. $P(S)=1$
+3. If events $A_1,A_2,\dots$ are pairwise disjoint and elements of the sample space, then $P$
+
+:::
+

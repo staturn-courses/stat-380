@@ -1,0 +1,185 @@
+## Chapter 3 & Chapter 4 {#slide-1}
+
+Random Variables and Probability Distributions
+
+Mathematical expectation
+
+Random Variables (RV)
+
+Discrete Random Variables ( PMF / CDF / Expectation / Variance )
+
+Continuous random variables ( PDF / CDF / Expectation / Variance )
+
+Joint probability distributions
+
+Covariance & Correlation
+
+## Random Variables {#slide-2}
+
+## Random Variables: Introduction {#slide-3}
+
+## Random Variables {#slide-4}
+
+A  random variable (RV)   is a real -- valued function defined over a sample space. A RV assigns a value to each outcome in the sample space.
+
+Typically, capital letters at the END of the alphabet are used to denote a RV.
+
+The corresponding lower case letter is then used to denote a specific value.
+
+## Random variables (Continued) {#slide-5}
+
+## Discrete random variables {#slide-6}
+
+## Discrete random variables {#slide-7}
+
+## Example 1 {#slide-8}
+
+## Example 1 (Continued) {#slide-9}
+
+## Example 1 (Continued) {#slide-10}
+
+## Example 1 (Continued) {#slide-11}
+
+## Probability mass function ( pmf ) {#slide-12}
+
+## Example 2 {#slide-13}
+
+## Example 3 {#slide-14}
+
+## Slide 15
+
+## Cumulative distribution function (CDF) {#slide-16}
+
+## Example 4 {#slide-17}
+
+## Expected value of Discrete  rv's  (Average) {#slide-18}
+
+## Example 5 {#slide-19}
+
+## Example 6 {#slide-20}
+
+## Expected Value of Discrete  rv's (Continued) {#slide-21}
+
+## Example 6 (Continued) {#slide-22}
+
+## Expected value of Discrete RV's (Continued) {#slide-23}
+
+## Example 7 {#slide-24}
+
+## Variance of Discrete  Rv's {#slide-25}
+
+## Variance: Proof {#slide-26}
+
+## Example 8 {#slide-27}
+
+## Variance of Discrete RV's (Continued) {#slide-28}
+
+## Example 9 {#slide-29}
+
+## In-class problem {#slide-30}
+
+In roulette, a ball rolls around a roulette wheel. 18 are red, 18 are black, and 2 are green.  A bet on "red" costs \$1 to play.  If it lands red, you win \$1.  If not, you lose your \$1.
+
+What are your expected winnings with this strategy?
+
+Show your work!
+
+![Image result for roulette](ppt/media/image57.png "Picture 5")
+
+## Continuous random variables {#slide-31}
+
+## continuous random variable {#slide-32}
+
+32
+
+## Probability distribution function (PDF) {#slide-33}
+
+## Example 1 {#slide-34}
+
+## Cumulative distribution function (CDF) {#slide-35}
+
+## Example 2 {#slide-36}
+
+## Expected value of Continuous RV's {#slide-37}
+
+## Example 3 {#slide-38}
+
+## Expected value of Continuous  rv's {#slide-39}
+
+## Example 4 {#slide-40}
+
+## Variance of Continuous RV's {#slide-41}
+
+## Example 5 {#slide-42}
+
+## Joint probability distributions {#slide-43}
+
+## Joint probability distribution {#slide-44}
+
+Up until this point, we've been looking at just one random variable at a time. Often, we are interested in the simultaneous outcomes of several random variables
+
+Examples:
+
+For heart patients, we might be interested in heart rate, blood pressure (this could be broken down into systolic and diastolic), and cholesterol (again, could break down to HDL and LDL).
+
+For college applicants, we may want to look at high school GPA, class rank, and ACT/SAT score.
+
+The white blood cell count for patients at times: 0, 1, and 2 hours after a medicine is administered.
+
+## Joint probability distribution of Discrete RV {#slide-45}
+
+## Example 1 {#slide-46}
+
+## Example 1 {#slide-47}
+
+## Marginal distribution of discrete  rv's   {#slide-48}
+
+## Example 2 {#slide-49}
+
+## Joint probability distribution of Continuous RV {#slide-50}
+
+## Example 3 {#slide-51}
+
+## Marginal distribution of Continuous RV {#slide-52}
+
+## Example 4 {#slide-53}
+
+## Conditional distributions {#slide-54}
+
+## Example 5 {#slide-55}
+
+## Independence {#slide-56}
+
+## Example 6 {#slide-57}
+
+## Choose notation {#slide-58}
+
+## Double Integration & Boundaries {#slide-59}
+
+## Double Integration & Boundaries {#slide-60}
+
+## Double Integration & Boundaries {#slide-61}
+
+## Covariance & correlation {#slide-62}
+
+## Expected value and variance review {#slide-63}
+
+## Covariance {#slide-64}
+
+## Example 7 {#slide-65}
+
+## Correlation {#slide-66}
+
+## Correlation {#slide-67}
+
+![https://cdn-images-1.medium.com/max/2000/1\*T40Se1iQZKEVGe4q4MTWPw.png](ppt/media/image115.png "Picture 4")
+
+## Correlation {#slide-68}
+
+## Example 8 {#slide-69}
+
+## Example 9 {#slide-70}
+
+## Linear combinations of random variables {#slide-71}
+
+## Example 10 {#slide-72}
