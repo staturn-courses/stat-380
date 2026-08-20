@@ -6,6 +6,7 @@ about:
   image: "icon380.png"
   links:
     - text: All courses
+      icon: house
       href: https://staturn-courses.github.io/
 ---
 
