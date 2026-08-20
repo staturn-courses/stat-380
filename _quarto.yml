@@ -5,6 +5,8 @@ project:
     - "*.qmd"
     - "!old/"
     - "!notes/orig-markdown/"
+  resources:
+    - notes/
 website:
   title: "STAT 380"
   navbar:

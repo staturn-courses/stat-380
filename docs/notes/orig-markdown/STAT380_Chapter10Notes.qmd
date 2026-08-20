@@ -1,0 +1,561 @@
+## Chapter 10 {#slide-1}
+
+One & Two sample Tests of Hypothesis
+
+Measuring unusual with p-values
+
+Hypothesis testing (Tests for single proportion)
+
+Type I and Type ii Errors
+
+Power
+
+Tests of single mean
+
+Tests for difference in means
+
+## Measuring unusual with p-values {#slide-2}
+
+## Unusually Large and Small Values {#slide-3}
+
+## Unusual values are in the tail   {#slide-4}
+
+## P-values {#slide-5}
+
+## Is the value 4 unusually small? {#slide-6}
+
+## Is 12 unusually large? {#slide-7}
+
+## Example 1 {#slide-8}
+
+Ages of CEOS
+
+The ages for the 60 CEOs of America's best small companies of 1993 are given below.
+
+32, 33, 36, 37, 38, 40, 41, 43, 43, 44, 44, 45, 45, 45, 45, 46,
+
+46, 47, 47, 47, 48, 48, 48, 48, 49, 50, 50, 50, 50, 50, 50, 51, 51, 52, 53, 53, 53, 55, 55, 55, 56, 56, 56, 56, 57, 57, 58, 58, 59, 60, 61, 61, 61, 62, 62, 63, 69, 69, 70, 74
+
+Compute the following
+
+Upper p-value of 70
+
+Upper p-value of 72
+
+Upper p-value of 36
+
+Lower p-value of 34
+
+Lower p-value of 31
+
+## Is a value unusually large? {#slide-9}
+
+## Is a value unusually small? {#slide-10}
+
+## Example 1 {#slide-11}
+
+The ages for the 60 CEOs of America's best small companies of 1993 are given below.
+
+32, 33, 36, 37, 38, 40, 41, 43, 43, 44, 44, 45, 45, 45, 45, 46,46, 47, 47, 47, 48, 48, 48, 48, 49, 50, 50, 50, 50, 50, 50, 
+
+51, 51, 52, 53, 53, 53, 55, 55, 55, 56, 56, 56, 56, 57, 57, 58, 58, 59, 60, 61, 61, 61, 62, 62, 63, 69, 69, 70, 74
+
+Is an age of 35 significantly large?
+
+Is an age of 35 significantly small?
+
+## Hypothesis Testing {#slide-12}
+
+## What are statistical hypotheses? {#slide-13}
+
+Claims/assertions about population parameters
+
+Tested using a single sample from the population
+
+Any test involves two hypotheses
+
+	The null hypothesis, H 0
+
+	The alternative hypothesis, H a
+
+## The Two Hypotheses {#slide-14}
+
+The  Null Hypothesis , H 0  
+
+Statement of 
+
+No change
+
+No effect
+
+No difference
+
+Assumed true until evidence indicates otherwise.
+
+ The  Alternative Hypothesis,  H a  
+
+## Steps in a Hypothesis Test {#slide-15}
+
+## Example 2 {#slide-16}
+
+Case:   Hazelwood School District vs. United States  (1977)
+
+Subject: 
+
+Discrimination against African Americans in hiring school teachers.
+
+Facts:  
+
+In 1972 and 1973,  only 22 out of 405 (5.4%)  teachers hired were African American in Saint Louis.
+
+All of America:  15.4% of teachers are African American
+
+## Step 0: determine parameter {#slide-17}
+
+## Step 1: Determine H 0  and H a {#slide-18}
+
+## Step 2: determine statistic from sample data {#slide-19}
+
+## Step 3: Distribution of statistic under H 0 {#slide-20}
+
+## Step 4: Determine if unusually  small {#slide-21}
+
+![](ppt/media/image15.png "Picture 8")
+
+## Step 5: Make decision {#slide-22}
+
+## Slide 23
+
+- Reject H 0    Evidence supports H a
+
+"There is significant evidence to support..." then the alternative hypothesis statement
+
+Example:  There is significant evidence that the average size of a family unit was greater than the national average.
+
+## Writing Conclusions: Large p-value (\> 0.05) {#slide-24}
+
+## Hazelwood example {#slide-25}
+
+- p-value \< 0.05    Reject H 0
+
+There is significant evidence that the proportion of African-American teachers hired by the Saint Louis school district was less than the national rate of hire.
+
+## Note! {#slide-26}
+
+No conclusion EVER involves "accepting" or "supporting" H 0 !
+
+## What if... {#slide-27}
+
+...the sample had 52/405 African Americans?
+
+![](ppt/media/image18.png "Picture 7")
+
+## Which of these conclusions is best, if 52/405 were African-American? {#slide-28}
+
+There is significant evidence that the proportion of African-American teachers hired by the Saint Louis school district was less than the national rate of hire.
+
+There is no significant evidence that the proportion of African-American teachers hired by the Saint Louis school district was less than the national rate of hire.
+
+There is significant evidence that the proportion of African-American teachers hired by the Saint Louis school district was equal to the national rate of hire.
+
+## Upper or lower p-value? {#slide-29}
+
+## Example 3 {#slide-30}
+
+Suppose that a pharmaceutical company wants to be able to claim that for its newest medication, the proportion of patients who experience side effects is less than 0.20.  In a clinical trial with 400 patients, they find that 68 of the patients experience side effects (68/400 = 17%).  Perform a hypothesis test at a 5% level of significance.  
+
+## Step 0: Determine the parameter {#slide-31}
+
+## Step 1: determine hypotheses {#slide-32}
+
+## Step 2: statistic {#slide-33}
+
+## Step 3: distribution of statistic {#slide-34}
+
+## Step 4: Find a p-value {#slide-35}
+
+Which of these is the p-value?
+
+0.016
+
+0.073
+
+0.200
+
+0.170
+
+## Step 5: Make a conclusion {#slide-36}
+
+Which of these is the best conclusion based on the p-value?
+
+There is no significant evidence that the percent of people experiencing side effects with the new drug is lower than 20%
+
+There is significant evidence that the percent of people experiencing side effects with the new drug is lower than 20%
+
+There is significant evidence that the percent of people experiencing side effects with the new drug is equal to 20%
+
+## Step 4. Determining "Unusual" {#slide-37}
+
+## Example 4: Determining unusual... {#slide-38}
+
+## Slide 39
+
+![](ppt/media/image19.png "Picture 1")
+
+## Critical values & rejection regions {#slide-40}
+
+40
+
+## Recall: Example {#slide-41}
+
+## Example {#slide-42}
+
+![](ppt/media/image15.png "Picture 6")
+
+## Example {#slide-43}
+
+![](ppt/media/image27.png "Picture 5")
+
+## Example {#slide-44}
+
+![](ppt/media/image29.png "Picture 3")
+
+TOO BIG!!
+
+True critical value = 50
+
+## Two Types of Errors {#slide-45}
+
+Type I and Type II Errors
+
+45
+
+## Types of Errors {#slide-46}
+
+Type I Error: Reject null when the null is true.
+
+Type II Error: Fail to reject null, when null is false.
+
+## Example 5 {#slide-47}
+
+## RR & critical value (Example 5) {#slide-48}
+
+## What type of error? (Example 5) {#slide-49}
+
+Truth: the overall drinking rate has not decreased
+
+Sample result: 10/20 underage students drink
+
+Type-I error
+
+Type-II error
+
+Correct decision is made
+
+![](ppt/media/image30.png "Picture 1")
+
+## What type of error? (Example 5) {#slide-50}
+
+Truth: the overall drinking rate has not decreased
+
+Sample result: 8/20 underage students drink
+
+Type-I error
+
+Type-II error
+
+Correct decision is made
+
+![](ppt/media/image30.png "Picture 1")
+
+## What type of error? (Example 5) {#slide-51}
+
+Truth: the overall drinking rate has decreased
+
+Sample result: 8/20 underage students drink
+
+Type-I error
+
+Type-II error
+
+Correct decision is made
+
+![](ppt/media/image30.png "Picture 9")
+
+## What type of error? (Example 5) {#slide-52}
+
+Truth: the overall drinking rate has decreased
+
+Sample result: 11/20 underage students drink
+
+Type-I error
+
+Type-II error
+
+Correct decision is made
+
+![](ppt/media/image30.png "Picture 9")
+
+## Type-I error and significance {#slide-53}
+
+![](ppt/media/image30.png "Picture 7")
+
+## Example 6  {#slide-54}
+
+## Example 6  {#slide-55}
+
+## Example 6  {#slide-56}
+
+## Power {#slide-57}
+
+57
+
+## Power {#slide-58}
+
+The probability of correctly rejecting H 0
+
+1-P(Type-II error)
+
+WE WANT THIS!!!
+
+## Power {#slide-59}
+
+The probability of being in lower-right box
+
+## Underage drinking example {#slide-60}
+
+![](ppt/media/image30.png "Picture 5")
+
+## WHAT IF... {#slide-61}
+
+Underage drinking rate  has decreased  to 0.5?
+
+![](ppt/media/image32.png "Picture 4")
+
+![](ppt/media/image30.png "Picture 14")
+
+## WHAT IF... {#slide-62}
+
+Underage drinking rate  has decreased  to 0.25?
+
+![](ppt/media/image30.png "Picture 15")
+
+![](ppt/media/image44.png "Picture 5")
+
+## Moral 1 {#slide-63}
+
+The truer the alternative, the higher the power
+
+## Moral 1 summary {#slide-64}
+
+Truer alternatives increase power
+
+![](ppt/media/image30.png "Picture 16")
+
+![](ppt/media/image32.png "Picture 18")
+
+![](ppt/media/image44.png "Picture 19")
+
+## Impact of significance level {#slide-65}
+
+![](ppt/media/image47.png "Picture 4")
+
+## Slide 66
+
+![](ppt/media/image47.png "Picture 2")
+
+![](ppt/media/image49.png "Picture 6")
+
+## Moral 2 {#slide-67}
+
+Decreasing significance level decreases power
+
+(in general, harder to reject H 0 , when false  or  true)
+
+Increasing significance level increases power 
+
+(in general, easier to reject H 0 , when false  or  true)
+
+## Moral 2 summary {#slide-68}
+
+Higher significance levels increase power
+
+![](ppt/media/image52.png "Picture 4")
+
+![](ppt/media/image53.png "Picture 5")
+
+![](ppt/media/image54.png "Picture 6")
+
+## Moral 3 {#slide-69}
+
+As sample size increases, power increases
+
+## 3 ingredients for increased power {#slide-70}
+
+## Calculating power {#slide-71}
+
+## Example 7 - Underage Drinking  {#slide-72}
+
+## REVIEW: Steps in a Hypothesis Test {#slide-73}
+
+## Example 8 {#slide-74}
+
+Average body temperature is 'well-known' to be 98.6 o F.
+
+A sample of 65 young healthy males resulted in a sample mean of 98.39 and standard deviation of 0.74.
+
+Does this sample provide statistically significant evidence that the population mean body temperature of young healthy males is LOWER than 98.6 o ?
+
+## Step 0: Parameter of interest {#slide-75}
+
+## Step 1: Hypotheses (in general) {#slide-76}
+
+In general, take the form:
+
+Which H a  depends on research question.
+
+## Step 1: Hypotheses (our example) {#slide-77}
+
+Our example: Does this sample provide statistically significant evidence that the population mean body temperature of young healthy males is  lower  than 98.6 o ?
+
+## Step 2: Sample result {#slide-78}
+
+## Step 3: Find statistic, determine its distribution under H 0 {#slide-79}
+
+## Slide 80
+
+![](ppt/media/image55.png "Picture 4")
+
+## Slide 81
+
+![](ppt/media/image57.png "Picture 6")
+
+## Write conclusion {#slide-82}
+
+We have statistically significant evidence to support the alternative hypothesis, that the average body temperature of healthy young adult males is lower than 98.6 degrees F.
+
+## Accompanying confidence interval {#slide-83}
+
+## 95% CI interpretation {#slide-84}
+
+We are 95% confident the true average body temperature of healthy young adult males is between 98.21 and 98.57 degrees F.
+
+Since 95% CI does not overlap null mean of 98.6, we could use this confidence interval (instead of a test statistic/p-value) to support H a . 
+
+## Slide 85
+
+![](ppt/media/image64.png "Picture 1")
+
+## Normality check {#slide-86}
+
+## Why? {#slide-87}
+
+## What if? {#slide-88}
+
+## Example 9  {#slide-89}
+
+According to the United States Mint, quarters weigh 5.67 grams.  A researcher is interested in determining whether the "state" quarters have a weight that is different from 5.67 grams.  He randomly selects 18 "state" quarters, weighs them and obtains a sample mean of 5.70 and standard deviation of 0.05. Assume the distribution is normally distributed.
+
+	
+
+At the  α  =   0.05 level of significance, is there evidence to conclude that state quarters have a weight different than  5.67 grams (either way)? 
+
+Follow the steps in a hypothesis test using ALL possible methods to determine significance (p-value, standardized statistic, and confidence interval).
+
+## Example 9: Work space {#slide-90}
+
+## Slide 91
+
+![](ppt/media/image66.png "Picture 2")
+
+## Comparing two means {#slide-92}
+
+Independent 2-sample t-test
+
+## Independent samples {#slide-93}
+
+Two Cases:
+
+Random samples from different populations 
+
+Randomly assigned treatments
+
+Important idea:
+
+Values from one sample/treatment group have little to no relationship to values from the other sample(s).
+
+## Parameters {#slide-94}
+
+## Alternative hypotheses {#slide-95}
+
+Alternative hypotheses are one of the following:
+
+## Test statistic {#slide-96}
+
+## Intuition {#slide-97}
+
+Consider 4 separate samples of students
+
+Intent: compare average sleep of athletes to non-athletes
+
+Which sample provides the strongest evidence of a difference in average sleep needed?
+
+i.e., which sample will have the most extreme t-statistic?
+
+Rank the remaining t-statistics from most extreme, to closest to 0.
+
+![](ppt/media/image69.png "Picture 6")
+
+## Degrees of freedom {#slide-98}
+
+## Example 10 {#slide-99}
+
+A 2014 article randomized 47 children aged 6-10 to one of two groups 
+
+( K. nan der Horst, A.  Ferrage , A.  Rytz  (2014). \"Involving Children in Meal Preparation,\" Appetite. Vol. 79, pp.18-24)
+
+Group 1: Children helped parents with meal preparation
+
+Group 2: Children did not help with meal preparation
+
+Of interest: Are average number of calories consumed higher for children in the "helped" group?
+
+![Image result for involving children in meal prep](ppt/media/image70.jpeg "Picture 5")
+
+## Of note {#slide-100}
+
+Groups are independent:
+
+Randomly assigned
+
+Number of calories consumed by a kid in the 'helped' group provides no information about number of calories consumed by a kid in the 'did not help' group
+
+## Of note (Example 10) {#slide-101}
+
+## Data summary {#slide-102}
+
+There were 25 kids assigned to help with a sample mean of 431.4 and standard deviation of 105.7.
+
+There were 22 kids assigned not to help with a sample mean of 346.8 and a standard deviation of 99.5.  
+
+## What is the appropriate t-statistic? {#slide-103}
+
+## Slide 104
+
+## Slide 105
+
+## Conclusion {#slide-106}
+
+Since the p-value \< 0.05, we have significant evidence that children who help with meal preparation consume more calories  on average  than children who do not.
+
+## Two -- sided confidence interval {#slide-107}
+
+## Conclusion {#slide-108}
+
+Since the p-value \< 0.05, we have significant evidence that children who help with meal preparation consume more calories  on average  than children who do not.
+
+Furthermore, we can be 95% confident that children who help with meal preparation consume between 24 and 144 more calories,  on average , than children who do not.
+
+## Slide 109
+
+![](ppt/media/image76.png "Picture 1")

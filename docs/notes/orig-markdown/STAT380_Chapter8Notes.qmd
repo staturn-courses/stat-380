@@ -1,0 +1,284 @@
+## Chapter 8 {#slide-1}
+
+Fundamental Sampling distributions and data descriptions
+
+Random Sampling
+
+Some Important Statistics
+
+Sampling Distributions of Mean
+
+Sampling Distributions of Variance
+
+T-Distribution
+
+## Random sampling {#slide-2}
+
+## Recall: statistical inference {#slide-3}
+
+Population
+
+Sample
+
+Collect Data
+
+(Randomly)
+
+Make guess about a parameter
+
+(Statistical Inference)
+
+## Example {#slide-4}
+
+Population: All Americans
+
+3,930 Americans
+
+Sample:
+
+Inference!
+
+- A Pew Research article investigated Americans' attitudes towards guns.
+- They conducted a survey of 3,930 Americans and asked each person whether or not they owned a gun.
+
+## Parameters and Statistics {#slide-5}
+
+P arameter
+
+Number describing a  P opulation
+
+Fixed, unknown
+
+S tatistic
+
+Number describing a  S ample
+
+Random, observable
+
+## Example {#slide-6}
+
+Sample:
+
+Inference!
+
+Population: All Americans
+
+3,930 Americans
+
+Pew Research wants to know what percent of all Americans own guns.
+
+Percent of  All Americans  with guns is a  parameter .
+
+Percent of  3,930 Americans sampled  with guns is a  statistic .
+
+## Sampling {#slide-7}
+
+Non-random (convenience) sampling methods are often biased.
+
+Statistics from non-random samples either consistently overestimate or underestimate the true population parameters.
+
+Random sampling
+
+Each unit in the population has an equal probability of being selected for the sample
+
+## Random sampling {#slide-8}
+
+## statistics {#slide-9}
+
+## Example {#slide-10}
+
+## Example {#slide-11}
+
+Population: All Nebraskans
+
+\$125,000
+
+\$95,000
+
+\$134,000
+
+\$145,000
+
+\$105,000
+
+\$110,000
+
+\$160,000
+
+Average Net Income
+
+90,000
+
+100,000
+
+110,000
+
+150,000
+
+130,000
+
+140,000
+
+170,000
+
+120,000
+
+160,000
+
+## Sampling distribution of many percent\'s {#slide-12}
+
+![](ppt/media/image14.png "Picture 3")
+
+## Sampling distribution of many means {#slide-13}
+
+![](ppt/media/image17.png "Picture 3")
+
+## Standard error {#slide-14}
+
+14
+
+## Good statistics {#slide-15}
+
+Are unbiased (on average, equal to their population version)
+
+Precise (small standard errors)
+
+15
+
+## Slide 16
+
+## Example 1 {#slide-17}
+
+If a sample of size of 144 is drawn from a normal distribution with mean 130 and variance 20, what is the distribution of the sample mean? (specify the values of the parameter(s))
+
+## Sampling Distributions Activity {#slide-18}
+
+Go to the Sampling Distributions webpage at  http://onlinestatbook.com/stat_sim/sampling_dist/index.html  
+
+Click begin
+
+Steps
+
+Select Normal Distribution for your parent population
+
+Select N = 2
+
+Click animate, click animate again, and again...
+
+Click 10,000
+
+Increase N to 25 and repeat
+
+What do you notice about the mean and standard deviation of your parent population and sampling distributions?
+
+Repeat steps above by changing the parent population to Uniform, Skewed, and Custom
+
+What happens as you change your parent population? What changes as N increases?
+
+## Slide 19
+
+## Central limit theorem {#slide-20}
+
+20
+
+## Central limit theorem {#slide-21}
+
+## Implication of CLT {#slide-22}
+
+22
+
+## CLT Formal definition {#slide-23}
+
+## Slide 24
+
+![](ppt/media/image42.png "Picture 1")
+
+## Example 2 {#slide-25}
+
+## Central limit theorem {#slide-26}
+
+## Slide 27
+
+![](ppt/media/image42.png "Picture 1")
+
+## Example 3 {#slide-28}
+
+## Example 4 {#slide-29}
+
+## Slide 30
+
+## Slide 31
+
+## Example 5 {#slide-32}
+
+The television picture tubes of manufacturer  A  have an expected lifetime of 6.5 years and a standard deviation of 0.9 year, while those of manufacturer  B  have an expected lifetime of 6.0 years and a standard deviation of 0.8 year. What is the probability that a random sample of 36 tubes from manufacturer  A  will have a mean lifetime that is at least 1 year more than the mean lifetime of a sample of 49 tubes from manufacturer  B ?
+
+## Chi -- Square distribution {#slide-33}
+
+## Slide 34
+
+## Chi-square table {#slide-35}
+
+![](ppt/media/image68.png "Picture 3")
+
+Find probability
+
+Find degrees of freedom
+
+## Example 6 {#slide-36}
+
+## Technology {#slide-37}
+
+![](ppt/media/image72.png "Picture 3")
+
+![](ppt/media/image73.png "Picture 4")
+
+## Slide 38
+
+![](ppt/media/image74.png "Picture 1")
+
+## In-class {#slide-39}
+
+The time (in hours) that a technician requires to perform preventive maintenance on an air-conditioning unit is governed by the exponential distribution with mean 1 hour. Your company has a contract to maintain 70 of these units in an apartment building. You must schedule technicians' time for a visit to this building. Is it safe to budget an average of 1.1 hour for each unit? Or should you budget an average of 1.25 hours?
+
+## T -- distribution  {#slide-40}
+
+## T -- Distribution  {#slide-41}
+
+## T - distribution {#slide-42}
+
+## Slide 43
+
+![](ppt/media/image78.png "Picture 2")
+
+## Slide 44
+
+![](ppt/media/image79.png "Picture 1")
+
+Find probability
+
+Find degrees of freedom
+
+## Slide 45
+
+![](ppt/media/image81.png "Picture 1")
+
+## Example 7 {#slide-46}
+
+## Technology {#slide-47}
+
+![](ppt/media/image83.png "Picture 3")
+
+## Example 8 {#slide-48}
+
+It is known that HW scores follow a normal distribution with mean 80. Given a random sample of 15 HW scores with a sample standard deviation of 5, what is the probability that the average HW score is at least 82?
+
+## Example 9 {#slide-49}
+
+## Example 10 {#slide-50}
+
+An insurance company knows that in the entire population of millions of apartment owners, the mean expected annual loss from damage is \$75 with a standard deviation of \$300. The distribution of losses is strongly right skewed (i.e. most policies have \$0 losses) but a few have large losses. If the company sells 10,000 policies, can it safely base its rates on the assumption that its average loss will be no greater than \$85
+
+## In-class {#slide-51}
+
+It is known that a certain engine is expected to perform at 20 MPG. A random sample of 100 engines is chosen and with the sample variance computed to be 1. Find the probability that, on average, the chosen engines will perform less than 21 MPG.
