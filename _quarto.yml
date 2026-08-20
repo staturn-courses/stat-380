@@ -1,10 +1,10 @@
 project:
   type: website
+  output-dir: docs
   render:
     - "*.qmd"
     - "!old/"
     - "!notes/orig-markdown/"
-    output-dir: docs
 website:
   title: "STAT 380"
   navbar:

@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "stat-380-syllabus-f26.html",
+    "href": "stat-380-syllabus-f26.html",
+    "title": "STAT 801A (Fall 2026)",
+    "section": "",
+    "text": "Instructor\nName: Tyler Wiederich, Ph.D.\nOffice: Hardin Hall 343A\nOffice hours: TBD.\nE-mail: twiederich2@unl.edu\nAll office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.\n\n\nCourse Description\nProbability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications.\n\n\nAssessments\nThis course consists of projects and exams.\nProjects: Four group projects (2-3 people/group) will be assigned throughout the semester.\nExams: There will be 2 exams during the semester. Each exam will have a closed-book and open-book portion. More details will be provided in class.\nFinal: To be announced in class\nThese assessments are weighted as follows:\n\n\n\n\nQuizzes\nProjects*\nExams**\nFinal\n\n\n\n\n% of grade\n10%\n40%\n30%\n20%\n\n\n\n*Each project is worth 10% of your grade.\n**Each exam is worth 15% of your grade.\nAll projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. No late projects or quizzes are accepted.\nFor group projects, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student’s project grade if he/she/they do not abide by this group work policy.\n\n\nGrades\nYour overall course grade percentage guarantees the following grade for the course.\n\n\n\nLetter Grade\n+\n\n-\n\n\n\n\n\nA\n\n93\n90\n\n\n\nB\n87\n83\n80\n\n\n\nC\n77\n73\n70\n\n\n\nD\n67\n63\n60\n\n\n\nF\n\n&lt;60\n\n\n\n\n\n\n\nContinuity of Instruction Policy\nIn the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.\n\n\nAI Disclaimer\nThe recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, the use of AI tools is not permitted. If you are suspected of using AI, I reserve the right to give a zero grade.\n\n\nTentative Schedule\n\n\n\n\n\n\n\n\n\nWeek\nMonday\nTopics\nNotes\n\n\n\n\n1\n8/24\nIntro to R\nNo lab\n\n\n2\n8/31\nData summaries\n\n\n\n3\n9/7\nProbability\nNo lab (Labor Day)\n\n\n4\n9/14\nProbability\n\n\n\n5\n9/21\nInference for one mean\n\n\n\n6\n9/28\nReview + Exam 1\n\n\n\n7\n9/28\nInference for two means\n\n\n\n8\n10/12\nInference for proportions\n\n\n\n9\n10/19\nInference for Variances\nNo class on Tuesday (Fall break)\n\n\n10\n10/26\nANOVA\n\n\n\n11\n11/2\nANOVA\nNo class on Tuesday – Go Vote!\n\n\n12\n11/9\nReview + Exam 2\n\n\n\n13\n11/16\nRegression\n\n\n\n14\n11/23\nNo class/lab\nThanksgiving\n\n\n15\n11/30\nRegression\n\n\n\n16\n12/7\nDead week\n\n\n\n17\n12/14\nFinal*\n\n\n\n\n*The final will be held in-person on Monday, Dec. 14 from 10:00 to noon.\n\n\nUNL Course Policies and Resources\nStudents are responsible for knowing the university policies and resources found on this page: https://go.unl.edu/coursepolicies\n\nUniversity-wide Attendance Policy\nAcademic Honesty Policy\nServices for Students with Disabilities\nMental Health and Well-Being Resources\nFinal Exam Schedule\nFifteenth Week Policy\nEmergency Procedures\nDiversity & Inclusiveness\nTitle IX Policy\nOther Relevant University-Wide Policies"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Handout 1\n\nNotes\n\nHandout 2\n\nNotes\n\nHandout 3\nHandout 4\nHandout 5\nHandout 6\nHandout 7"
+  },
+  {
+    "objectID": "canvas.html",
+    "href": "canvas.html",
+    "title": "Canvas",
+    "section": "",
+    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+  },
+  {
+    "objectID": "assessments/midterm/midterm.html",
+    "href": "assessments/midterm/midterm.html",
+    "title": "Midterm",
+    "section": "",
+    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
+  },
+  {
+    "objectID": "assessments/final/final.html",
+    "href": "assessments/final/final.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "The final project for this course consists of two components where you will find and describe a probability distribution that has not been discussed in class (examples). In groups of 2-3, you are tasked with a written report and a presentation of your chosen distribution. All group members are required to equally contribute. Please let your instructor know if you are having issues with non-participation.\nOnce you and your group have selected a distribution, create a discussion post on Canvas to let the class know which distribution you have selected. Duplicate distributions will not be allowed and will be given to the group who posted first."
+  },
+  {
+    "objectID": "assessments/final/final.html#description",
+    "href": "assessments/final/final.html#description",
+    "title": "Final Project",
+    "section": "",
+    "text": "The final project for this course consists of two components where you will find and describe a probability distribution that has not been discussed in class (examples). In groups of 2-3, you are tasked with a written report and a presentation of your chosen distribution. All group members are required to equally contribute. Please let your instructor know if you are having issues with non-participation.\nOnce you and your group have selected a distribution, create a discussion post on Canvas to let the class know which distribution you have selected. Duplicate distributions will not be allowed and will be given to the group who posted first."
+  },
+  {
+    "objectID": "assessments/final/final.html#write-up",
+    "href": "assessments/final/final.html#write-up",
+    "title": "Final Project",
+    "section": "Write-up",
+    "text": "Write-up\nDue date: end of the scheduled final exam for the course\nThe written report should be 4-6 pages and contain the following sections:\n\nIntroduction: describe your distribution, the type of data it describes, history, etc.\nMathematical description: provide the mathematical definition of the probability function (you do not need to derive anything), as well as restrictions on the support of the RV and its parameters. Describe the mean and variance of the function (again, you do not need to derive this). Additionally, include a plot of the pmf/pdf, as well as how it changes with different parameters (e.g., the exponential distribution with \\(\\beta=1,2,3\\))\nR Implementation: describe how to use this probability function in R (e.g., qnorm(), pnorm(), packages, etc.). If this function is not implemented in R, describe the process of how to write these functions for your distribution.\nApplications: describe 2-3 practical applications where your probability function would be used.\nExample: provide a completed example of a practical application of the distribution from a published source. If you would like, you may also fit this distribution to data of your own choosing."
+  },
+  {
+    "objectID": "assessments/final/final.html#presentation",
+    "href": "assessments/final/final.html#presentation",
+    "title": "Final Project",
+    "section": "Presentation",
+    "text": "Presentation\nDue date: last week of classes\nDuring the last week of classes, you and your group will present your distribution to the class (approximately 4 groups/day). Your presentation should be between 7 and 10 minutes, and include the opportunities for the class to ask questions. At the minimum, you must include the following sections:\n\nIntroduction (including mathematical description)\nR Implementation\nExample\n\nTo ensure that each group has enough time to present, a portion of your grade is allocated to keeping your presentation to under 10 minutes.\nIn addition to presenting your distribution, you are also responsible for listening to your peers present. On Canvas, there is a quiz with one question per group."
+  },
+  {
+    "objectID": "assessments/final/final.html#peer-review",
+    "href": "assessments/final/final.html#peer-review",
+    "title": "Final Project",
+    "section": "Peer Review",
+    "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
+  },
+  {
+    "objectID": "assessments/hw1/hw1.html",
+    "href": "assessments/hw1/hw1.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent?"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Unless otherwise noted, all assignments should be submitted on Canvas by 5 p.m. on the due date."
+  },
+  {
+    "objectID": "assignments.html#homework-projects",
+    "href": "assignments.html#homework-projects",
+    "title": "Assignments",
+    "section": "Homework / Projects",
+    "text": "Homework / Projects\n\nHW 1, due NOW"
+  },
+  {
+    "objectID": "assignments.html#tests",
+    "href": "assignments.html#tests",
+    "title": "Assignments",
+    "section": "Tests",
+    "text": "Tests"
+  },
+  {
+    "objectID": "assignments.html#final",
+    "href": "assignments.html#final",
+    "title": "Assignments",
+    "section": "Final",
+    "text": "Final"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STAT 380",
+    "section": "",
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 380 course.\nCourse description: Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications."
+  }
+]
