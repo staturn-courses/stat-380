@@ -16,8 +16,6 @@ format:
     fig-align: center
 ---
 
-## Sample space & Events {#slide-2}
-
 ## Terminology {#slide-3}
 
 **Experiment**: an activity or process with an uncertain outcome. This can be repeated any number of times.

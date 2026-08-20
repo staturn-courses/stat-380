@@ -1,0 +1,22 @@
+---
+title: "Notes"
+format: html
+---
+
+Handout 1
+
+- [Notes](_site/notes/handout1.pdf)
+
+Handout 2
+
+- [Notes](_site/notes/handout2.pdf)
+
+Handout 3
+
+Handout 4
+
+Handout 5
+
+Handout 6
+
+Handout 7

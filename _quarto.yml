@@ -1,0 +1,27 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!old/"
+    - "!notes/orig-markdown/"
+    output-dir: docs
+website:
+  title: "STAT 380"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Course Home
+      - href: canvas.qmd
+        text: Canvas
+      - href: assignments.qmd
+        text: Assignments
+      - href: notes.qmd
+        text: Notes
+
+format: 
+  html:
+    theme: flatly
+    toc: true
+    
+execute:
+  freeze: true

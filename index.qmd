@@ -1,0 +1,15 @@
+---
+title: "STAT 380"
+subtitle: Tyler Wiederich, Ph.D.
+about:
+  template: jolla
+  image: "icon380.png"
+  links:
+    - text: All courses
+      href: https://staturn-courses.github.io/
+---
+
+This website is open to my students in the University of Nebraska-Lincoln's STAT 380 course. 
+
+**Course description:** Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications.
+
