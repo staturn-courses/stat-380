@@ -6,7 +6,7 @@ about:
   image: "icon380.png"
   links:
     - text: All courses
-      href: https://staturn-courses.github.io/
+      href: https://staturn-courses.github.io/staturn-courses/
 ---
 
 This website is open to my students in the University of Nebraska-Lincoln's STAT 380 course. 
