@@ -3,7 +3,7 @@ title: "Canvas"
 format: html
 ---
 
-[Canvas](canvas.nebraska.edu) is used for the following:
+[Canvas](https://canvas.nebraska.edu) is used for the following:
 
 - Discussion/message board
 - Online quizzes
