@@ -7,7 +7,7 @@ format:
 
 Unless otherwise noted, all assignments should be submitted on Canvas by 5 p.m. on the due date. 
 
-## Homework / Projects
+## Projects / Quizzes
 
 <!-- - [HW 1](assessments/hw1/hw1.qmd), due XXX -->
 
