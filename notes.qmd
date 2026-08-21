@@ -5,7 +5,7 @@ format: html
 
 Handout 1
 
-- [Notes](_site/notes/handout1.pdf)
+- [Notes](notes/handout1.pdf)
 
 <!-- Handout 2 -->
 
