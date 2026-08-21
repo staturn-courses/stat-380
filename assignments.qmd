@@ -9,7 +9,7 @@ Unless otherwise noted, all assignments should be submitted on Canvas by 5 p.m. 
 
 ## Homework / Projects
 
-- [HW 1](assessments/hw1/hw1.qmd), due NOW
+<!-- - [HW 1](assessments/hw1/hw1.qmd), due XXX -->
 
 ## Tests
 

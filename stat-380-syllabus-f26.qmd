@@ -7,12 +7,9 @@ format:
 
 # Instructor
 
-Name: Tyler Wiederich, Ph.D.
-
-Office: Hardin Hall 343A
-
-Office hours: TBD. 
-
+Name: Tyler Wiederich, Ph.D. \
+Office: Hardin Hall 343A \
+Office hours: W 1-3.\
 E-mail: [twiederich2@unl.edu](mailto:twiederich2@unl.edu)
 
 
@@ -24,28 +21,23 @@ Probability calculus; random variables, their probability distributions and expe
 
 # Assessments
 
-This course consists of projects and exams. 
+This course consists of projects/quizzes, a midterm, and a final. 
 
+**Projects/Quizzes**: Projects and quizzes will be assigned periodically throughout the semester. You will have at least one week to complete the assessment.
 
-**Projects**: Four group projects (2-3 people/group) will be assigned throughout the semester. 
+**Midterm**: There will be one midterm approximately halfway through the semester. Details will be provided in class.
 
-**Exams**: There will be 2 exams during the semester. Each exam will have a closed-book and open-book portion. More details will be provided in class.
-
-**Final**: To be announced in class
+**Final**: To be announced in class.
 
 These assessments are weighted as follows:
 
-| | Quizzes | Projects\* | Exams\*\* | Final | 
-| :---: | :---: | :---: | :---: | :---: |
-| % of grade | 10% | 40% | 30% | 20% |
+| | Projects/quizzes\* | Midterm | Final | 
+| :---: | :---: | :---: | :---: |
+| % of grade | 20% | 30% | 50% |
 
-\*Each project is worth 10% of your grade.
+\*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.
 
-\*\*Each exam is worth 15% of your grade.
-
-All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. No late projects or quizzes are accepted.
-
-For group projects, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
+If projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
 
 # Grades
 
@@ -71,27 +63,11 @@ The recent popularity of large language models and other artificial intelligence
 
 \newpage
 
-# Tentative Schedule
+# Tentative Topics
 
-| Week | Monday | Topics | Notes | 
-| :---: | :---: | ------- | ------- | 
-| 1 | 8/24 | Intro to R | No lab |
-| 2 | 8/31 | Data summaries | |
-| 3 | 9/7 | Probability | No lab (Labor Day) |
-| 4 | 9/14 | Probability |  |
-| 5 | 9/21 | Inference for one mean  | |
-| 6 | 9/28 | Review + Exam 1 | |
-| 7 | 9/28 | Inference for two means  | |
-| 8 | 10/12 | Inference for proportions  | |
-| 9 | 10/19 | Inference for Variances | No class on Tuesday  (Fall break) |
-| 10 | 10/26 | ANOVA | |
-| 11 | 11/2 | ANOVA | No class on Tuesday -- Go Vote! |
-| 12 | 11/9 | Review + Exam 2 | |
-| 13 | 11/16 | Regression | |
-| 14 | 11/23 | No class/lab | Thanksgiving |
-| 15 | 11/30 | Regression |  |
-| 16 | 12/7 | Dead week  |  |
-| 17 | 12/14 | Final\*  |  |
+- Probability
+- 
+
 
 \*The final will be held in-person on Monday, Dec. 14 from 10:00 to noon. 
 
