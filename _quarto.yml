@@ -6,7 +6,7 @@ project:
     - "!old/"
     - "!notes/orig-markdown/"
   resources:
-    - notes/
+    - "notes/*.pdf"
 website:
   title: "STAT 380"
   navbar:
