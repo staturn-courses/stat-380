@@ -1,17 +1,11 @@
 ---
-title: "Assignments"
 format: 
   html:
     toc: false
 ---
 
-Unless otherwise noted, all assignments should be submitted on Canvas by 5 p.m. on the due date. 
+Unless otherwise stated, all assignments are due by 5 p.m. on Canvas. 
 
-## Projects / Quizzes
-
-<!-- - [HW 1](assessments/hw1/hw1.qmd), due XXX -->
-
-## Tests
-
-
-## Final
+| Project | Due date | Data | Solutions | Notes |
+| :---: | :---: | :---: | :---: | :---: |
+| Project 1 |
