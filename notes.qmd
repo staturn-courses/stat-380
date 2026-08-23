@@ -1,12 +1,17 @@
 ---
-title: "Notes"
 format: html
 ---
+
+[Stat 380 Syllabus](stat-380-syllabus-f26.qmd)
+
+--- 
+
+<!-- Handout 2 -->
+
+<!-- - [Notes](_site/notes/handout2.pdf) -->
 
 Handout 1
 
 - [Notes](notes/handout1.pdf)
 
-<!-- Handout 2 -->
 
-<!-- - [Notes](_site/notes/handout2.pdf) -->

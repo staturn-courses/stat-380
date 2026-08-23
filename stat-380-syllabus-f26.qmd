@@ -1,8 +1,9 @@
 ---
-title: STAT 801A (Fall 2026)
-subtitle: Statistical Methods In Research -- Non Calculus
+title: STAT 380 (Fall 2026)
+subtitle: Statistics \& Applications
 format:
   html: default
+  pdf: default
 ---
 
 # Instructor
@@ -31,13 +32,15 @@ This course consists of projects/quizzes, a midterm, and a final.
 
 These assessments are weighted as follows:
 
-| | Projects/quizzes\* | Midterm | Final | 
+| | Projects/quizzes\* | Midterm | Final\*\* | 
 | :---: | :---: | :---: | :---: |
-| % of grade | 20% | 30% | 50% |
+| % of grade | 30% | 30% | 40% |
 
 \*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.
 
 If projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
+
+\*\*The final exam is scheduled for Friday, Dec. 18 from 10:00 to noon. 
 
 # Grades
 
@@ -66,10 +69,15 @@ The recent popularity of large language models and other artificial intelligence
 # Tentative Topics
 
 - Probability
-- 
+- Random Variables
+- Probability Distributions
+- Discrete Random Variables
+- Continuous Random Variables
+- One \& Two Sample Estimation
+- Hypothesis Testing
 
 
-\*The final will be held in-person on Monday, Dec. 14 from 10:00 to noon. 
+
 
 # UNL Course Policies and Resources
 

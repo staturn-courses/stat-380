@@ -7,12 +7,11 @@ project:
     - "!notes/orig-markdown/"
   resources:
     - "notes/*.pdf"
+    - "*.pdf"
 website:
   title: "STAT 380"
   navbar:
     left:
-      - href: index.qmd
-        text: Course Home
       - href: canvas.qmd
         text: Canvas
       - href: assignments.qmd
