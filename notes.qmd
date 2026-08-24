@@ -4,6 +4,8 @@ format: html
 
 [Stat 380 Syllabus](stat-380-syllabus-f26.qmd)
 
+No textbook is required for this course. Our notes will loosely follow "Probability \& Statistics For Engineers \& Scientists" by Walpole, Myers, Myers, and Ye. 
+
 --- 
 
 <!-- Handout 2 -->

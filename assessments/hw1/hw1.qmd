@@ -16,4 +16,4 @@ Complete each of the following problems. You may either type up your solutions o
 
 3. Following question 3, if at least 3 women and at least 2 men are required, how many different committees are possible? 
 
-4. Suppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let $A$ be the event that at least one spade is drawn, and let $B$ be the event that at least one queen is drawn. Are $A$ and $B$ independent? 
+4. Suppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let $A$ be the event that at least one spade is drawn, and let $B$ be the event that at least one queen is drawn. If the first card drawn was a spade, are $A$ and $B$ independent events? 

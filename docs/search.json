@@ -11,7 +11,7 @@
     "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\n\n\n\nHandout 1\n\nNotes"
+    "text": "Stat 380 Syllabus\nNo textbook is required for this course. Our notes will loosely follow “Probability & Statistics For Engineers & Scientists” by Walpole, Myers, Myers, and Ye.\n\n\n\nHandout 1\n\nNotes"
   },
   {
     "objectID": "canvas.html",
@@ -67,7 +67,7 @@
     "href": "assessments/hw1/hw1.html",
     "title": "Homework 1",
     "section": "",
-    "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent?"
+    "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. If the first card drawn was a spade, are \\(A\\) and \\(B\\) independent events?"
   },
   {
     "objectID": "assignments.html",
