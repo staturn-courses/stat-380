@@ -161,4 +161,36 @@ $$
 \mu_x=E[X]=\sum_{f(x)>0} x\cdot f(x)
 $$
 
-ENDED AT SLIDE 18
+**Example**: find the expected value of the pmf $f(x)=\frac{1}{30}(x+1)^2$ where $x=0,1,2,3$
+
+\
+\
+\
+\
+\
+\
+\
+
+**Proposition** If $X$ is a discrete random variable that takes on the values of $x_i$ where $i\geq1$, with respective probabilities $f(x_i)$, for any real-valued function $g$, 
+
+$$
+E[g(X)]=\sum g(x_i)f(x_i)
+$$
+
+**Example**: find $E[X^2]$ of the pmf $f(x)=\frac{1}{30}(x+1)^2$ where $x=0,1,2,3$
+
+\
+\
+\
+\
+\
+\
+\
+
+**Corollary**: If $a$ and $b$ are constants, then 
+
+$$
+E[aX+b]=a\cdot E[X]+b
+$$
+
+ENDED ON SLIDE 24
