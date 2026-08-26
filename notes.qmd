@@ -17,5 +17,6 @@ Handout 2
 Handout 1
 
 - [Notes](notes/handout1.pdf)
+- For the sample variance formula, the RHS should read $\frac{\sum_{i=1}^n X_i^2-n\bar{X}^2}{n-1}$
 
 

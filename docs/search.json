@@ -7,25 +7,32 @@
     "text": "Instructor\nName: Tyler Wiederich, Ph.D. \nOffice: Hardin Hall 343A\nOffice hours: W 1-3.\nE-mail: twiederich2@unl.edu\nAll office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.\n\n\nCourse Description\nProbability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications.\n\n\nAssessments\nThis course consists of projects/quizzes, a midterm, and a final.\nProjects/Quizzes: Projects and quizzes will be assigned periodically throughout the semester. You will have at least one week to complete the assessment.\nMidterm: There will be one midterm approximately halfway through the semester. Details will be provided in class.\nFinal: To be announced in class.\nThese assessments are weighted as follows:\n\n\n\n\nProjects/quizzes*\nMidterm\nFinal**\n\n\n\n\n% of grade\n30%\n30%\n40%\n\n\n\n*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.\nIf projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student’s project grade if he/she/they do not abide by this group work policy.\n**The final exam is scheduled for Friday, Dec. 18 from 10:00 to noon.\n\n\nGrades\nYour overall course grade percentage guarantees the following grade for the course.\n\n\n\nLetter Grade\n+\n\n-\n\n\n\n\n\nA\n\n93\n90\n\n\n\nB\n87\n83\n80\n\n\n\nC\n77\n73\n70\n\n\n\nD\n67\n63\n60\n\n\n\nF\n\n&lt;60\n\n\n\n\n\n\n\nContinuity of Instruction Policy\nIn the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.\n\n\nAI Disclaimer\nThe recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, the use of AI tools is not permitted. If you are suspected of using AI, I reserve the right to give a zero grade.\n\n\nTentative Topics\n\nProbability\nRandom Variables\nProbability Distributions\nDiscrete Random Variables\nContinuous Random Variables\nOne & Two Sample Estimation\nHypothesis Testing\n\n\n\nUNL Course Policies and Resources\nStudents are responsible for knowing the university policies and resources found on this page: https://go.unl.edu/coursepolicies\n\nUniversity-wide Attendance Policy\nAcademic Honesty Policy\nServices for Students with Disabilities\nMental Health and Well-Being Resources\nFinal Exam Schedule\nFifteenth Week Policy\nEmergency Procedures\nDiversity & Inclusiveness\nTitle IX Policy\nOther Relevant University-Wide Policies"
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "STAT 380",
+    "objectID": "notes/handout2-problems.html",
+    "href": "notes/handout2-problems.html",
+    "title": "In-class Counting Problems",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 2\n\nNotes\n\nHandout 1\n\nNotes"
+    "text": "Chess is a popular game with a seemingly infinite number of distinct games. For the following problems, we will examine the first two moves of the game. Assume that all moves are randomly chosen and that the players are not using strategy.\n\nEach player has 16 pieces, consisting of 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king. White plays first with the options of moving any pawn 1 or 2 spaces forward, or the knight forward 2 spaces and to either the left of right 1 space. After white moves one piece, then black has the same options for their first move.\n\nHow many distinct board positions are there after white plays their first move?\nHow many distinct board positions are there after black plays their first move?\nWhat is the probability that white plays one of the pawns in front of the king or queen?\nGiven that white played a knight in their first move, what is the probability that black plays a pawn?\nIs black playing a pawn independent of white playing a knight for their first move?\n\n\nNow consider white’s first three moves, and assume that each move is valid (i.e., do not consider black’s potential moves).\n\nIf white’s first three moves involved moving three different pawns one space forward, how many white pawn configurations are there? (i.e., played pawn a3, b3, and d3).\n\n\nFor moves 4 and 5, white has the options to play using 8 pawns, 2 knights, 1 bishop, 1 queen, and 1 king. Again, assume that each piece can be validly played and that move 4 does change what pieces could be played in move 5.\n\nIf white plays two distinct pieces, how many\nHow many piece pairs could white play for their next two moves, assuming that the order does not matter?"
   },
   {
-    "objectID": "canvas.html",
-    "href": "canvas.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 380 course.\nCourse description: Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications."
   },
   {
-    "objectID": "assessments/hw1/hw1.html",
-    "href": "assessments/hw1/hw1.html",
-    "title": "Homework 1",
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "STAT 380",
     "section": "",
-    "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. If the first card drawn was a spade, are \\(A\\) and \\(B\\) independent events?"
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1"
+  },
+  {
+    "objectID": "assessments/midterm/midterm.html",
+    "href": "assessments/midterm/midterm.html",
+    "title": "Midterm",
+    "section": "",
+    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
   },
   {
     "objectID": "assessments/final/final.html",
@@ -63,31 +70,24 @@
     "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
   },
   {
-    "objectID": "assessments/midterm/midterm.html",
-    "href": "assessments/midterm/midterm.html",
-    "title": "Midterm",
+    "objectID": "assessments/hw1/hw1.html",
+    "href": "assessments/hw1/hw1.html",
+    "title": "Homework 1",
     "section": "",
-    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
+    "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. If the first card drawn was a spade, are \\(A\\) and \\(B\\) independent events?"
   },
   {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
+    "objectID": "canvas.html",
+    "href": "canvas.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1"
+    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "notes.html",
+    "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 380 course.\nCourse description: Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications."
-  },
-  {
-    "objectID": "notes/handout2-problems.html",
-    "href": "notes/handout2-problems.html",
-    "title": "In-class Counting Problems",
-    "section": "",
-    "text": "Chess is a popular game with a seemingly infinite number of distinct games. For the following problems, we will exam the first two moves of the game. Assume that all moves are randomly chosen and that the players are not using strategy.\n\nEach player has 16 pieces, consisting of 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king. White plays first with the options of moving any pawn 1 or 2 spaces forward, or the knight forward 2 spaces and to either the left of right 1 space. After white moves one piece, then black has the same options for their first move.\n\nHow many distinct board positions are there after white plays their first move?\nHow many distinct board positions are there after black plays their first move?\nWhat is the probability that white plays one of the pawns in front of the king or queen?\nGiven that white played a knight in their first move, what is the probability that black plays a pawn?\nIs black playing a pawn independent of white playing a knight for their first move?\n\n\nNow consider white’s first three moves, and assume that each move is valid (i.e., do not consider black’s potential moves).\n\nIf white’s first three moves involved moving three different pawns one space forward, how many white pawn configurations are there? (i.e., played pawn a3, b3, and d3).\nFor moves 4 and 5, white decides to play two different types of pieces and has the options of pawn, knight, bishop, queen, and king. How many combinations of pieces could they play?"
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 2\n\nNotes\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
   }
 ]
