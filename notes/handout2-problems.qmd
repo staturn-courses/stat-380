@@ -1,0 +1,50 @@
+---
+title: "In-class Counting Problems"
+format: html
+---
+Chess is a popular game with a seemingly infinite number of distinct games. For the following problems, we will examine the first two moves of the game. Assume that all moves are randomly chosen and that the players are not using strategy. 
+
+![](https://images.chesscomfiles.com/uploads/v1/article/23272.f3880603.668x375o.18798f249aa9@2x.png){width=50% align=center}
+
+Each player has 16 pieces, consisting of 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king. White plays first with the options of moving any pawn 1 or 2 spaces forward, or the knight forward 2 spaces and to either the left of right 1 space. After white moves one piece, then black has the same options for their first move. 
+
+1. How many distinct board positions are there after white plays their first move?
+
+2. How many distinct board positions are there after black plays their first move?
+
+3. What is the probability that white plays one of the pawns in front of the king or queen?
+
+4. Given that white played a knight in their first move, what is the probability that black plays a pawn? 
+
+5. Is black playing a pawn independent of white playing a knight for their first move?
+
+---
+
+Now consider white's first three moves, and assume that each move is valid (i.e., do not consider black's potential moves).
+
+6. If white's first three moves involved moving three different pawns one space forward, how many white pawn configurations are there? (i.e., played pawn a3, b3, and d3). 
+
+---
+
+For moves 4 and 5, white has the options to play using 8 pawns, 2 knights, 1 bishop, 1 queen, and 1 king. Again, assume that each piece can be validly played and that move 4 does change what pieces could be played in move 5. 
+
+7. If white plays two distinct pieces, how many 
+
+8. How many piece pairs could white play for their next two moves, assuming that the order does not matter?
+
+9. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

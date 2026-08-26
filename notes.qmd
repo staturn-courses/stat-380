@@ -10,9 +10,9 @@ A textbook is available for our course (Probability \& Statistics for Engineers 
 
 --- 
 
-<!-- Handout 2 -->
+Handout 2
 
-<!-- - [Notes](_site/notes/handout2.pdf) -->
+- [Notes](/notes/handout2.pdf)
 
 Handout 1
 

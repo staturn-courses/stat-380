@@ -110,7 +110,7 @@ What are the unions, intersections, and complements of $A$ and $B$?
 
 ## Set Properties
 
-The following are set properties and 
+The following are set properties that are helpful to know:
 
 - $A\cap\phi$
 \
@@ -127,13 +127,13 @@ The following are set properties and
 - $\phi'$
 \
 
-Events $A$ and $B$ are mutually exclusive (disjoint) if an only if $A\cap B=\phi$.
-
 DeMorgan's Laws
 
 - $(A\cap B)^\prime$
 \
 - $(A\cup B)^\prime$
+
+Events $A$ and $B$ are mutually exclusive (disjoint) if an only if $A\cap B=\phi$.
 
 ## Counting {#slide-21}
 
@@ -202,6 +202,8 @@ $$
 
 Using the club example, there are $\frac{30!}{(30-3)!}$ permutations of club officers.
 
+\vspace{3cm}
+
 ## Combinations
 
 When the ordering of objects is not important, the selections of some objects from the set of objects are called combinations. This is the counting of unordered sets and subsets.
@@ -212,7 +214,7 @@ $$
 {n\choose r}=\frac{n!}{(n-r)!r!}
 $$
 
-Example: suppose that your grandma has an envelope of each common denomination of dollar bill (\$1, \$5, \$10, \$20, \$50, \$100). She let's you select three of the dollar bills at random. How many possible combinations of bills can you draw from the envelope?
+Example: suppose that your grandma has an envelope of each common denomination of dollar bill (\$1, \$5, \$10, \$20, \$50, \$100). She lets you select three of the dollar bills at random. How many possible combinations of bills can you draw from the envelope?
 
 \newpage
 

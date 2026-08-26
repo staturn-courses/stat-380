@@ -25,13 +25,7 @@ $$
 
 As the quality manager, one natural concern would be: “how many bags fail the quality test?” To each element in the sample space, we can assign a number that represents the number of failed bags:
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{5cm}
 
 A random variable (RV) is a real – valued function defined over a sample space. A RV assigns a value to each outcome in the sample space. Typically, capital letters at the END of the alphabet are used to denote a RV. The corresponding lower case letter is then used to denote a specific value.
 
@@ -39,13 +33,7 @@ The probability that $X$ takes on the value $x$, $P(X=x)$ is defined as the sum 
 
 Using the previous example, we can find $P(X=0)$, $P(X=1)$, $P(X=2)$, and $P(X=3)$.
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{5cm}
 
 
 ## Discrete Random Variables
@@ -56,52 +44,28 @@ Example: workers consist of 3 men and 3 women. Suppose 2 workers are chosen at r
 
 - What are the possible values of $X$?
 
-\
-\
-\
+\vspace{3cm}
 
 - How many elements are in $S$?
 
-\
-\
-\
+\vspace{3cm}
 
 - What are the probabilities of each outcome in $X$ occurring? 
 
 
-\
-\
-\
+\vspace{3cm}
 
 - Table
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 - Graph
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 - Formula
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 A probability mass function (pmf) is a set of ordered pairs $(x,f(x))$ of the discrete random variable $X$ if, for all possible values of $x$:
 
@@ -115,13 +79,7 @@ $$
 f(x)=\frac{x}{c} \text{ where } x=1,2,3,4
 $$
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 Example: is $f(x)$ a valid pmf?
 
@@ -129,13 +87,7 @@ $$
 f(x)=0.3^x\times0.7^{1-x}; \quad x=0,1
 $$
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 The cumulative distribution function (cdf), $F(x)$ of a disrete random variable with pmf $f(x)$ is 
 
@@ -145,13 +97,7 @@ $$
 
 Example: let $X=1,2,3,4$ and $f(1)=0.1$, $f(2)=0.3$, $f(3)=0.25$, $f(4)=0.35$. Create a table and graph for $F(x)$. 
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 The **expectation** of a random variable $X$ is a weighted average, denoted $E[X]$, of the possible values that $X$ can assume.
 
@@ -163,13 +109,7 @@ $$
 
 **Example**: find the expected value of the pmf $f(x)=\frac{1}{30}(x+1)^2$ where $x=0,1,2,3$
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 **Proposition** If $X$ is a discrete random variable that takes on the values of $x_i$ where $i\geq1$, with respective probabilities $f(x_i)$, for any real-valued function $g$, 
 
@@ -179,13 +119,7 @@ $$
 
 **Example**: find $E[X^2]$ of the pmf $f(x)=\frac{1}{30}(x+1)^2$ where $x=0,1,2,3$
 
-\
-\
-\
-\
-\
-\
-\
+\vspace{7cm}
 
 **Corollary**: If $a$ and $b$ are constants, then 
 
@@ -193,4 +127,60 @@ $$
 E[aX+b]=a\cdot E[X]+b
 $$
 
-ENDED ON SLIDE 24
+
+
+Let $E[X]$ be 5 and $E[X^2]$ be 15 for a random variable $X$. Find the following:
+
+- $E[x-1]$
+
+\vspace{3cm}
+
+- $E[3x]$
+
+\vspace{3cm}
+
+- $E[-2x+5]$
+
+\vspace{3cm}
+
+Another characteristic of interest for a discrete random variable is the variance with will provide an indication of variation or spread of the values of $X$.
+
+**Definition**: If $X$ is a random variable with mean, $\mu$, then the variance of $X$, denoted by $Var(X)$, is defined by 
+
+$$
+Var(X)=\sigma^2_X=E[(X-\mu)^2]=E[X^2]-(E[X])^2
+$$
+
+Proof:
+
+\vspace{10cm}
+
+
+**Example**: find the variance for the pmf $f(x)=\frac{x}{10}$, where $x=1,2,3,4$
+
+\vspace{10cm}
+
+\newpage
+
+**Corollary**: for any constants $a$ and $b$, then 
+
+$$
+Var(aX+b)=a^2Var(X)
+$$
+
+Proof:
+
+\newpage
+
+Let $E[X]=5$ and $E[X^2]=15$. Find the following:
+
+- $Var(X)$
+
+\vspace{3cm}
+
+- $Var(3X+5)$
+
+\vspace{3cm}
+
+
+
