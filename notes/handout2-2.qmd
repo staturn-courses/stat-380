@@ -1,0 +1,5 @@
+---
+title: "Bayes' Rule"
+---
+
+Suppose that the Minnesota DNR wants to conduct a study on a specific type of bird in the state. In order to best direct their resources, they consider three locations where the bird is present. Based on prior knowledge, they know

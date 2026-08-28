@@ -1,0 +1,18 @@
+---
+title: "Handout 2 Problems"
+---
+
+Suppose that you have a perfectly shuffled deck of 52 playing cards and draw 5 cards. 
+
+
+1. How many ways could you get a royal flush (same suit for 10, J, Q, K, A)?
+2. How many ways could you get a straight flush without having a royal flush (same suit for sequence of 5 cards)?
+3. How many ways could you get a four of a kind?
+4. How many ways could you get a 3 of a kind and a pair?
+5. How many ways could you get a 3 of a kind without a pair?
+6. How many ways could you get a hand without any pairs, three of kind, or four of a kind?
+
+--- 
+
+7. How many possible ways could you receive your five cards?
+8. How would you calculate probabilities for 1-6?
