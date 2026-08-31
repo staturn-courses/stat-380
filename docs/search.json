@@ -7,13 +7,6 @@
     "text": "Instructor\nName: Tyler Wiederich, Ph.D. \nOffice: Hardin Hall 343A\nOffice hours: W 1-3.\nE-mail: twiederich2@unl.edu\nAll office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.\n\n\nCourse Description\nProbability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications.\n\n\nAssessments\nThis course consists of projects/quizzes, a midterm, and a final.\nProjects/Quizzes: Projects and quizzes will be assigned periodically throughout the semester. You will have at least one week to complete the assessment.\nMidterm: There will be one midterm approximately halfway through the semester. Details will be provided in class.\nFinal: To be announced in class.\nThese assessments are weighted as follows:\n\n\n\n\nProjects/quizzes*\nMidterm\nFinal**\n\n\n\n\n% of grade\n30%\n30%\n40%\n\n\n\n*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.\nIf projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student’s project grade if he/she/they do not abide by this group work policy.\n**The final exam is scheduled for Friday, Dec. 18 from 10:00 to noon.\n\n\nGrades\nYour overall course grade percentage guarantees the following grade for the course.\n\n\n\nLetter Grade\n+\n\n-\n\n\n\n\n\nA\n\n93\n90\n\n\n\nB\n87\n83\n80\n\n\n\nC\n77\n73\n70\n\n\n\nD\n67\n63\n60\n\n\n\nF\n\n&lt;60\n\n\n\n\n\n\n\nContinuity of Instruction Policy\nIn the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.\n\n\nAI Disclaimer\nThe recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, the use of AI tools is not permitted. If you are suspected of using AI, I reserve the right to give a zero grade.\n\n\nTentative Topics\n\nProbability\nRandom Variables\nProbability Distributions\nDiscrete Random Variables\nContinuous Random Variables\nOne & Two Sample Estimation\nHypothesis Testing\n\n\n\nUNL Course Policies and Resources\nStudents are responsible for knowing the university policies and resources found on this page: https://go.unl.edu/coursepolicies\n\nUniversity-wide Attendance Policy\nAcademic Honesty Policy\nServices for Students with Disabilities\nMental Health and Well-Being Resources\nFinal Exam Schedule\nFifteenth Week Policy\nEmergency Procedures\nDiversity & Inclusiveness\nTitle IX Policy\nOther Relevant University-Wide Policies"
   },
   {
-    "objectID": "notes/handout2-2.html",
-    "href": "notes/handout2-2.html",
-    "title": "Bayes’ Rule",
-    "section": "",
-    "text": "Suppose that the Minnesota DNR wants to conduct a study on a specific type of bird in the state. In order to best direct their resources, they consider three locations where the bird is present. Based on prior knowledge, they know"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "STAT 380",
@@ -77,6 +70,13 @@
     "text": "Complete each of the following problems. You may either type up your solutions or provide a scan of handwritten work. Solutions without work shown are not eligible for credit.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How any different committees are possible?\nFollowing question 3, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. If the first card drawn was a spade, are \\(A\\) and \\(B\\) independent events?"
   },
   {
+    "objectID": "assessments/midterm/midterm2.html",
+    "href": "assessments/midterm/midterm2.html",
+    "title": "Midterm",
+    "section": "",
+    "text": "https://www.nature.com/articles/ncomms1580?"
+  },
+  {
     "objectID": "canvas.html",
     "href": "canvas.html",
     "title": "STAT 380",
@@ -88,7 +88,7 @@
     "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 2\n\nNotes\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
   },
   {
     "objectID": "notes/handout2-problems.html",

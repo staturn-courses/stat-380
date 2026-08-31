@@ -1,5 +1,72 @@
 ---
-title: "Bayes' Rule"
+date: today
+date-format: "[Fall 2026]"
+format:
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 380}
+        \chead{Handout 2 (Bayes' Rule)}
+        \rhead{Fall 2026}
+        \setlength{\headheight}{14pt}
+    fig-align: center
 ---
 
-Suppose that the Minnesota DNR wants to conduct a study on a specific type of bird in the state. In order to best direct their resources, they consider three locations where the bird is present. Based on prior knowledge, they know
+Suppose that the Minnesota DNR wants to conduct a study on a specific type of bird at one of the state parks. In order to best direct their resources, they select a region known to contain the bird and partition the region into five different zones. In each zone, a nesting box is constructed and a 360-degree camera is placed on top of the housing unit. The five cameras uniquely cover areas of the region (no overlap), and due to foliage, do not equally partition the region. Based on previous surveys, the probability that a photograph transmitted from the region was taken in each zone is given as follows:
+
+- $P(Z_A)=0.27$
+- $P(Z_B)=0.15$
+- $P(Z_C)=0.22$
+- $P(Z_D)=0.26$
+- $P(Z_E)=0.10$
+
+\vspace{5cm}
+
+Each camera takes a series of photographs and transmits them back to the research office. Because the cameras are solar powered, they do not necessarily take the same number of photographs. The data were collected and organized as fractions, where the numerator represents the number of photographs containing the desired bird species and the denominator represents the number of photographs taken. 
+
+- Zone A: 3/10
+- Zone B: 4/14
+- Zone C: 1/4
+- Zone D: 13/21
+- Zone E: 3/7
+
+Since a photograph does not necessarily contain the bird, it is of interest to the researchers to determine the probability of detecting the bird in the region. The following theorem allows us to calculate this probability.
+
+\newpage
+
+::: {.callout-note icon=false}
+
+## **Theorem of Total Probability**
+
+If the events $B_1,B_2,\dots,B_k$ constitute a partition of the sample space $S$ such that $P(B_i)\neq 0$ for $i=1,2,\dots,k$, then for any event $A$ of $S$,
+
+$$
+P(A)=\sum_{i=1}^k P(B_i\cap A)=\sum_{i=1}^k P(B_i)P(A|B_i)
+$$
+
+:::
+
+Let $D$ denote the detection of the bird in a photograph, and let $Z_A, Z_B,\dots, Z_E$ denote the events that the photograph was taken in Zones A through E. We can calculate $P(D)$ as follows:
+
+\vspace{7cm}
+
+In the last round of transmitted photographs, only one photograph containing the desired bird species was received. Unfortunately, the metadata from the photograph does not contain location data, and thus each location would need to be manually checked in order to find the bird. While sending park rangers to the region, the study supervisor recalls that **Bayes' Rule** can be used to compute the most likely zones to search.
+
+::: {.callout-note icon=false}
+
+## **Bayes' Rule**
+
+If the events $B_1,B_2,\dots,B_k$ constitute a partition of the sample space $S$, where $P(B_i)\neq 0$ for $i=1,2,\dots,k$, then for any event $A$ in $S$ such that $P(A)\neq 0$,
+
+$$
+P(B_r|A)=\frac{P(B_r\cap A)}{\sum_{i=1}^k P(B_i\cap A)}=\frac{P(B_r)P(A|B_r)}{\sum_{i=1}^k P(B_i)P(A|B_i)}\quad \text{for}\quad r=1,2,\dots,k.
+$$
+
+:::
+
+\newpage
+
+Using Bayes' Rule, it is possible to calculate the probability that the photograph was taken in each zone. These probabilities provide guidance to the park rangers about which zones to check first. In what order should the park rangers search the zones, from most likely to least likely?

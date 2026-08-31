@@ -13,6 +13,7 @@ A textbook is available for our course (Probability \& Statistics for Engineers 
 Handout 2
 
 - [Notes](/notes/handout2.pdf)
+- [Bayes' Rule Handout](/notes/handout2-2.pdf)
 - [In-class problems](notes/in-class-problems-2.qmd)
 
 Handout 1
