@@ -8,4 +8,4 @@ Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.
 
 | Project | Due date | Data | Solutions | Notes |
 | :---: | :---: | :---: | :---: | :---: |
-| [Project 1](assessments/hw1/hw1.qmd) | Friday, September 9th | | | |
+| [Project 1](assessments/hw1/hw1.qmd) | Friday, September 11th | | | |
