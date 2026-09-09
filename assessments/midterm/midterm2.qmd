@@ -4,3 +4,42 @@ format: html
 ---
 
 <https://www.nature.com/articles/ncomms1580>?
+
+Consider the exponential distribution, given by
+
+$$
+f(x)=\lambda e^{-\lambda x}; \quad x>0;\  \lambda>0
+$$
+
+You may use the facts that $E(X)=\frac{1}{\lambda}$ and $E(X^2)=\frac{2}{\lambda^2}$
+
+$$
+V(X)=E(X^2)-E(X)^2
+$$
+
+1. Compute the following quantities:
+  
+    a. $E(2X)$
+    b. $E(X+3)$
+    c. $V(X)$
+    d. $V(3X+2)$
+  
+2.  Compute $P(X>3)$ when $\lambda=4$.
+
+3. Let $X\sim \text{Exp}(\frac{1}{2})$ and $Y\sim \text{Exp}(\frac{1}{3})$ be two random variables for one observational unit. 
+
+    a. Write the joint distribution of $(X,Y)$ when $X$ and $Y$ are independently sampled from each other.
+    b. What can you say about $Corr(X,Y)$? Justify your answer by 
+
+4. Let $X_1, X_2, \dots, X_n$ be independently and identically distributed from an exponential distribution as defined above, and recall that the distribution of ind
+
+    a. Write down the joint distribution of $X_1,X_2,\dots,X_n$ using product notation. 
+    b. For your solution to part (a), apply the $\log_e$ operation. 
+    
+5. In Problem 4, you computed the log likelihood for 
+
+
+
+
+
+

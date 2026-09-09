@@ -7,25 +7,550 @@
     "text": "Instructor\nName: Tyler Wiederich, Ph.D. \nOffice: Hardin Hall 343A\nOffice hours: W 1-3.\nE-mail: twiederich2@unl.edu\nAll office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.\n\n\nCourse Description\nProbability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications.\n\n\nAssessments\nThis course consists of projects/quizzes, a midterm, and a final.\nProjects/Quizzes: Projects and quizzes will be assigned periodically throughout the semester. You will have at least one week to complete the assessment.\nMidterm: There will be one midterm approximately halfway through the semester. Details will be provided in class.\nFinal: To be announced in class.\nThese assessments are weighted as follows:\n\n\n\n\nProjects/quizzes*\nMidterm\nFinal**\n\n\n\n\n% of grade\n30%\n30%\n40%\n\n\n\n*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.\nIf projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student’s project grade if he/she/they do not abide by this group work policy.\n**The final exam is scheduled for Friday, Dec. 18 from 10:00 to noon.\n\n\nGrades\nYour overall course grade percentage guarantees the following grade for the course.\n\n\n\nLetter Grade\n+\n\n-\n\n\n\n\n\nA\n\n93\n90\n\n\n\nB\n87\n83\n80\n\n\n\nC\n77\n73\n70\n\n\n\nD\n67\n63\n60\n\n\n\nF\n\n&lt;60\n\n\n\n\n\n\n\nContinuity of Instruction Policy\nIn the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.\n\n\nAI Disclaimer\nThe recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, the use of AI tools is not permitted. If you are suspected of using AI, I reserve the right to give a zero grade.\n\n\nTentative Topics\n\nProbability\nRandom Variables\nProbability Distributions\nDiscrete Random Variables\nContinuous Random Variables\nOne & Two Sample Estimation\nHypothesis Testing\n\n\n\nUNL Course Policies and Resources\nStudents are responsible for knowing the university policies and resources found on this page: https://go.unl.edu/coursepolicies\n\nUniversity-wide Attendance Policy\nAcademic Honesty Policy\nServices for Students with Disabilities\nMental Health and Well-Being Resources\nFinal Exam Schedule\nFifteenth Week Policy\nEmergency Procedures\nDiversity & Inclusiveness\nTitle IX Policy\nOther Relevant University-Wide Policies"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "notes/handout3.html",
+    "href": "notes/handout3.html",
     "title": "STAT 380",
     "section": "",
-    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 380 course.\nCourse description: Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications."
+    "text": "Random Variables and Probability Distributions\nMathematical expectation\nRandom Variables (RV)\nDiscrete Random Variables ( PMF / CDF / Expectation / Variance )\nContinuous random variables ( PDF / CDF / Expectation / Variance )\nJoint probability distributions\nCovariance & Correlation"
   },
   {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
+    "objectID": "notes/handout3.html#slide-1",
+    "href": "notes/handout3.html#slide-1",
     "title": "STAT 380",
     "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th"
+    "text": "Random Variables and Probability Distributions\nMathematical expectation\nRandom Variables (RV)\nDiscrete Random Variables ( PMF / CDF / Expectation / Variance )\nContinuous random variables ( PDF / CDF / Expectation / Variance )\nJoint probability distributions\nCovariance & Correlation"
   },
   {
-    "objectID": "assessments/midterm/midterm.html",
-    "href": "assessments/midterm/midterm.html",
+    "objectID": "notes/handout3.html#slide-2",
+    "href": "notes/handout3.html#slide-2",
+    "title": "STAT 380",
+    "section": "Random Variables",
+    "text": "Random Variables"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-3",
+    "href": "notes/handout3.html#slide-3",
+    "title": "STAT 380",
+    "section": "Random Variables: Introduction",
+    "text": "Random Variables: Introduction"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-4",
+    "href": "notes/handout3.html#slide-4",
+    "title": "STAT 380",
+    "section": "Random Variables",
+    "text": "Random Variables\nA random variable (RV) is a real – valued function defined over a sample space. A RV assigns a value to each outcome in the sample space.\nTypically, capital letters at the END of the alphabet are used to denote a RV.\nThe corresponding lower case letter is then used to denote a specific value."
+  },
+  {
+    "objectID": "notes/handout3.html#slide-5",
+    "href": "notes/handout3.html#slide-5",
+    "title": "STAT 380",
+    "section": "Random variables (Continued)",
+    "text": "Random variables (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-6",
+    "href": "notes/handout3.html#slide-6",
+    "title": "STAT 380",
+    "section": "Discrete random variables",
+    "text": "Discrete random variables"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-7",
+    "href": "notes/handout3.html#slide-7",
+    "title": "STAT 380",
+    "section": "Discrete random variables",
+    "text": "Discrete random variables"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-8",
+    "href": "notes/handout3.html#slide-8",
+    "title": "STAT 380",
+    "section": "Example 1",
+    "text": "Example 1"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-9",
+    "href": "notes/handout3.html#slide-9",
+    "title": "STAT 380",
+    "section": "Example 1 (Continued)",
+    "text": "Example 1 (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-10",
+    "href": "notes/handout3.html#slide-10",
+    "title": "STAT 380",
+    "section": "Example 1 (Continued)",
+    "text": "Example 1 (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-11",
+    "href": "notes/handout3.html#slide-11",
+    "title": "STAT 380",
+    "section": "Example 1 (Continued)",
+    "text": "Example 1 (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-12",
+    "href": "notes/handout3.html#slide-12",
+    "title": "STAT 380",
+    "section": "Probability mass function ( pmf )",
+    "text": "Probability mass function ( pmf )"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-13",
+    "href": "notes/handout3.html#slide-13",
+    "title": "STAT 380",
+    "section": "Example 2",
+    "text": "Example 2"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-14",
+    "href": "notes/handout3.html#slide-14",
+    "title": "STAT 380",
+    "section": "Example 3",
+    "text": "Example 3"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-15",
+    "href": "notes/handout3.html#slide-15",
+    "title": "STAT 380",
+    "section": "Slide 15",
+    "text": "Slide 15"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-16",
+    "href": "notes/handout3.html#slide-16",
+    "title": "STAT 380",
+    "section": "Cumulative distribution function (CDF)",
+    "text": "Cumulative distribution function (CDF)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-17",
+    "href": "notes/handout3.html#slide-17",
+    "title": "STAT 380",
+    "section": "Example 4",
+    "text": "Example 4"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-18",
+    "href": "notes/handout3.html#slide-18",
+    "title": "STAT 380",
+    "section": "Expected value of Discrete rv’s (Average)",
+    "text": "Expected value of Discrete rv’s (Average)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-19",
+    "href": "notes/handout3.html#slide-19",
+    "title": "STAT 380",
+    "section": "Example 5",
+    "text": "Example 5"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-20",
+    "href": "notes/handout3.html#slide-20",
+    "title": "STAT 380",
+    "section": "Example 6",
+    "text": "Example 6"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-21",
+    "href": "notes/handout3.html#slide-21",
+    "title": "STAT 380",
+    "section": "Expected Value of Discrete rv’s (Continued)",
+    "text": "Expected Value of Discrete rv’s (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-22",
+    "href": "notes/handout3.html#slide-22",
+    "title": "STAT 380",
+    "section": "Example 6 (Continued)",
+    "text": "Example 6 (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-23",
+    "href": "notes/handout3.html#slide-23",
+    "title": "STAT 380",
+    "section": "Expected value of Discrete RV’s (Continued)",
+    "text": "Expected value of Discrete RV’s (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-24",
+    "href": "notes/handout3.html#slide-24",
+    "title": "STAT 380",
+    "section": "Example 7",
+    "text": "Example 7"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-25",
+    "href": "notes/handout3.html#slide-25",
+    "title": "STAT 380",
+    "section": "Variance of Discrete Rv’s",
+    "text": "Variance of Discrete Rv’s"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-26",
+    "href": "notes/handout3.html#slide-26",
+    "title": "STAT 380",
+    "section": "Variance: Proof",
+    "text": "Variance: Proof"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-27",
+    "href": "notes/handout3.html#slide-27",
+    "title": "STAT 380",
+    "section": "Example 8",
+    "text": "Example 8"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-28",
+    "href": "notes/handout3.html#slide-28",
+    "title": "STAT 380",
+    "section": "Variance of Discrete RV’s (Continued)",
+    "text": "Variance of Discrete RV’s (Continued)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-29",
+    "href": "notes/handout3.html#slide-29",
+    "title": "STAT 380",
+    "section": "Example 9",
+    "text": "Example 9"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-30",
+    "href": "notes/handout3.html#slide-30",
+    "title": "STAT 380",
+    "section": "In-class problem",
+    "text": "In-class problem\nIn roulette, a ball rolls around a roulette wheel. 18 are red, 18 are black, and 2 are green. A bet on “red” costs $1 to play. If it lands red, you win $1. If not, you lose your $1.\nWhat are your expected winnings with this strategy?\nShow your work!\n\n\n\nImage result for roulette"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-31",
+    "href": "notes/handout3.html#slide-31",
+    "title": "STAT 380",
+    "section": "Continuous random variables",
+    "text": "Continuous random variables"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-32",
+    "href": "notes/handout3.html#slide-32",
+    "title": "STAT 380",
+    "section": "continuous random variable",
+    "text": "continuous random variable\n32"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-33",
+    "href": "notes/handout3.html#slide-33",
+    "title": "STAT 380",
+    "section": "Probability distribution function (PDF)",
+    "text": "Probability distribution function (PDF)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-34",
+    "href": "notes/handout3.html#slide-34",
+    "title": "STAT 380",
+    "section": "Example 1",
+    "text": "Example 1"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-35",
+    "href": "notes/handout3.html#slide-35",
+    "title": "STAT 380",
+    "section": "Cumulative distribution function (CDF)",
+    "text": "Cumulative distribution function (CDF)"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-36",
+    "href": "notes/handout3.html#slide-36",
+    "title": "STAT 380",
+    "section": "Example 2",
+    "text": "Example 2"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-37",
+    "href": "notes/handout3.html#slide-37",
+    "title": "STAT 380",
+    "section": "Expected value of Continuous RV’s",
+    "text": "Expected value of Continuous RV’s"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-38",
+    "href": "notes/handout3.html#slide-38",
+    "title": "STAT 380",
+    "section": "Example 3",
+    "text": "Example 3"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-39",
+    "href": "notes/handout3.html#slide-39",
+    "title": "STAT 380",
+    "section": "Expected value of Continuous rv’s",
+    "text": "Expected value of Continuous rv’s"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-40",
+    "href": "notes/handout3.html#slide-40",
+    "title": "STAT 380",
+    "section": "Example 4",
+    "text": "Example 4"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-41",
+    "href": "notes/handout3.html#slide-41",
+    "title": "STAT 380",
+    "section": "Variance of Continuous RV’s",
+    "text": "Variance of Continuous RV’s"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-42",
+    "href": "notes/handout3.html#slide-42",
+    "title": "STAT 380",
+    "section": "Example 5",
+    "text": "Example 5"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-43",
+    "href": "notes/handout3.html#slide-43",
+    "title": "STAT 380",
+    "section": "Joint probability distributions",
+    "text": "Joint probability distributions"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-44",
+    "href": "notes/handout3.html#slide-44",
+    "title": "STAT 380",
+    "section": "Joint probability distribution",
+    "text": "Joint probability distribution\nUp until this point, we’ve been looking at just one random variable at a time. Often, we are interested in the simultaneous outcomes of several random variables\nExamples:\nFor heart patients, we might be interested in heart rate, blood pressure (this could be broken down into systolic and diastolic), and cholesterol (again, could break down to HDL and LDL).\nFor college applicants, we may want to look at high school GPA, class rank, and ACT/SAT score.\nThe white blood cell count for patients at times: 0, 1, and 2 hours after a medicine is administered."
+  },
+  {
+    "objectID": "notes/handout3.html#slide-45",
+    "href": "notes/handout3.html#slide-45",
+    "title": "STAT 380",
+    "section": "Joint probability distribution of Discrete RV",
+    "text": "Joint probability distribution of Discrete RV"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-46",
+    "href": "notes/handout3.html#slide-46",
+    "title": "STAT 380",
+    "section": "Example 1",
+    "text": "Example 1"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-47",
+    "href": "notes/handout3.html#slide-47",
+    "title": "STAT 380",
+    "section": "Example 1",
+    "text": "Example 1"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-48",
+    "href": "notes/handout3.html#slide-48",
+    "title": "STAT 380",
+    "section": "Marginal distribution of discrete rv’s",
+    "text": "Marginal distribution of discrete rv’s"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-49",
+    "href": "notes/handout3.html#slide-49",
+    "title": "STAT 380",
+    "section": "Example 2",
+    "text": "Example 2"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-50",
+    "href": "notes/handout3.html#slide-50",
+    "title": "STAT 380",
+    "section": "Joint probability distribution of Continuous RV",
+    "text": "Joint probability distribution of Continuous RV"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-51",
+    "href": "notes/handout3.html#slide-51",
+    "title": "STAT 380",
+    "section": "Example 3",
+    "text": "Example 3"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-52",
+    "href": "notes/handout3.html#slide-52",
+    "title": "STAT 380",
+    "section": "Marginal distribution of Continuous RV",
+    "text": "Marginal distribution of Continuous RV"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-53",
+    "href": "notes/handout3.html#slide-53",
+    "title": "STAT 380",
+    "section": "Example 4",
+    "text": "Example 4"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-54",
+    "href": "notes/handout3.html#slide-54",
+    "title": "STAT 380",
+    "section": "Conditional distributions",
+    "text": "Conditional distributions"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-55",
+    "href": "notes/handout3.html#slide-55",
+    "title": "STAT 380",
+    "section": "Example 5",
+    "text": "Example 5"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-56",
+    "href": "notes/handout3.html#slide-56",
+    "title": "STAT 380",
+    "section": "Independence",
+    "text": "Independence"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-57",
+    "href": "notes/handout3.html#slide-57",
+    "title": "STAT 380",
+    "section": "Example 6",
+    "text": "Example 6"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-58",
+    "href": "notes/handout3.html#slide-58",
+    "title": "STAT 380",
+    "section": "Choose notation",
+    "text": "Choose notation"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-59",
+    "href": "notes/handout3.html#slide-59",
+    "title": "STAT 380",
+    "section": "Double Integration & Boundaries",
+    "text": "Double Integration & Boundaries"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-60",
+    "href": "notes/handout3.html#slide-60",
+    "title": "STAT 380",
+    "section": "Double Integration & Boundaries",
+    "text": "Double Integration & Boundaries"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-61",
+    "href": "notes/handout3.html#slide-61",
+    "title": "STAT 380",
+    "section": "Double Integration & Boundaries",
+    "text": "Double Integration & Boundaries"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-62",
+    "href": "notes/handout3.html#slide-62",
+    "title": "STAT 380",
+    "section": "Covariance & correlation",
+    "text": "Covariance & correlation"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-63",
+    "href": "notes/handout3.html#slide-63",
+    "title": "STAT 380",
+    "section": "Expected value and variance review",
+    "text": "Expected value and variance review"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-64",
+    "href": "notes/handout3.html#slide-64",
+    "title": "STAT 380",
+    "section": "Covariance",
+    "text": "Covariance"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-65",
+    "href": "notes/handout3.html#slide-65",
+    "title": "STAT 380",
+    "section": "Example 7",
+    "text": "Example 7"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-66",
+    "href": "notes/handout3.html#slide-66",
+    "title": "STAT 380",
+    "section": "Correlation",
+    "text": "Correlation"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-67",
+    "href": "notes/handout3.html#slide-67",
+    "title": "STAT 380",
+    "section": "Correlation",
+    "text": "Correlation\n\n\n\nhttps://cdn-images-1.medium.com/max/2000/1*T40Se1iQZKEVGe4q4MTWPw.png"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-68",
+    "href": "notes/handout3.html#slide-68",
+    "title": "STAT 380",
+    "section": "Correlation",
+    "text": "Correlation"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-69",
+    "href": "notes/handout3.html#slide-69",
+    "title": "STAT 380",
+    "section": "Example 8",
+    "text": "Example 8"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-70",
+    "href": "notes/handout3.html#slide-70",
+    "title": "STAT 380",
+    "section": "Example 9",
+    "text": "Example 9"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-71",
+    "href": "notes/handout3.html#slide-71",
+    "title": "STAT 380",
+    "section": "Linear combinations of random variables",
+    "text": "Linear combinations of random variables"
+  },
+  {
+    "objectID": "notes/handout3.html#slide-72",
+    "href": "notes/handout3.html#slide-72",
+    "title": "STAT 380",
+    "section": "Example 10",
+    "text": "Example 10"
+  },
+  {
+    "objectID": "notes/handout2-problems.html",
+    "href": "notes/handout2-problems.html",
+    "title": "In-class Counting Problems",
+    "section": "",
+    "text": "Chess is a popular game with a seemingly infinite number of distinct games. For the following problems, we will examine the first two moves of the game. Assume that all moves are randomly chosen and that the players are not using strategy.\n\nEach player has 16 pieces, consisting of 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king. White plays first with the options of moving any pawn 1 or 2 spaces forward, or the knight forward 2 spaces and to either the left of right 1 space. After white moves one piece, then black has the same options for their first move.\n\nHow many distinct board positions are there after white plays their first move?\nHow many distinct board positions are there after black plays their first move?\nWhat is the probability that white plays one of the pawns in front of the king or queen?\nGiven that white played a knight in their first move, what is the probability that black plays a pawn?\nIs black playing a pawn independent of white playing a knight for their first move?\n\n\nNow consider white’s first three moves, and assume that each move is valid (i.e., do not consider black’s potential moves).\n\nIf white’s first three moves involved moving three different pawns one space forward, how many white pawn configurations are there? (i.e., played pawn a3, b3, and d3).\n\n\nFor moves 4 and 5, white has the options to play using 8 pawns, 2 knights, 1 bishop, 1 queen, and 1 king. Again, assume that each piece can be validly played and that move 4 does change what pieces could be played in move 5.\n\nIf white plays two distinct pieces, how many\nHow many piece pairs could white play for their next two moves, assuming that the order does not matter?"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "STAT 380",
+    "section": "",
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
+  },
+  {
+    "objectID": "canvas.html",
+    "href": "canvas.html",
+    "title": "STAT 380",
+    "section": "",
+    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+  },
+  {
+    "objectID": "assessments/midterm/midterm2.html",
+    "href": "assessments/midterm/midterm2.html",
     "title": "Midterm",
     "section": "",
-    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
+    "text": "https://www.nature.com/articles/ncomms1580?\nConsider the exponential distribution, given by\n\\[\nf(x)=\\lambda e^{-\\lambda x}; \\quad x&gt;0;\\  \\lambda&gt;0\n\\]\nYou may use the facts that \\(E(X)=\\frac{1}{\\lambda}\\) and \\(E(X^2)=\\frac{2}{\\lambda^2}\\)\n\\[\nV(X)=E(X^2)-E(X)^2\n\\]\n\nCompute the following quantities:\n\n\\(E(2X)\\)\n\\(E(X+3)\\)\n\\(V(X)\\)\n\\(V(3X+2)\\)\n\nCompute \\(P(X&gt;3)\\) when \\(\\lambda=4\\).\nLet \\(X\\sim \\text{Exp}(\\frac{1}{2})\\) and \\(Y\\sim \\text{Exp}(\\frac{1}{3})\\) be two random variables for one observational unit.\n\nWrite the joint distribution of \\((X,Y)\\) when \\(X\\) and \\(Y\\) are independently sampled from each other.\nWhat can you say about \\(Corr(X,Y)\\)? Justify your answer by\n\nLet \\(X_1, X_2, \\dots, X_n\\) be independently and identically distributed from an exponential distribution as defined above, and recall that the distribution of ind\n\nWrite down the joint distribution of \\(X_1,X_2,\\dots,X_n\\) using product notation.\nFor your solution to part (a), apply the \\(\\log_e\\) operation.\n\nIn Problem 4, you computed the log likelihood for"
+  },
+  {
+    "objectID": "assessments/hw1/hw1.html",
+    "href": "assessments/hw1/hw1.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
   },
   {
     "objectID": "assessments/final/final.html",
@@ -63,39 +588,25 @@
     "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
   },
   {
-    "objectID": "assessments/hw1/hw1.html",
-    "href": "assessments/hw1/hw1.html",
-    "title": "Project 1",
-    "section": "",
-    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
-  },
-  {
-    "objectID": "assessments/midterm/midterm2.html",
-    "href": "assessments/midterm/midterm2.html",
+    "objectID": "assessments/midterm/midterm.html",
+    "href": "assessments/midterm/midterm.html",
     "title": "Midterm",
     "section": "",
-    "text": "https://www.nature.com/articles/ncomms1580?"
+    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
   },
   {
-    "objectID": "canvas.html",
-    "href": "canvas.html",
+    "objectID": "assignments.html",
+    "href": "assignments.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th"
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
-  },
-  {
-    "objectID": "notes/handout2-problems.html",
-    "href": "notes/handout2-problems.html",
-    "title": "In-class Counting Problems",
-    "section": "",
-    "text": "Chess is a popular game with a seemingly infinite number of distinct games. For the following problems, we will examine the first two moves of the game. Assume that all moves are randomly chosen and that the players are not using strategy.\n\nEach player has 16 pieces, consisting of 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king. White plays first with the options of moving any pawn 1 or 2 spaces forward, or the knight forward 2 spaces and to either the left of right 1 space. After white moves one piece, then black has the same options for their first move.\n\nHow many distinct board positions are there after white plays their first move?\nHow many distinct board positions are there after black plays their first move?\nWhat is the probability that white plays one of the pawns in front of the king or queen?\nGiven that white played a knight in their first move, what is the probability that black plays a pawn?\nIs black playing a pawn independent of white playing a knight for their first move?\n\n\nNow consider white’s first three moves, and assume that each move is valid (i.e., do not consider black’s potential moves).\n\nIf white’s first three moves involved moving three different pawns one space forward, how many white pawn configurations are there? (i.e., played pawn a3, b3, and d3).\n\n\nFor moves 4 and 5, white has the options to play using 8 pawns, 2 knights, 1 bishop, 1 queen, and 1 king. Again, assume that each piece can be validly played and that move 4 does change what pieces could be played in move 5.\n\nIf white plays two distinct pieces, how many\nHow many piece pairs could white play for their next two moves, assuming that the order does not matter?"
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 380 course.\nCourse description: Probability calculus; random variables, their probability distributions and expected values; t, F and chi-square sampling distributions; estimation; testing of hypothesis; and regression analysis with applications."
   },
   {
     "objectID": "notes/in-class-problems-2.html",

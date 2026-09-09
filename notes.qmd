@@ -10,6 +10,10 @@ A textbook is available for our course (Probability \& Statistics for Engineers 
 
 --- 
 
+Handout 3
+
+- [Slides](notes/handout3.pdf)
+
 Handout 2
 
 - [Notes](/notes/handout2.pdf)
