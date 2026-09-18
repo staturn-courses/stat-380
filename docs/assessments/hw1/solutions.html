@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>assignments – STAT 380</title>
+<title>Project 1 Solutions – STAT 380</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,17 +74,46 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STAT 380</span>
     </a>
   </div>
@@ -95,15 +124,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./canvas.html"> 
+    <a class="nav-link" href="../../canvas.html"> 
 <span class="menu-text">Canvas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
+    <a class="nav-link" href="../../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
+    <a class="nav-link" href="../../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -117,43 +146,156 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem-1" id="toc-problem-1" class="nav-link active" data-scroll-target="#problem-1">Problem 1</a>
+  <ul class="collapse">
+  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
+  <li><a href="#a-and-b" id="toc-a-and-b" class="nav-link" data-scroll-target="#a-and-b">(a) and (b)</a></li>
+  </ul></li>
+  <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
+  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
+  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a>
+  <ul class="collapse">
+  <li><a href="#find-pa" id="toc-find-pa" class="nav-link" data-scroll-target="#find-pa">Find P(A)</a></li>
+  <li><a href="#find-pb" id="toc-find-pb" class="nav-link" data-scroll-target="#find-pb">Find P(B)</a></li>
+  <li><a href="#find-pab" id="toc-find-pab" class="nav-link" data-scroll-target="#find-pab">Find P(AB)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Project 1 Solutions</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Project</th>
-<th style="text-align: center;">Due date</th>
-<th style="text-align: center;">Data</th>
-<th style="text-align: center;">Solutions</th>
-<th style="text-align: center;">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><a href="./assessments/hw1/hw1.html">Project 1</a></td>
-<td style="text-align: center;">Friday, September 11th</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./assessments/hw1/solutions.html">Solutions</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><a href="./assessments/hw2/project2.html">Project 2</a></td>
-<td style="text-align: center;">Monday, September 28th</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="problem-1" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
+<section id="a" class="level3">
+<h3 class="anchored" data-anchor-id="a">(a)</h3>
+<p>Treat A and B as one block. The block can be AB or BA.</p>
+<p><span class="math display">\[
+2\cdot5!=240
+\]</span></p>
+</section>
+<section id="b" class="level3">
+<h3 class="anchored" data-anchor-id="b">(b)</h3>
+<p>Count all permutations and subtract those with E last.</p>
+<p><span class="math display">\[
+6!-5!=720-120=600
+\]</span></p>
+</section>
+<section id="a-and-b" class="level3">
+<h3 class="anchored" data-anchor-id="a-and-b">(a) and (b)</h3>
+<p>If (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.</p>
+<p><span class="math display">\[
+2\cdot(5!-4!)=192
+\]</span></p>
+<hr>
+</section>
+</section>
+<section id="problem-2" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>Order does not matter, so use a combination (“choose”).</p>
+<p><span class="math display">\[
+\binom{7+8}{6}=5,005
+\]</span></p>
+<hr>
+</section>
+<section id="problem-3" class="level2">
+<h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
+<p>The possible committee compositions are 3 women/3 men or 4 women/2 men.</p>
+<p><span class="math display">\[
+\binom{8}{3}\binom{7}{3}
++
+\binom{8}{4}\binom{7}{2}=3,430
+\]</span> —</p>
+</section>
+<section id="problem-4" class="level2">
+<h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
+<p>Two events are independent if one of the following is shown:</p>
+<ul>
+<li><span class="math inline">\(P(A\cap B)=P(A)P(B)\)</span></li>
+<li><span class="math inline">\(P(A|B)=P(A)\)</span></li>
+<li><span class="math inline">\(P(B|A)=P(B)\)</span></li>
+</ul>
+<p>Here, <span class="math inline">\(P(A\cap B)=P(A)P(B)\)</span> is shown.</p>
+<section id="find-pa" class="level3">
+<h3 class="anchored" data-anchor-id="find-pa">Find P(A)</h3>
+<p>Use the complement: neither card is a spade.</p>
+<p><span class="math display">\[
+P(A)
+=
+1-\frac{\binom{39}{2}}{\binom{52}{2}}
+=
+\frac{15}{34}
+\]</span></p>
+</section>
+<section id="find-pb" class="level3">
+<h3 class="anchored" data-anchor-id="find-pb">Find P(B)</h3>
+<p>Use the complement: neither card is a queen.</p>
+<p><span class="math display">\[
+P(B)
+=
+1-\frac{\binom{48}{2}}{\binom{52}{2}}
+=
+\frac{2}{13}
+\]</span></p>
+</section>
+<section id="find-pab" class="level3">
+<h3 class="anchored" data-anchor-id="find-pab">Find P(AB)</h3>
+<p>Using De Morgan’s Laws:</p>
+<p><span class="math display">\[
+P(A\cap B)
+=
+1-P\left((A\cap B)'\right)=1-P(A'\cup B')
+\]</span></p>
+<p><span class="math inline">\(P(A'\cup B')\)</span> is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection.</p>
+<ul>
+<li>No spades: 52-13=39 options</li>
+<li>No queens: 48 options</li>
+<li>No spades and no queens: 52 - 13 - 4 + 1 = 36 options</li>
+</ul>
+<p><span class="math display">\[
+P(A\cap B)
+=
+1-
+\left(\frac{\binom{39}{2}}{\binom{52}{2}}
++
+\frac{\binom{48}{2}}{\binom{52}{2}}
+-
+\frac{\binom{36}{2}}{\binom{52}{2}}\right)=\frac{29}{442}
+\]</span></p>
+<p>Now,</p>
+<p><span class="math display">\[
+P(A)P(B)=\frac{15}{34}\times\frac{2}{13}=\frac{30}{442}\neq\frac{29}{442}
+\]</span></p>
+<p>Therefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

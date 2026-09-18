@@ -553,11 +553,39 @@
     "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nComputer chips are required to be kept at cool temperatures in order to operate efficiently. Let \\(Y\\) denote the temperature in °C, above a baseline temperature, of a randomly selected computer chip. The machine operates in such a way that a different cooling process begins once the chip temperature exceeds 1 degree above the baseline. The pdf of the chip temperature between 0 and 1 °C above the baseline measurement is provided below:\n\\[\nf_Y(y)=y+c_1;\\quad 0&lt;y&lt;1\n\\]\n\nFind the value of \\(c_1\\) that produces a valid pdf for the temperature of the chip.\nCompute \\(E[Y]\\).\nCompute \\(V[Y]\\).\nYour colleague decides to use Fahrenheit in their report, which is computed as \\(°F = \\frac{9}{5}°C\\). Help them with their calculations by computing the expectation and variance of \\(T\\) in °F.\n\nA performance metric is determined by the chip temperature and fan rotation speed (for cooling) due to their combined power draw. Let \\(X\\) be the random variable of the fan rotation speed and bounded by 0 and 2 units above its baseline. The joint pdf of \\(X\\) and \\(Y\\) is provided below.\n\\[\nf_{X,Y}(x,y)=\\frac{1}{4}(x+2y);\\quad 0&lt;y&lt;1,\\ 0&lt;x&lt;2\n\\] Note: for all distributions, you MUST provide the support as part of your solution.\n\nIf the temperature of the computer chip is known, determine the distribution of the fan rotation speed (i.e., distribution of \\(X|Y=y\\)).\nUsing the conditional distribution of \\(X|Y=y\\), compute the CDF (i.e., \\(F_{X|Y}(x|y)\\)).\nFind \\(Corr(X,Y)\\) and provide a brief statement (1-2 sentences) on what this means."
   },
   {
-    "objectID": "assessments/hw1/hw1.html",
-    "href": "assessments/hw1/hw1.html",
-    "title": "Project 1",
+    "objectID": "assessments/hw1/solutions.html",
+    "href": "assessments/hw1/solutions.html",
+    "title": "Project 1 Solutions",
     "section": "",
-    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
+    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-1",
+    "href": "assessments/hw1/solutions.html#problem-1",
+    "title": "Project 1 Solutions",
+    "section": "",
+    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-2",
+    "href": "assessments/hw1/solutions.html#problem-2",
+    "title": "Project 1 Solutions",
+    "section": "Problem 2",
+    "text": "Problem 2\nOrder does not matter, so use a combination (“choose”).\n\\[\n\\binom{7+8}{6}=5,005\n\\]"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-3",
+    "href": "assessments/hw1/solutions.html#problem-3",
+    "title": "Project 1 Solutions",
+    "section": "Problem 3",
+    "text": "Problem 3\nThe possible committee compositions are 3 women/3 men or 4 women/2 men.\n\\[\n\\binom{8}{3}\\binom{7}{3}\n+\n\\binom{8}{4}\\binom{7}{2}=3,430\n\\] —"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-4",
+    "href": "assessments/hw1/solutions.html#problem-4",
+    "title": "Project 1 Solutions",
+    "section": "Problem 4",
+    "text": "Problem 4\nTwo events are independent if one of the following is shown:\n\n\\(P(A\\cap B)=P(A)P(B)\\)\n\\(P(A|B)=P(A)\\)\n\\(P(B|A)=P(B)\\)\n\nHere, \\(P(A\\cap B)=P(A)P(B)\\) is shown.\n\nFind P(A)\nUse the complement: neither card is a spade.\n\\[\nP(A)\n=\n1-\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n=\n\\frac{15}{34}\n\\]\n\n\nFind P(B)\nUse the complement: neither card is a queen.\n\\[\nP(B)\n=\n1-\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n=\n\\frac{2}{13}\n\\]\n\n\nFind P(AB)\nUsing De Morgan’s Laws:\n\\[\nP(A\\cap B)\n=\n1-P\\left((A\\cap B)'\\right)=1-P(A'\\cup B')\n\\]\n\\(P(A'\\cup B')\\) is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection.\n\nNo spades: 52-13=39 options\nNo queens: 48 options\nNo spades and no queens: 52 - 13 - 4 + 1 = 36 options\n\n\\[\nP(A\\cap B)\n=\n1-\n\\left(\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n+\n\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n-\n\\frac{\\binom{36}{2}}{\\binom{52}{2}}\\right)=\\frac{29}{442}\n\\]\nNow,\n\\[\nP(A)P(B)=\\frac{15}{34}\\times\\frac{2}{13}=\\frac{30}{442}\\neq\\frac{29}{442}\n\\]\nTherefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades."
   },
   {
     "objectID": "assessments/final/final.html",
@@ -595,6 +623,13 @@
     "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
   },
   {
+    "objectID": "assessments/hw1/hw1.html",
+    "href": "assessments/hw1/hw1.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
+  },
+  {
     "objectID": "assessments/hw2/project2-old.html",
     "href": "assessments/hw2/project2-old.html",
     "title": "Project 2",
@@ -613,7 +648,7 @@
     "href": "assignments.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th\n\n\n\n\n\nProject 2\nMonday, September 28th"
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th\n\nSolutions\n\n\n\nProject 2\nMonday, September 28th"
   },
   {
     "objectID": "index.html",

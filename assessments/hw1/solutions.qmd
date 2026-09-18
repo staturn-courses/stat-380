@@ -1,0 +1,123 @@
+---
+title: "Project 1 Solutions"
+---
+
+## Problem 1
+
+### (a)
+
+Treat A and B as one block. The block can be AB or BA.
+
+$$
+2\cdot5!=240
+$$
+
+### (b)
+
+Count all permutations and subtract those with E last.
+
+$$
+6!-5!=720-120=600
+$$
+
+### (a) and (b)
+
+If (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.
+
+$$
+2\cdot(5!-4!)=192
+$$
+
+
+
+---
+
+## Problem 2
+
+Order does not matter, so use a combination ("choose").
+
+$$
+\binom{7+8}{6}=5,005
+$$
+
+---
+
+## Problem 3
+
+The possible committee compositions are 3 women/3 men or 4 women/2 men.
+
+$$
+\binom{8}{3}\binom{7}{3}
++
+\binom{8}{4}\binom{7}{2}=3,430
+$$
+---
+
+## Problem 4
+
+Two events are independent if one of the following is shown:
+
+- $P(A\cap B)=P(A)P(B)$
+- $P(A|B)=P(A)$
+- $P(B|A)=P(B)$
+
+Here, $P(A\cap B)=P(A)P(B)$ is shown.
+
+### Find P(A)
+
+Use the complement: neither card is a spade.
+
+$$
+P(A)
+=
+1-\frac{\binom{39}{2}}{\binom{52}{2}}
+=
+\frac{15}{34}
+$$
+
+### Find P(B)
+
+Use the complement: neither card is a queen.
+
+$$
+P(B)
+=
+1-\frac{\binom{48}{2}}{\binom{52}{2}}
+=
+\frac{2}{13}
+$$
+
+### Find P(A\cap B)
+
+Using De Morgan's Laws:
+
+$$
+P(A\cap B)
+=
+1-P\left((A\cap B)'\right)=1-P(A'\cup B')
+$$
+
+$P(A'\cup B')$ is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection. 
+
+- No spades: 52-13=39 options
+- No queens: 48 options
+- No spades and no queens: 52 - 13 - 4 + 1 = 36 options
+
+$$
+P(A\cap B)
+=
+1-
+\left(\frac{\binom{39}{2}}{\binom{52}{2}}
++
+\frac{\binom{48}{2}}{\binom{52}{2}}
+-
+\frac{\binom{36}{2}}{\binom{52}{2}}\right)=\frac{29}{442}
+$$
+
+Now, 
+
+$$
+P(A)P(B)=\frac{15}{34}\times\frac{2}{13}=\frac{30}{442}\neq\frac{29}{442}
+$$
+
+Therefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades.
