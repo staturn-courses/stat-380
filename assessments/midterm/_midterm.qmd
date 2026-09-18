@@ -1,0 +1,60 @@
+---
+title: "Midterm"
+format: html
+---
+
+Student's t distribution is widely used in many areas of statistics. For $\nu$ degrees of freedom, the probability density function is given by the following: 
+
+$$
+f(x)=\frac{\Gamma(\frac{\nu+1}{2})}{\sqrt{\pi\nu}\Gamma(\frac\nu 2)}(1+\frac{x^2}{\nu})^{-\frac{\nu+1}{2}}; \quad x\in(-\infty,\infty)
+$$
+
+
+1. Create a function in R called `my_dt` to calculate $f(x)$ at a given $x$ and $\nu$. (Hint: the `gamma()` function will be useful here)
+
+```{r}
+#| eval: false
+#| include: true
+my_dt <- function(x, nu) {
+  fx <- "FUNCTION HERE"
+  return(fx)
+}
+```
+
+2. R has a built in t distribution density function, `dt()`, that you can use to verify your solution to (1). Evaluate both your function and `dt()` at the following values of x and $\nu$ and arrange your results into a neatly formatted table.
+
+    - $x=-1.5, \nu=6$
+    - $x=0.7, \nu=20$
+    - $x=2, \nu=4$
+
+```{r}
+#| include: false
+set.seed(380)
+y <- rnorm(30, 2, 3)
+dput(round(y,1))
+```
+
+3. A sample of 30 data points was collected and provided below. Calculate the t-statistic of the mean using $t=\frac{\bar{X}}{s/\sqrt n}$, where $\bar{X}$ is the sample mean, $s$ is the sample standard deviation, and $n$ is the sample size.
+
+```{r}
+y <- c(2.7, 2, 0.1, 8.2, -1.2, -3.8, -0.2, 3.6, 0.3, 3.1, 2.7, 3.4, 
+-0.8, 0.4, 2.1, -2.3, 3.9, 0.1, 4.4, 0.8, 3.1, -0.4, 5.2, 2.2, 
+0, 2.6, -0.3, -3.9, -0.5, -2.5)
+```
+
+4. Using `my_dt`, compute $P(X\leq -|t|)+P(X \geq |t|)$ for $\nu=29$. (Hint: the `integrate` function will be helpful here, as well as the `Inf` object)
+
+5. Run the following line and compare the p-value with your result from (4). 
+
+```{r}
+t.test(y)
+```
+
+6. In 2-4 sentences, describe what is represented by $1-P(-t\leq x \leq t)$. 
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 ---
 title: "Project 2"
-date: "9/25/26"
-date-format: "MMMM D, YYYY [by 5 p.m.]"
+date: "9/28/26"
+date-format: "MMMM D, YYYY [by 11:59 p.m.]"
 published-title: "Due date"
 format: 
   html: default
@@ -12,31 +12,27 @@ Complete each of the following problems. To submit this project, you must type y
 
 ---
 
-A food science research team is investigating the microbial growth of E. coli. The bacteria cultures are prepared from the same initial stock and plated onto identical growth media. Each culture is placed in its own incubation unit. Although the incubation units are set to the optimal growth temperature, the variation of each machine means that the temperature in °C, is a random variable. A tolerance of $\alpha$ is set so that each machine guarantees that the temperature does not go below ($-\alpha$)°C or above $\alpha$°C. For our convenience, the distribution of temperature, $T$, was shifted so that it is symmetric about zero with a support of $t\in\{-\alpha,\alpha\}$. It is reasonable to assume that the temperature of each machine is held constant. The pdf for $T$ is given below. 
+Computer chips are required to be kept at cool temperatures in order to operate efficiently. Let $Y$ denote the temperature in °C, above a baseline temperature, of a randomly selected computer chip. The machine operates in such a way that a different cooling process begins once the chip temperature exceeds 1 degree above the baseline. The pdf of the chip temperature between 0 and 1 °C above the baseline measurement is provided below: 
 
 $$
-f_T(t)=c\cdot \left( 1-\left(\frac{t}{\alpha}\right)^2\right) ; \quad -\alpha\leq t \leq \alpha
-$$
-
-1. Find the value of $c$ that produces a valid pdf for temperature, for any given $\alpha$. 
-2. Compute $E[T]$.
-3. Compute $V[T]$. 
-4. Your colleague decides to use Fahrenheit in their report, which is computed as $°F = \frac{9}{5}°C + 32$. Help them with their calculations by computing the expectation and variance of $T$ in °F. 
-
-Previous research established that E. coli doubles approximately every 20 minutes when grown under optimal conditions. Knowing that growth will decay when the temperature deviates from the optimal temperature, a parabolic distribution is chosen for $R|T=t$ is is provided below. 
-
-$$
-f_{R|T=t}(r|T=t)=c_R\left[1-\left(\frac{r-\mu_R(t)}{\gamma}\right)^2\right];\quad \mu_R(t)-\gamma\leq r\leq \mu_R(t)+\gamma
+f_Y(y)=y+c_1;\quad 0<y<1
 $$
 
 
-Let $\mu_R(t)=\frac{\ln2}{20}-\beta(t)^2$ be the expected growth rate at a given temperature, $t$, $\beta$ be the rate of decay (constant), $\gamma$ be the temperature difference from $\mu_R(t)$ at which E. coli stops growing (also constant), and $c_R$ be the normalizing constant such that $\int_{-\infty}^{\infty}f_{R|T=t}(r|T=t)=1$ (you do not need to calculate $c_R$). 
 
-5. Find the joint distribution function of $T$ and $R$, $f_{T,R}(t,r)$.
-6. Find the marginal distribution function of $R$, $f_R(R)$
-7. Find the cumulative distribution function of $R$, $F_R(r)$
-8. Find the covariance of $T$ and $R$, $\text{Cov}(T,R)$
-9. Find the correlation of $T$ and $R$, $Corr(T,R)$
-10. Are $T$ and $R$ independent? Prove this by showing the (in)equality relationship between $f_{T,R}(t,r)$ and $f_T(t)f_R(r)$.
+1. Find the value of $c_1$ that produces a valid pdf for the temperature of the chip. 
+2. Compute $E[Y]$.
+3. Compute $V[Y]$.
+4. Your colleague decides to use Fahrenheit in their report, which is computed as $°F = \frac{9}{5}°C$. Help them with their calculations by computing the expectation and variance of $T$ in °F. 
 
+A performance metric is determined by the chip temperature and fan rotation speed (for cooling) due to their combined power draw. Let $X$ be the random variable of the fan rotation speed and bounded by 0 and 2 units above its baseline. The joint pdf of $X$ and $Y$ is provided below. 
+
+$$
+f_{X,Y}(x,y)=\frac{1}{4}(x+2y);\quad 0<y<1,\ 0<x<2
+$$
+Note: for all distributions, you MUST provide the support as part of your solution.
+
+5. If the temperature of the computer chip is known, determine the distribution of the fan rotation speed (i.e., distribution of $X|Y=y$).
+6. Using the conditional distribution of $X|Y=y$, compute the CDF (i.e., $F_{X|Y}(x|y)$).
+7. Find $Corr(X,Y)$ and provide a brief statement (1-2 sentences) on what this means.
 

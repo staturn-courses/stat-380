@@ -165,7 +165,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Due date</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 25, 2026 by 5 p.m.</p>
+      <p class="date">September 28, 2026 by 11:59 p.m.</p>
     </div>
   </div>
   
@@ -179,28 +179,24 @@ window.Quarto = {
 
 <p>Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.</p>
 <hr>
-<p>A food science research team is investigating the microbial growth of E. coli. The bacteria cultures are prepared from the same initial stock and plated onto identical growth media. Each culture is placed in its own incubation unit. Although the incubation units are set to the optimal growth temperature of 37°C, variation of each machine means that the temperature in °C, <span class="math inline">\(T\)</span>, is a random variable. A tolerance of <span class="math inline">\(\alpha\)</span> is set so that each machine guarantees that the temperature does not go below (<span class="math inline">\(37-\alpha\)</span>)°C or above <span class="math inline">\(37+\alpha\)</span>°C. It is reasonable to assume that the temperature of each machine is held constant. The pdf for <span class="math inline">\(T\)</span> is given below.</p>
+<p>Computer chips are required to be kept at cool temperatures in order to operate efficiently. Let <span class="math inline">\(Y\)</span> denote the temperature in °C, above a baseline temperature, of a randomly selected computer chip. The machine operates in such a way that a different cooling process begins once the chip temperature exceeds 1 degree above the baseline. The pdf of the chip temperature between 0 and 1 °C above the baseline measurement is provided below:</p>
 <p><span class="math display">\[
-f_T(t)=c\cdot \left( 1-\left(\frac{t-37}{\alpha}\right)^2\right) ; \quad 37-\alpha\leq t \leq 37+\alpha
+f_Y(y)=y+c_1;\quad 0&lt;y&lt;1
 \]</span></p>
 <ol type="1">
-<li>Find the value of <span class="math inline">\(c\)</span> that produces a valid pdf for temperature, for any given <span class="math inline">\(\alpha\)</span>.</li>
-<li>Compute <span class="math inline">\(E[T]\)</span>.</li>
-<li>Compute <span class="math inline">\(V[T]\)</span>.</li>
-<li>Your colleague decides to use Fahrenheit in their report, which is computed as <span class="math inline">\(°F = \frac{9}{5}°C + 32\)</span>. Help them with their calculations by computing the expectation and variance of <span class="math inline">\(T\)</span> in °F.</li>
+<li>Find the value of <span class="math inline">\(c_1\)</span> that produces a valid pdf for the temperature of the chip.</li>
+<li>Compute <span class="math inline">\(E[Y]\)</span>.</li>
+<li>Compute <span class="math inline">\(V[Y]\)</span>.</li>
+<li>Your colleague decides to use Fahrenheit in their report, which is computed as <span class="math inline">\(°F = \frac{9}{5}°C\)</span>. Help them with their calculations by computing the expectation and variance of <span class="math inline">\(T\)</span> in °F.</li>
 </ol>
-<p>Previous research established that E. coli doubles approximately every 20 minutes when grown under optimal conditions. Knowing that growth will decay when the temperature deviates from 37°C, a parabolic distribution is chosen for <span class="math inline">\(R|T=t\)</span> is is provided below.</p>
+<p>A performance metric is determined by the chip temperature and fan rotation speed (for cooling) due to their combined power draw. Let <span class="math inline">\(X\)</span> be the random variable of the fan rotation speed and bounded by 0 and 2 units above its baseline. The joint pdf of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is provided below.</p>
 <p><span class="math display">\[
-f_{R|T=t}(r|T=t)=c_R\left[1-\left(\frac{r-\mu_R(t)}{\gamma}\right)^2\right];\quad \mu_R(t)-\gamma\leq r\leq \mu_R(t)+\gamma
-\]</span></p>
-<p>Let <span class="math inline">\(\mu_R(t)=\frac{\ln2}{20}-\beta(t-37)^2\)</span> be the expected growth rate at a given temperature, <span class="math inline">\(t\)</span>. Let <span class="math inline">\(\beta\)</span> be the rate of decay (constant), <span class="math inline">\(\gamma\)</span> be the temperature difference from <span class="math inline">\(\mu_R(t)\)</span> at which E. coli stops growing (also constant), and <span class="math inline">\(c_R\)</span> be the normalizing constant such that <span class="math inline">\(\int_{-\infty}^{\infty}f_{R|T=t}(r|T=t)=1\)</span> (you do not need to calculate <span class="math inline">\(c_R\)</span>).</p>
+f_{X,Y}(x,y)=\frac{1}{4}(x+2y);\quad 0&lt;y&lt;1,\ 0&lt;x&lt;2
+\]</span> Note: for all distributions, you MUST provide the support as part of your solution.</p>
 <ol start="5" type="1">
-<li>Find the joint distribution function of <span class="math inline">\(T\)</span> and <span class="math inline">\(R\)</span>, <span class="math inline">\(f_{T,R}(t,r)\)</span>.</li>
-<li>Find the marginal distribution function of <span class="math inline">\(R\)</span>, <span class="math inline">\(f_R(R)\)</span></li>
-<li>Find the cumulative distribution function of <span class="math inline">\(R\)</span>, <span class="math inline">\(F_R(r)\)</span></li>
-<li>Find the covariance of <span class="math inline">\(T\)</span> and <span class="math inline">\(R\)</span>, <span class="math inline">\(\text{Cov}(T,R)\)</span></li>
-<li>Find the correlation of <span class="math inline">\(T\)</span> and <span class="math inline">\(R\)</span>, <span class="math inline">\(Corr(T,R)\)</span></li>
-<li>Are <span class="math inline">\(T\)</span> and <span class="math inline">\(R\)</span> independent? Prove this by showing the (in)equality relationship between <span class="math inline">\(f_{T,R}(t,r)\)</span> and <span class="math inline">\(f_T(t)f_R(r)\)</span>.</li>
+<li>If the temperature of the computer chip is known, determine the distribution of the fan rotation speed (i.e., distribution of <span class="math inline">\(X|Y=y\)</span>).</li>
+<li>Using the conditional distribution of <span class="math inline">\(X|Y=y\)</span>, compute the CDF (i.e., <span class="math inline">\(F_{X|Y}(x|y)\)</span>).</li>
+<li>Find <span class="math inline">\(Corr(X,Y)\)</span> and provide a brief statement (1-2 sentences) on what this means.</li>
 </ol>
 
 
