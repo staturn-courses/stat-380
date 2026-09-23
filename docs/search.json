@@ -529,7 +529,7 @@
     "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandouts 4 and 5\n\nDiscrete distributions\nContinuous distributions\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
   },
   {
     "objectID": "canvas.html",
@@ -648,7 +648,7 @@
     "href": "assignments.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th\n\nSolutions\n\n\n\nProject 2\nMonday, September 28th"
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nFriday, September 11th\n\nSolutions\n\n\n\nProject 2\nWednesday, September 30th"
   },
   {
     "objectID": "index.html",

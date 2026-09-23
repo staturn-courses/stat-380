@@ -10,6 +10,11 @@ A textbook is available for our course (Probability \& Statistics for Engineers 
 
 --- 
 
+Handouts 4 and 5
+
+- [Discrete distributions](notes/handout4.pdf)
+- [Continuous distributions](notes/handout5.pdf)
+
 Handout 3
 
 - [Slides](notes/handout3.pdf)
