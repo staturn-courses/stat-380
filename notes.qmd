@@ -14,6 +14,7 @@ Handouts 4 and 5
 
 - [Discrete distributions](notes/handout4.pdf)
 - [Continuous distributions](notes/handout5.pdf)
+- [R for probability calculations](notes/intro-to-r.R)
 
 Handout 3
 

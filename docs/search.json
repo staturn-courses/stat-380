@@ -529,7 +529,7 @@
     "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandouts 4 and 5\n\nDiscrete distributions\nContinuous distributions\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\nHandouts 4 and 5\n\nDiscrete distributions\nContinuous distributions\nR for probability calculations\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)"
   },
   {
     "objectID": "canvas.html",
@@ -539,53 +539,32 @@
     "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
   },
   {
-    "objectID": "assessments/midterm/midterm2.html",
-    "href": "assessments/midterm/midterm2.html",
+    "objectID": "assessments/midterm/midterm3.html",
+    "href": "assessments/midterm/midterm3.html",
+    "title": "midterm3",
+    "section": "",
+    "text": "https://journals.sagepub.com/doi/10.1177/2515245917744314\nThus far, we have discussed set theory and probability distributions. However, we have not talked about how to fit distributions to data, which is an important topic in statistics. For this midterm, you will take the skills you have learned and apply them to estimating distribution parameters.\nRead the following article on Maximum Likelihood Estimation (MLE), which can be accessed through UNL’s library.\n\nMyung, In Jae. “Tutorial on Maximum Likelihood Estimation.” Journal of Mathematical Psychology, vol. 47, no. 1, Feb. 2003, pp. 90–100, https://doi.org/10.1016/S0022-2496(02)00028-7.\n\n\nQuestions from reading\n\nDescribe the purpose of maximum likelihood estimation. How would we use this in our course? (2-4 sentences)\nWhat is the difference between the pdf, \\(f(y|w)\\), and the likelihood function, \\(f(w|y)\\)? (1-3 sentences)\nDescribe the process of maximum likelihood estimation. What steps do you need to take for the estimation? What is goal? (3-5 sentences)\n\n\nConnecting MLE’s to our course\n\nSuppose you take a sample of size \\(n\\) from a population with a known pdf, and each observation is i.i.d. (independently and identically distributed). The joint pdf for the sample is the product of the pdfs for each \\(X_i\\). That is, for \\(X_1,X_2,\\dots,X_n\\sim \\text{Some pdf}\\), \\[f(x=(x_1,x_2,\\dots,x_n))=\\prod_{i=1}^{n}f(x_i)=f(x_1)\\times f(x_2)\\times\\dots\\times f(x_n)\\] Explain why this makes sense using properties of set theory and probability functions discussed in our course. (2-4 sentences)\nSuppose that your sample from above came from an exponential distribution. Recall that the exponential distribution is defined as follows: \\[f(x)=\\frac{1}{\\beta}e^{-x/\\beta};\\quad x&gt;0,\\ \\beta&gt;0\\] Write the log-likelihood function for the observed sample and simplify the expression so that \\(\\sum_{i=1}^n x_i\\) is present in your solution.\n\n\nset.seed(380)\ny &lt;- rexp(n=10, rate = 0.5)\n\n\nIn class, we showed how to find \\(E[X]=\\beta\\) when \\(X\\sim Exp(\\beta)\\).\nThe MLE estimator of \\(\\beta\\) is \\(\\hat{\\beta}=\\bar{x}\\)."
+  },
+  {
+    "objectID": "assessments/midterm/midterm.html",
+    "href": "assessments/midterm/midterm.html",
     "title": "Midterm",
     "section": "",
-    "text": "https://www.nature.com/articles/ncomms1580?\nConsider the exponential distribution, given by\n\\[\nf(x)=\\lambda e^{-\\lambda x}; \\quad x&gt;0;\\  \\lambda&gt;0\n\\]\nYou may use the facts that \\(E(X)=\\frac{1}{\\lambda}\\) and \\(E(X^2)=\\frac{2}{\\lambda^2}\\)\n\\[\nV(X)=E(X^2)-E(X)^2\n\\]\n\nCompute the following quantities:\n\n\\(E(2X)\\)\n\\(E(X+3)\\)\n\\(V(X)\\)\n\\(V(3X+2)\\)\n\nCompute \\(P(X&gt;3)\\) when \\(\\lambda=4\\).\nLet \\(X\\sim \\text{Exp}(\\frac{1}{2})\\) and \\(Y\\sim \\text{Exp}(\\frac{1}{3})\\) be two random variables for one observational unit.\n\nWrite the joint distribution of \\((X,Y)\\) when \\(X\\) and \\(Y\\) are independently sampled from each other.\nWhat can you say about \\(Corr(X,Y)\\)? Justify your answer by\n\nLet \\(X_1, X_2, \\dots, X_n\\) be independently and identically distributed from an exponential distribution as defined above, and recall that the distribution of ind\n\nWrite down the joint distribution of \\(X_1,X_2,\\dots,X_n\\) using product notation.\nFor your solution to part (a), apply the \\(\\log_e\\) operation.\n\nIn Problem 4, you computed the log likelihood for"
+    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
   },
   {
-    "objectID": "assessments/hw2/project2.html",
-    "href": "assessments/hw2/project2.html",
+    "objectID": "assessments/hw2/project2-old.html",
+    "href": "assessments/hw2/project2-old.html",
     "title": "Project 2",
     "section": "",
-    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nComputer chips are required to be kept at cool temperatures in order to operate efficiently. Let \\(Y\\) denote the temperature in °C, above a baseline temperature, of a randomly selected computer chip. The machine operates in such a way that a different cooling process begins once the chip temperature exceeds 1 degree above the baseline. The pdf of the chip temperature between 0 and 1 °C above the baseline measurement is provided below:\n\\[\nf_Y(y)=y+c_1;\\quad 0&lt;y&lt;1\n\\]\n\nFind the value of \\(c_1\\) that produces a valid pdf for the temperature of the chip.\nCompute \\(E[Y]\\).\nCompute \\(V[Y]\\).\nYour colleague decides to use Fahrenheit in their report, which is computed as \\(°F = \\frac{9}{5}°C\\). Help them with their calculations by computing the expectation and variance of \\(T\\) in °F.\n\nA performance metric is determined by the chip temperature and fan rotation speed (for cooling) due to their combined power draw. Let \\(X\\) be the random variable of the fan rotation speed and bounded by 0 and 2 units above its baseline. The joint pdf of \\(X\\) and \\(Y\\) is provided below.\n\\[\nf_{X,Y}(x,y)=\\frac{1}{4}(x+2y);\\quad 0&lt;y&lt;1,\\ 0&lt;x&lt;2\n\\] Note: for all distributions, you MUST provide the support as part of your solution.\n\nIf the temperature of the computer chip is known, determine the distribution of the fan rotation speed (i.e., distribution of \\(X|Y=y\\)).\nUsing the conditional distribution of \\(X|Y=y\\), compute the CDF (i.e., \\(F_{X|Y}(x|y)\\)).\nFind \\(Corr(X,Y)\\) and provide a brief statement (1-2 sentences) on what this means."
+    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nA food science research team is investigating the microbial growth of E. coli. The bacteria cultures are prepared from the same initial stock and plated onto identical growth media. Each culture is placed in its own incubation unit. Although the incubation units are set to the optimal growth temperature, the variation of each machine means that the temperature in °C, is a random variable. A tolerance of \\(\\alpha\\) is set so that each machine guarantees that the temperature does not go below (\\(-\\alpha\\))°C or above \\(\\alpha\\)°C. For our convenience, the distribution of temperature, \\(T\\), was shifted so that it is symmetric about zero with a support of \\(t\\in\\{-\\alpha,\\alpha\\}\\). It is reasonable to assume that the temperature of each machine is held constant. The pdf for \\(T\\) is given below.\n\\[\nf_T(t)=c\\cdot \\left( 1-\\left(\\frac{t}{\\alpha}\\right)^2\\right) ; \\quad -\\alpha\\leq t \\leq \\alpha\n\\]\n\nFind the value of \\(c\\) that produces a valid pdf for temperature, for any given \\(\\alpha\\).\nCompute \\(E[T]\\).\nCompute \\(V[T]\\).\nYour colleague decides to use Fahrenheit in their report, which is computed as \\(°F = \\frac{9}{5}°C + 32\\). Help them with their calculations by computing the expectation and variance of \\(T\\) in °F.\n\nPrevious research established that E. coli doubles approximately every 20 minutes when grown under optimal conditions. Knowing that growth will decay when the temperature deviates from the optimal temperature, a parabolic distribution is chosen for \\(R|T=t\\) is is provided below.\n\\[\nf_{R|T=t}(r|T=t)=c_R\\left[1-\\left(\\frac{r-\\mu_R(t)}{\\gamma}\\right)^2\\right];\\quad \\mu_R(t)-\\gamma\\leq r\\leq \\mu_R(t)+\\gamma\n\\]\nLet \\(\\mu_R(t)=\\frac{\\ln2}{20}-\\beta(t)^2\\) be the expected growth rate at a given temperature, \\(t\\), \\(\\beta\\) be the rate of decay (constant), \\(\\gamma\\) be the temperature difference from \\(\\mu_R(t)\\) at which E. coli stops growing (also constant), and \\(c_R\\) be the normalizing constant such that \\(\\int_{-\\infty}^{\\infty}f_{R|T=t}(r|T=t)=1\\) (you do not need to calculate \\(c_R\\)).\n\nFind the joint distribution function of \\(T\\) and \\(R\\), \\(f_{T,R}(t,r)\\).\nFind the marginal distribution function of \\(R\\), \\(f_R(R)\\)\nFind the cumulative distribution function of \\(R\\), \\(F_R(r)\\)\nFind the covariance of \\(T\\) and \\(R\\), \\(\\text{Cov}(T,R)\\)\nFind the correlation of \\(T\\) and \\(R\\), \\(Corr(T,R)\\)\nAre \\(T\\) and \\(R\\) independent? Prove this by showing the (in)equality relationship between \\(f_{T,R}(t,r)\\) and \\(f_T(t)f_R(r)\\)."
   },
   {
-    "objectID": "assessments/hw1/solutions.html",
-    "href": "assessments/hw1/solutions.html",
-    "title": "Project 1 Solutions",
+    "objectID": "assessments/hw1/hw1.html",
+    "href": "assessments/hw1/hw1.html",
+    "title": "Project 1",
     "section": "",
-    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
-  },
-  {
-    "objectID": "assessments/hw1/solutions.html#problem-1",
-    "href": "assessments/hw1/solutions.html#problem-1",
-    "title": "Project 1 Solutions",
-    "section": "",
-    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
-  },
-  {
-    "objectID": "assessments/hw1/solutions.html#problem-2",
-    "href": "assessments/hw1/solutions.html#problem-2",
-    "title": "Project 1 Solutions",
-    "section": "Problem 2",
-    "text": "Problem 2\nOrder does not matter, so use a combination (“choose”).\n\\[\n\\binom{7+8}{6}=5,005\n\\]"
-  },
-  {
-    "objectID": "assessments/hw1/solutions.html#problem-3",
-    "href": "assessments/hw1/solutions.html#problem-3",
-    "title": "Project 1 Solutions",
-    "section": "Problem 3",
-    "text": "Problem 3\nThe possible committee compositions are 3 women/3 men or 4 women/2 men.\n\\[\n\\binom{8}{3}\\binom{7}{3}\n+\n\\binom{8}{4}\\binom{7}{2}=3,430\n\\] —"
-  },
-  {
-    "objectID": "assessments/hw1/solutions.html#problem-4",
-    "href": "assessments/hw1/solutions.html#problem-4",
-    "title": "Project 1 Solutions",
-    "section": "Problem 4",
-    "text": "Problem 4\nTwo events are independent if one of the following is shown:\n\n\\(P(A\\cap B)=P(A)P(B)\\)\n\\(P(A|B)=P(A)\\)\n\\(P(B|A)=P(B)\\)\n\nHere, \\(P(A\\cap B)=P(A)P(B)\\) is shown.\n\nFind P(A)\nUse the complement: neither card is a spade.\n\\[\nP(A)\n=\n1-\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n=\n\\frac{15}{34}\n\\]\n\n\nFind P(B)\nUse the complement: neither card is a queen.\n\\[\nP(B)\n=\n1-\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n=\n\\frac{2}{13}\n\\]\n\n\nFind P(AB)\nUsing De Morgan’s Laws:\n\\[\nP(A\\cap B)\n=\n1-P\\left((A\\cap B)'\\right)=1-P(A'\\cup B')\n\\]\n\\(P(A'\\cup B')\\) is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection.\n\nNo spades: 52-13=39 options\nNo queens: 48 options\nNo spades and no queens: 52 - 13 - 4 + 1 = 36 options\n\n\\[\nP(A\\cap B)\n=\n1-\n\\left(\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n+\n\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n-\n\\frac{\\binom{36}{2}}{\\binom{52}{2}}\\right)=\\frac{29}{442}\n\\]\nNow,\n\\[\nP(A)P(B)=\\frac{15}{34}\\times\\frac{2}{13}=\\frac{30}{442}\\neq\\frac{29}{442}\n\\]\nTherefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades."
+    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
   },
   {
     "objectID": "assessments/final/final.html",
@@ -623,25 +602,53 @@
     "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
   },
   {
-    "objectID": "assessments/hw1/hw1.html",
-    "href": "assessments/hw1/hw1.html",
-    "title": "Project 1",
+    "objectID": "assessments/hw1/solutions.html",
+    "href": "assessments/hw1/solutions.html",
+    "title": "Project 1 Solutions",
     "section": "",
-    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nHow many different permutations are there of the letters A, B, C, D, E, F for which\n\nA and B are next to each other\nE is not last in line\n\nA committee of 6 people is to be chosen from a group consisting of 7 men and 8 women. How many different committees are possible?\nFollowing question 2, if at least 3 women and at least 2 men are required, how many different committees are possible?\nSuppose that two cards are drawn without replacement from a standard 52-card deck (no jokers). Let \\(A\\) be the event that at least one spade is drawn, and let \\(B\\) be the event that at least one queen is drawn. Are \\(A\\) and \\(B\\) independent events? Justify your answer using the mathematical definition of independence."
+    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
   },
   {
-    "objectID": "assessments/hw2/project2-old.html",
-    "href": "assessments/hw2/project2-old.html",
+    "objectID": "assessments/hw1/solutions.html#problem-1",
+    "href": "assessments/hw1/solutions.html#problem-1",
+    "title": "Project 1 Solutions",
+    "section": "",
+    "text": "Treat A and B as one block. The block can be AB or BA.\n\\[\n2\\cdot5!=240\n\\]\n\n\n\nCount all permutations and subtract those with E last.\n\\[\n6!-5!=720-120=600\n\\]\n\n\n\nIf (a) and (b) were combined, count all cases where E is not last and AB / BA occupy two adjacent slots.\n\\[\n2\\cdot(5!-4!)=192\n\\]"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-2",
+    "href": "assessments/hw1/solutions.html#problem-2",
+    "title": "Project 1 Solutions",
+    "section": "Problem 2",
+    "text": "Problem 2\nOrder does not matter, so use a combination (“choose”).\n\\[\n\\binom{7+8}{6}=5,005\n\\]"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-3",
+    "href": "assessments/hw1/solutions.html#problem-3",
+    "title": "Project 1 Solutions",
+    "section": "Problem 3",
+    "text": "Problem 3\nThe possible committee compositions are 3 women/3 men or 4 women/2 men.\n\\[\n\\binom{8}{3}\\binom{7}{3}\n+\n\\binom{8}{4}\\binom{7}{2}=3,430\n\\] —"
+  },
+  {
+    "objectID": "assessments/hw1/solutions.html#problem-4",
+    "href": "assessments/hw1/solutions.html#problem-4",
+    "title": "Project 1 Solutions",
+    "section": "Problem 4",
+    "text": "Problem 4\nTwo events are independent if one of the following is shown:\n\n\\(P(A\\cap B)=P(A)P(B)\\)\n\\(P(A|B)=P(A)\\)\n\\(P(B|A)=P(B)\\)\n\nHere, \\(P(A\\cap B)=P(A)P(B)\\) is shown.\n\nFind P(A)\nUse the complement: neither card is a spade.\n\\[\nP(A)\n=\n1-\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n=\n\\frac{15}{34}\n\\]\n\n\nFind P(B)\nUse the complement: neither card is a queen.\n\\[\nP(B)\n=\n1-\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n=\n\\frac{2}{13}\n\\]\n\n\nFind P(AB)\nUsing De Morgan’s Laws:\n\\[\nP(A\\cap B)\n=\n1-P\\left((A\\cap B)'\\right)=1-P(A'\\cup B')\n\\]\n\\(P(A'\\cup B')\\) is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection.\n\nNo spades: 52-13=39 options\nNo queens: 48 options\nNo spades and no queens: 52 - 13 - 4 + 1 = 36 options\n\n\\[\nP(A\\cap B)\n=\n1-\n\\left(\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n+\n\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n-\n\\frac{\\binom{36}{2}}{\\binom{52}{2}}\\right)=\\frac{29}{442}\n\\]\nNow,\n\\[\nP(A)P(B)=\\frac{15}{34}\\times\\frac{2}{13}=\\frac{30}{442}\\neq\\frac{29}{442}\n\\]\nTherefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades."
+  },
+  {
+    "objectID": "assessments/hw2/project2.html",
+    "href": "assessments/hw2/project2.html",
     "title": "Project 2",
     "section": "",
-    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nA food science research team is investigating the microbial growth of E. coli. The bacteria cultures are prepared from the same initial stock and plated onto identical growth media. Each culture is placed in its own incubation unit. Although the incubation units are set to the optimal growth temperature, the variation of each machine means that the temperature in °C, is a random variable. A tolerance of \\(\\alpha\\) is set so that each machine guarantees that the temperature does not go below (\\(-\\alpha\\))°C or above \\(\\alpha\\)°C. For our convenience, the distribution of temperature, \\(T\\), was shifted so that it is symmetric about zero with a support of \\(t\\in\\{-\\alpha,\\alpha\\}\\). It is reasonable to assume that the temperature of each machine is held constant. The pdf for \\(T\\) is given below.\n\\[\nf_T(t)=c\\cdot \\left( 1-\\left(\\frac{t}{\\alpha}\\right)^2\\right) ; \\quad -\\alpha\\leq t \\leq \\alpha\n\\]\n\nFind the value of \\(c\\) that produces a valid pdf for temperature, for any given \\(\\alpha\\).\nCompute \\(E[T]\\).\nCompute \\(V[T]\\).\nYour colleague decides to use Fahrenheit in their report, which is computed as \\(°F = \\frac{9}{5}°C + 32\\). Help them with their calculations by computing the expectation and variance of \\(T\\) in °F.\n\nPrevious research established that E. coli doubles approximately every 20 minutes when grown under optimal conditions. Knowing that growth will decay when the temperature deviates from the optimal temperature, a parabolic distribution is chosen for \\(R|T=t\\) is is provided below.\n\\[\nf_{R|T=t}(r|T=t)=c_R\\left[1-\\left(\\frac{r-\\mu_R(t)}{\\gamma}\\right)^2\\right];\\quad \\mu_R(t)-\\gamma\\leq r\\leq \\mu_R(t)+\\gamma\n\\]\nLet \\(\\mu_R(t)=\\frac{\\ln2}{20}-\\beta(t)^2\\) be the expected growth rate at a given temperature, \\(t\\), \\(\\beta\\) be the rate of decay (constant), \\(\\gamma\\) be the temperature difference from \\(\\mu_R(t)\\) at which E. coli stops growing (also constant), and \\(c_R\\) be the normalizing constant such that \\(\\int_{-\\infty}^{\\infty}f_{R|T=t}(r|T=t)=1\\) (you do not need to calculate \\(c_R\\)).\n\nFind the joint distribution function of \\(T\\) and \\(R\\), \\(f_{T,R}(t,r)\\).\nFind the marginal distribution function of \\(R\\), \\(f_R(R)\\)\nFind the cumulative distribution function of \\(R\\), \\(F_R(r)\\)\nFind the covariance of \\(T\\) and \\(R\\), \\(\\text{Cov}(T,R)\\)\nFind the correlation of \\(T\\) and \\(R\\), \\(Corr(T,R)\\)\nAre \\(T\\) and \\(R\\) independent? Prove this by showing the (in)equality relationship between \\(f_{T,R}(t,r)\\) and \\(f_T(t)f_R(r)\\)."
+    "text": "Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed.\n\nComputer chips are required to be kept at cool temperatures in order to operate efficiently. Let \\(Y\\) denote the temperature in °C, above a baseline temperature, of a randomly selected computer chip. The machine operates in such a way that a different cooling process begins once the chip temperature exceeds 1 degree above the baseline. The pdf of the chip temperature between 0 and 1 °C above the baseline measurement is provided below:\n\\[\nf_Y(y)=y+c_1;\\quad 0&lt;y&lt;1\n\\]\n\nFind the value of \\(c_1\\) that produces a valid pdf for the temperature of the chip.\nCompute \\(E[Y]\\).\nCompute \\(V[Y]\\).\nYour colleague decides to use Fahrenheit in their report, which is computed as \\(°F = \\frac{9}{5}°C\\). Help them with their calculations by computing the expectation and variance of \\(T\\) in °F.\n\nA performance metric is determined by the chip temperature and fan rotation speed (for cooling) due to their combined power draw. Let \\(X\\) be the random variable of the fan rotation speed and bounded by 0 and 2 units above its baseline. The joint pdf of \\(X\\) and \\(Y\\) is provided below.\n\\[\nf_{X,Y}(x,y)=\\frac{1}{4}(x+2y);\\quad 0&lt;y&lt;1,\\ 0&lt;x&lt;2\n\\] Note: for all distributions, you MUST provide the support as part of your solution.\n\nIf the temperature of the computer chip is known, determine the distribution of the fan rotation speed (i.e., distribution of \\(X|Y=y\\)).\nUsing the conditional distribution of \\(X|Y=y\\), compute the CDF (i.e., \\(F_{X|Y}(x|y)\\)).\nFind \\(Corr(X,Y)\\) and provide a brief statement (1-2 sentences) on what this means."
   },
   {
-    "objectID": "assessments/midterm/midterm.html",
-    "href": "assessments/midterm/midterm.html",
+    "objectID": "assessments/midterm/midterm2.html",
+    "href": "assessments/midterm/midterm2.html",
     "title": "Midterm",
     "section": "",
-    "text": "Student’s t distribution is widely used in many areas of statistics. For \\(\\nu\\) degrees of freedom, the probability density function is given by the following:\n\\[\nf(x)=\\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\pi\\nu}\\Gamma(\\frac\\nu 2)}(1+\\frac{x^2}{\\nu})^{-\\frac{\\nu+1}{2}}; \\quad x\\in(-\\infty,\\infty)\n\\]\n\nCreate a function in R called my_dt to calculate \\(f(x)\\) at a given \\(x\\) and \\(\\nu\\).\n\n\nmy_dt &lt;- function(x, nu) {\n  fx &lt;- FUNCTION HERE\n  return(fx)\n}\n\n\nR has a built in t distribution density function, dt(), that you can use to verify your solution to (1). Evaluate both your function and dt() at the following values of x and \\(\\nu\\) and arrange your results into a neatly formatted table.\n\n\\(x=-1.5, \\nu=6\\)\n\\(x=0.7, \\nu=20\\)\n\\(x=2, \\nu=4\\)"
+    "text": "https://www.nature.com/articles/ncomms1580?\nConsider the exponential distribution, given by\n\\[\nf(x)=\\lambda e^{-\\lambda x}; \\quad x&gt;0;\\  \\lambda&gt;0\n\\]\nYou may use the facts that \\(E(X)=\\frac{1}{\\lambda}\\) and \\(E(X^2)=\\frac{2}{\\lambda^2}\\)\n\\[\nV(X)=E(X^2)-E(X)^2\n\\]\n\nCompute the following quantities:\n\n\\(E(2X)\\)\n\\(E(X+3)\\)\n\\(V(X)\\)\n\\(V(3X+2)\\)\n\nCompute \\(P(X&gt;3)\\) when \\(\\lambda=4\\).\nLet \\(X\\sim \\text{Exp}(\\frac{1}{2})\\) and \\(Y\\sim \\text{Exp}(\\frac{1}{3})\\) be two random variables for one observational unit.\n\nWrite the joint distribution of \\((X,Y)\\) when \\(X\\) and \\(Y\\) are independently sampled from each other.\nWhat can you say about \\(Corr(X,Y)\\)? Justify your answer by\n\nLet \\(X_1, X_2, \\dots, X_n\\) be independently and identically distributed from an exponential distribution as defined above, and recall that the distribution of ind\n\nWrite down the joint distribution of \\(X_1,X_2,\\dots,X_n\\) using product notation.\nFor your solution to part (a), apply the \\(\\log_e\\) operation.\n\nIn Problem 4, you computed the log likelihood for"
   },
   {
     "objectID": "assignments.html",
