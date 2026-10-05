@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Midterm – STAT 380</title>
+<title>Project 2 – Solution Key – STAT 380</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -146,15 +146,28 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem-1" id="toc-problem-1" class="nav-link active" data-scroll-target="#problem-1">Problem 1</a></li>
+  <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
+  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
+  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
+  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
+  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
+  <li><a href="#problem-7" id="toc-problem-7" class="nav-link" data-scroll-target="#problem-7">Problem 7</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Midterm</h1>
+<h1 class="title">Project 2 – Solution Key</h1>
+<p class="subtitle lead">STAT 380</p>
 </div>
 
 
@@ -171,38 +184,105 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://www.nature.com/articles/ncomms1580" class="uri">https://www.nature.com/articles/ncomms1580</a>?</p>
-<p>Consider the exponential distribution, given by</p>
+<section id="problem-1" class="level1">
+<h1>Problem 1</h1>
 <p><span class="math display">\[
-f(x)=\lambda e^{-\lambda x}; \quad x&gt;0;\  \lambda&gt;0
+\int_0^1 (y + c_1)\,dy = \left[\frac{y^2}{2} + c_1 y\right]_0^1 = \frac{1}{2} + c_1 = 1
 \]</span></p>
-<p>You may use the facts that <span class="math inline">\(E(X)=\frac{1}{\lambda}\)</span> and <span class="math inline">\(E(X^2)=\frac{2}{\lambda^2}\)</span></p>
 <p><span class="math display">\[
-V(X)=E(X^2)-E(X)^2
+c_1 = \frac{1}{2}, \qquad f_Y(y) = y + \frac{1}{2};\quad 0&lt;y&lt;1
 \]</span></p>
-<ol type="1">
-<li><p>Compute the following quantities:</p>
-<ol type="a">
-<li><span class="math inline">\(E(2X)\)</span></li>
-<li><span class="math inline">\(E(X+3)\)</span></li>
-<li><span class="math inline">\(V(X)\)</span></li>
-<li><span class="math inline">\(V(3X+2)\)</span></li>
-</ol></li>
-<li><p>Compute <span class="math inline">\(P(X&gt;3)\)</span> when <span class="math inline">\(\lambda=4\)</span>.</p></li>
-<li><p>Let <span class="math inline">\(X\sim \text{Exp}(\frac{1}{2})\)</span> and <span class="math inline">\(Y\sim \text{Exp}(\frac{1}{3})\)</span> be two random variables for one observational unit.</p>
-<ol type="a">
-<li>Write the joint distribution of <span class="math inline">\((X,Y)\)</span> when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independently sampled from each other.</li>
-<li>What can you say about <span class="math inline">\(Corr(X,Y)\)</span>? Justify your answer by</li>
-</ol></li>
-<li><p>Let <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> be independently and identically distributed from an exponential distribution as defined above, and recall that the distribution of ind</p>
-<ol type="a">
-<li>Write down the joint distribution of <span class="math inline">\(X_1,X_2,\dots,X_n\)</span> using product notation.</li>
-<li>For your solution to part (a), apply the <span class="math inline">\(\log_e\)</span> operation.</li>
-</ol></li>
-<li><p>In Problem 4, you computed the log likelihood for</p></li>
-</ol>
+</section>
+<section id="problem-2" class="level1">
+<h1>Problem 2</h1>
+<p><span class="math display">\[
+E[Y] = \int_0^1 y\left(y + \frac{1}{2}\right)dy = \left[\frac{y^3}{3} + \frac{y^2}{4}\right]_0^1 = \frac{1}{3} + \frac{1}{4} = \frac{7}{12}
+\]</span></p>
+</section>
+<section id="problem-3" class="level1">
+<h1>Problem 3</h1>
+<p><span class="math display">\[
+E[Y^2] = \int_0^1 y^2\left(y + \frac{1}{2}\right)dy = \left[\frac{y^4}{4} + \frac{y^3}{6}\right]_0^1 = \frac{1}{4} + \frac{1}{6} = \frac{5}{12}
+\]</span></p>
+<p><span class="math display">\[
+V[Y] = E[Y^2] - (E[Y])^2 = \frac{5}{12} - \left(\frac{7}{12}\right)^2 = \frac{60}{144} - \frac{49}{144} = \frac{11}{144}
+\]</span></p>
+</section>
+<section id="problem-4" class="level1">
+<h1>Problem 4</h1>
+<p><span class="math display">\[
+T = \frac{9}{5}Y
+\]</span></p>
+<p><span class="math display">\[
+E[T] = \frac{9}{5}E[Y] = \frac{9}{5}\cdot\frac{7}{12} = \frac{21}{20} = 1.05
+\]</span></p>
+<p><span class="math display">\[
+V[T] = \left(\frac{9}{5}\right)^2 V[Y] = \frac{81}{25}\cdot\frac{11}{144} = \frac{99}{400} = 0.2475
+\]</span></p>
+</section>
+<section id="problem-5" class="level1">
+<h1>Problem 5</h1>
+<p>Marginal of <span class="math inline">\(Y\)</span>:</p>
+<p><span class="math display">\[
+f_Y(y) = \int_0^2 \frac{1}{4}(x + 2y)\,dx = \frac{1}{4}\left[\frac{x^2}{2} + 2yx\right]_0^2 = \frac{1}{4}(2 + 4y) = \frac{1}{2} + y;\quad 0&lt;y&lt;1
+\]</span></p>
+<p>Conditional distribution:</p>
+<p><span class="math display">\[
+f_{X|Y}(x|y) = \frac{f_{X,Y}(x,y)}{f_Y(y)} = \frac{\frac{1}{4}(x+2y)}{y + \frac{1}{2}} = \frac{x + 2y}{4y + 2};\quad 0&lt;x&lt;2
+\]</span></p>
+</section>
+<section id="problem-6" class="level1">
+<h1>Problem 6</h1>
+<p>For <span class="math inline">\(0&lt;x&lt;2\)</span>:</p>
+<p><span class="math display">\[
+F_{X|Y}(x|y) = \int_0^x \frac{t + 2y}{4y+2}\,dt = \frac{1}{4y+2}\left[\frac{t^2}{2} + 2yt\right]_0^x = \frac{x^2 + 4xy}{8y + 4}
+\]</span></p>
+<p><span class="math display">\[
+F_{X|Y}(x|y) =
+\begin{cases}
+0, &amp; x \le 0 \\[4pt]
+\dfrac{x^2 + 4xy}{8y + 4}, &amp; 0 &lt; x &lt; 2 \\[8pt]
+1, &amp; x \ge 2
+\end{cases}
+\qquad 0&lt;y&lt;1
+\]</span></p>
+<p>Note that <span class="math inline">\(y\)</span> is a fixed value.</p>
+</section>
+<section id="problem-7" class="level1">
+<h1>Problem 7</h1>
+<p>Marginal of <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+f_X(x) = \int_0^1 \frac{1}{4}(x + 2y)\,dy = \frac{1}{4}\left[xy + y^2\right]_0^1 = \frac{x+1}{4};\quad 0&lt;x&lt;2
+\]</span></p>
+<p>Moments of <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+E[X] = \int_0^2 x\cdot\frac{x+1}{4}\,dx = \frac{1}{4}\left[\frac{x^3}{3} + \frac{x^2}{2}\right]_0^2 = \frac{1}{4}\left(\frac{8}{3} + 2\right) = \frac{7}{6}
+\]</span></p>
+<p><span class="math display">\[
+E[X^2] = \int_0^2 x^2\cdot\frac{x+1}{4}\,dx = \frac{1}{4}\left[\frac{x^4}{4} + \frac{x^3}{3}\right]_0^2 = \frac{1}{4}\left(4 + \frac{8}{3}\right) = \frac{5}{3}
+\]</span></p>
+<p><span class="math display">\[
+V[X] = \frac{5}{3} - \left(\frac{7}{6}\right)^2 = \frac{60}{36} - \frac{49}{36} = \frac{11}{36}
+\]</span></p>
+<p>Joint moment:</p>
+<p><span class="math display">\[
+E[XY] = \int_0^1\int_0^2 xy\cdot\frac{1}{4}(x + 2y)\,dx\,dy = \frac{1}{4}\int_0^1\left[\frac{x^3 y}{3} + x^2y^2\right]_0^2 dy = \frac{1}{4}\int_0^1\left(\frac{8y}{3} + 4y^2\right)dy
+\]</span></p>
+<p><span class="math display">\[
+= \frac{1}{4}\left[\frac{4y^2}{3} + \frac{4y^3}{3}\right]_0^1 = \frac{1}{4}\left(\frac{8}{3}\right) = \frac{2}{3}
+\]</span></p>
+<p>Covariance:</p>
+<p><span class="math display">\[
+Cov(X,Y) = E[XY] - E[X]E[Y] = \frac{2}{3} - \frac{7}{6}\cdot\frac{7}{12} = \frac{48}{72} - \frac{49}{72} = -\frac{1}{72}
+\]</span></p>
+<p>Correlation:</p>
+<p><span class="math display">\[
+Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{V[X]\,V[Y]}} = \frac{-1/72}{\sqrt{\frac{11}{36}\cdot\frac{11}{144}}} = \frac{-1/72}{11/72} = -\frac{1}{11} \approx -0.0909
+\]</span></p>
+<p>The correlation is very close to 0 and negative. This means that there is a weak negative linear relationship between fan rotation speed and chip temperature. Higher chip temperatures are associated with slightly lower fan speeds (which seems counterintuitive), but the weak relationship means that one doesn’t really affect the other.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,56 +1,61 @@
 ---
-title: "Midterm"
-format: html
+title: "Midterm 2"
+date: "10/09/26"
+date-format: "MMMM D, YYYY [by 5:00 p.m.]"
+published-title: "Due date"
+format: 
+  html: default
+  pdf: default
 ---
 
-Student's t distribution is widely used in many areas of statistics. For $\nu$ degrees of freedom, the probability density function is given by the following: 
+Thus far, we have discussed set theory and probability distributions. However, we have not talked about how to fit distributions to data, which is an important topic in statistics. For this midterm, you will take the skills you have learned and apply them to estimating distribution parameters. 
 
-$$
-f(x)=\frac{\Gamma(\frac{\nu+1}{2})}{\sqrt{\pi\nu}\Gamma(\frac\nu 2)}(1+\frac{x^2}{\nu})^{-\frac{\nu+1}{2}}; \quad x\in(-\infty,\infty)
-$$
+Read the following article on Maximum Likelihood Estimation (MLE), which can be accessed through UNL's library. 
 
+> Myung, In Jae. “Tutorial on Maximum Likelihood Estimation.” Journal of Mathematical Psychology, vol. 47, no. 1, Feb. 2003, pp. 90–100, https://doi.org/10.1016/S0022-2496(02)00028-7.
 
-1. Create a function in R called `my_dt` to calculate $f(x)$ at a given $x$ and $\nu$. (Hint: the `gamma()` function will be useful here)
+Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. **No late submissions will be accepted**. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are **not** allowed to work on the midterm with your classmates or use AI tools. 
+
+---
+
+**Questions from reading**
+
+1. Describe the purpose of maximum likelihood estimation. How would we use this in our course? (2-4 sentences)
+
+2. What is the difference between the pdf, $f(y|w)$, and the likelihood function, $L(w|y)$? (2-4 sentences)
+
+3. Describe the process of maximum likelihood estimation. What steps do you need to take for the estimation, and what is the goal? (3-5 sentences)
+
+---
+
+**Connecting MLE's to our course**
+
+4. Recall that the exponential distribution is defined as follows: $$f(x)=\frac{1}{\beta}e^{-x/\beta};\quad x>0,\ \beta>0$$ In class, we showed how to derive $E[X]=\beta$ when $X\sim \text{Exp}(\beta)$. Derive $E[X^2]$ and show that $V(X)=\beta^2$.
+
+5. Suppose you take a sample of size $n$ from a population with a known pdf, and each observation is i.i.d. (independently and identically distributed). The joint pdf for the sample is the product of the pdfs for each $X_i$. That is, for $X_1,X_2,\dots,X_n\sim \text{Some pdf}$, $$f(x=(x_1,x_2,\dots,x_n))=\prod_{i=1}^{n}f(x_i)=f(x_1)\times f(x_2)\times\dots\times f(x_n)$$ Explain how the process of setting up the joint pdf makes sense using properties of set theory and probability discussed in our course. (2-4 sentences)
+
+6. Suppose that your sample from above came from an exponential distribution. Write the log-likelihood function (using $\log_e$) for the observed sample and simplify the expression so that $\sum_{i=1}^n x_i$ is present in your solution.
+
+7. The MLE of $\beta$ is $\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i$, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of $\beta$ using the MLE?
+
+    - 0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57
+
+  
 
 ```{r}
+#| echo: false
 #| eval: false
-#| include: true
-my_dt <- function(x, nu) {
-  fx <- "FUNCTION HERE"
-  return(fx)
-}
-```
-
-2. R has a built in t distribution density function, `dt()`, that you can use to verify your solution to (1). Evaluate both your function and `dt()` at the following values of x and $\nu$ and arrange your results into a neatly formatted table.
-
-    - $x=-1.5, \nu=6$
-    - $x=0.7, \nu=20$
-    - $x=2, \nu=4$
-
-```{r}
-#| include: false
 set.seed(380)
-y <- rnorm(30, 2, 3)
-dput(round(y,1))
+y <- round(rexp(n=10, rate = 0.5),2)
+cat(paste(y, collapse = ', '))
 ```
 
-3. A sample of 30 data points was collected and provided below. Calculate the t-statistic of the mean using $t=\frac{\bar{X}}{s/\sqrt n}$, where $\bar{X}$ is the sample mean, $s$ is the sample standard deviation, and $n$ is the sample size.
 
-```{r}
-y <- c(2.7, 2, 0.1, 8.2, -1.2, -3.8, -0.2, 3.6, 0.3, 3.1, 2.7, 3.4, 
--0.8, 0.4, 2.1, -2.3, 3.9, 0.1, 4.4, 0.8, 3.1, -0.4, 5.2, 2.2, 
-0, 2.6, -0.3, -3.9, -0.5, -2.5)
-```
+8. Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use $Y=1.05 X + 0.2$, where $X$ was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., $E(Y)$ and $V(Y)$)? Use the value for $\hat{\beta}$ that you computed in problem (7) and properties derived in problem (4).
 
-4. Using `my_dt`, compute $P(X\leq -|t|)+P(X \geq |t|)$ for $\nu=29$. (Hint: the `integrate` function will be helpful here, as well as the `Inf` object)
+9. An important assumption is that each element from our sample was independently drawn from the same population. Suppose that your sample only took two sensor readings from the population, $X_1$ and $X_2$. What does this imply about $\text{Corr}(X_1, X_2)$? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing $\text{Corr}(X_1, X_2)$ by setting up each of the required integrals and calculations. You do not need to compute this mathematically, but rather show the process when you start with $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$. Recall that $$\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}$$
 
-5. Run the following line and compare the p-value with your result from (4). 
-
-```{r}
-t.test(y)
-```
-
-6. In 2-4 sentences, describe what is represented by $1-P(-t\leq x \leq t)$. 
+10. Derive the CDF of the exponential distribution using your value for $\hat{\beta}$ and use your CDF to calculate the probability of observing a sensor reading that is greater than 1. 
 
 
 

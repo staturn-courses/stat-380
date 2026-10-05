@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Midterm – STAT 380</title>
+<title>Midterm 2 – STAT 380</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,41 +25,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -181,15 +146,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="midterm.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Midterm</h1>
+<h1 class="title">Midterm 2</h1>
 </div>
 
 
@@ -197,6 +162,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Due date</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 9, 2026 by 5:00 p.m.</p>
+    </div>
+  </div>
   
     
   </div>
@@ -206,26 +177,34 @@ window.Quarto = {
 </header>
 
 
-<p>Student’s t distribution is widely used in many areas of statistics. For <span class="math inline">\(\nu\)</span> degrees of freedom, the probability density function is given by the following:</p>
-<p><span class="math display">\[
-f(x)=\frac{\Gamma(\frac{\nu+1}{2})}{\sqrt{\pi\nu}\Gamma(\frac\nu 2)}(1+\frac{x^2}{\nu})^{-\frac{\nu+1}{2}}; \quad x\in(-\infty,\infty)
-\]</span></p>
+<p>Thus far, we have discussed set theory and probability distributions. However, we have not talked about how to fit distributions to data, which is an important topic in statistics. For this midterm, you will take the skills you have learned and apply them to estimating distribution parameters.</p>
+<p>Read the following article on Maximum Likelihood Estimation (MLE), which can be accessed through UNL’s library.</p>
+<blockquote class="blockquote">
+<p>Myung, In Jae. “Tutorial on Maximum Likelihood Estimation.” Journal of Mathematical Psychology, vol.&nbsp;47, no. 1, Feb.&nbsp;2003, pp.&nbsp;90–100, https://doi.org/10.1016/S0022-2496(02)00028-7.</p>
+</blockquote>
+<p>Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. <strong>No late submissions will be accepted</strong>. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are <strong>not</strong> allowed to work on the midterm with your classmates or use AI tools.</p>
+<hr>
+<p><strong>Questions from reading</strong></p>
 <ol type="1">
-<li>Create a function in R called <code>my_dt</code> to calculate <span class="math inline">\(f(x)\)</span> at a given <span class="math inline">\(x\)</span> and <span class="math inline">\(\nu\)</span>.</li>
+<li><p>Describe the purpose of maximum likelihood estimation. How would we use this in our course? (2-4 sentences)</p></li>
+<li><p>What is the difference between the pdf, <span class="math inline">\(f(y|w)\)</span>, and the likelihood function, <span class="math inline">\(L(w|y)\)</span>? (2-4 sentences)</p></li>
+<li><p>Describe the process of maximum likelihood estimation. What steps do you need to take for the estimation, and what is the goal? (3-5 sentences)</p></li>
 </ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>my_dt <span class="ot">&lt;-</span> <span class="cf">function</span>(x, nu) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  fx <span class="ot">&lt;-</span> FUNCTION HERE</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(fx)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<ol start="2" type="1">
-<li><p>R has a built in t distribution density function, <code>dt()</code>, that you can use to verify your solution to (1). Evaluate both your function and <code>dt()</code> at the following values of x and <span class="math inline">\(\nu\)</span> and arrange your results into a neatly formatted table.</p>
+<hr>
+<p><strong>Connecting MLE’s to our course</strong></p>
+<ol start="4" type="1">
+<li><p>Recall that the exponential distribution is defined as follows: <span class="math display">\[f(x)=\frac{1}{\beta}e^{-x/\beta};\quad x&gt;0,\ \beta&gt;0\]</span> In class, we showed how to derive <span class="math inline">\(E[X]=\beta\)</span> when <span class="math inline">\(X\sim \text{Exp}(\beta)\)</span>. Derive <span class="math inline">\(E[X^2]\)</span> and show that <span class="math inline">\(V(X)=\beta^2\)</span>.</p></li>
+<li><p>Suppose you take a sample of size <span class="math inline">\(n\)</span> from a population with a known pdf, and each observation is i.i.d. (independently and identically distributed). The joint pdf for the sample is the product of the pdfs for each <span class="math inline">\(X_i\)</span>. That is, for <span class="math inline">\(X_1,X_2,\dots,X_n\sim \text{Some pdf}\)</span>, <span class="math display">\[f(x=(x_1,x_2,\dots,x_n))=\prod_{i=1}^{n}f(x_i)=f(x_1)\times f(x_2)\times\dots\times f(x_n)\]</span> Explain how the process of setting up the joint pdf makes sense using properties of set theory and probability discussed in our course. (2-4 sentences)</p></li>
+<li><p>Suppose that your sample from above came from an exponential distribution. Write the log-likelihood function (using <span class="math inline">\(\log_e\)</span>) for the observed sample and simplify the expression so that <span class="math inline">\(\sum_{i=1}^n x_i\)</span> is present in your solution.</p></li>
+<li><p>The MLE of <span class="math inline">\(\beta\)</span> is <span class="math inline">\(\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i\)</span>, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of <span class="math inline">\(\beta\)</span> using the MLE?</p>
 <ul>
-<li><span class="math inline">\(x=-1.5, \nu=6\)</span></li>
-<li><span class="math inline">\(x=0.7, \nu=20\)</span></li>
-<li><span class="math inline">\(x=2, \nu=4\)</span></li>
+<li>0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57</li>
 </ul></li>
+</ol>
+<ol start="8" type="1">
+<li><p>Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use <span class="math inline">\(Y=1.05 X + 0.2\)</span>, where <span class="math inline">\(X\)</span> was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., <span class="math inline">\(E(Y)\)</span> and <span class="math inline">\(V(Y)\)</span>)? Use the value for <span class="math inline">\(\hat{\beta}\)</span> that you computed in problem (7) and properties derived in problem (4).</p></li>
+<li><p>An important assumption is that each element from our sample was independently drawn from the same population. Suppose that your sample only took two sensor readings from the population, <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>. What does this imply about <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span>? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span> by setting up each of the required integrals and calculations. You do not need to compute this mathematically, but rather show the process when you start with <span class="math inline">\(f_{X_1}(x_1)\)</span> and <span class="math inline">\(f_{X_2}(x_2)\)</span>. Recall that <span class="math display">\[\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}\]</span></p></li>
+<li><p>Derive the CDF of the exponential distribution using your value for <span class="math inline">\(\hat{\beta}\)</span> and use your CDF to calculate the probability of observing a sensor reading that is greater than 1.</p></li>
 </ol>
 
 
