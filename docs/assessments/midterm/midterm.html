@@ -146,9 +146,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="midterm.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -182,7 +182,7 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p>Myung, In Jae. “Tutorial on Maximum Likelihood Estimation.” Journal of Mathematical Psychology, vol.&nbsp;47, no. 1, Feb.&nbsp;2003, pp.&nbsp;90–100, https://doi.org/10.1016/S0022-2496(02)00028-7.</p>
 </blockquote>
-<p>Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. <strong>No late submissions will be accepted</strong>. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are <strong>not</strong> allowed to work on the midterm with your classmates or use AI tools.</p>
+<p>Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF on Canvas. <strong>No late submissions will be accepted</strong>. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are <strong>not</strong> allowed to work on the midterm with your classmates or use AI tools.</p>
 <hr>
 <p><strong>Questions from reading</strong></p>
 <ol type="1">
@@ -196,15 +196,15 @@ window.Quarto = {
 <li><p>Recall that the exponential distribution is defined as follows: <span class="math display">\[f(x)=\frac{1}{\beta}e^{-x/\beta};\quad x&gt;0,\ \beta&gt;0\]</span> In class, we showed how to derive <span class="math inline">\(E[X]=\beta\)</span> when <span class="math inline">\(X\sim \text{Exp}(\beta)\)</span>. Derive <span class="math inline">\(E[X^2]\)</span> and show that <span class="math inline">\(V(X)=\beta^2\)</span>.</p></li>
 <li><p>Suppose you take a sample of size <span class="math inline">\(n\)</span> from a population with a known pdf, and each observation is i.i.d. (independently and identically distributed). The joint pdf for the sample is the product of the pdfs for each <span class="math inline">\(X_i\)</span>. That is, for <span class="math inline">\(X_1,X_2,\dots,X_n\sim \text{Some pdf}\)</span>, <span class="math display">\[f(x=(x_1,x_2,\dots,x_n))=\prod_{i=1}^{n}f(x_i)=f(x_1)\times f(x_2)\times\dots\times f(x_n)\]</span> Explain how the process of setting up the joint pdf makes sense using properties of set theory and probability discussed in our course. (2-4 sentences)</p></li>
 <li><p>Suppose that your sample from above came from an exponential distribution. Write the log-likelihood function (using <span class="math inline">\(\log_e\)</span>) for the observed sample and simplify the expression so that <span class="math inline">\(\sum_{i=1}^n x_i\)</span> is present in your solution.</p></li>
-<li><p>The MLE of <span class="math inline">\(\beta\)</span> is <span class="math inline">\(\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i\)</span>, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of <span class="math inline">\(\beta\)</span> using the MLE?</p>
-<ul>
-<li>0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57</li>
-</ul></li>
+<li><p>The MLE of <span class="math inline">\(\beta\)</span> is <span class="math inline">\(\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i\)</span>, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of <span class="math inline">\(\beta\)</span> using the MLE? Additionally, interpret your estimate in the context of the sensor readings.</p>
+<blockquote class="blockquote">
+<p>0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57</p>
+</blockquote></li>
 </ol>
 <ol start="8" type="1">
-<li><p>Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use <span class="math inline">\(Y=1.05 X + 0.2\)</span>, where <span class="math inline">\(X\)</span> was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., <span class="math inline">\(E(Y)\)</span> and <span class="math inline">\(V(Y)\)</span>)? Use the value for <span class="math inline">\(\hat{\beta}\)</span> that you computed in problem (7) and properties derived in problem (4).</p></li>
-<li><p>An important assumption is that each element from our sample was independently drawn from the same population. Suppose that your sample only took two sensor readings from the population, <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>. What does this imply about <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span>? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span> by setting up each of the required integrals and calculations. You do not need to compute this mathematically, but rather show the process when you start with <span class="math inline">\(f_{X_1}(x_1)\)</span> and <span class="math inline">\(f_{X_2}(x_2)\)</span>. Recall that <span class="math display">\[\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}\]</span></p></li>
-<li><p>Derive the CDF of the exponential distribution using your value for <span class="math inline">\(\hat{\beta}\)</span> and use your CDF to calculate the probability of observing a sensor reading that is greater than 1.</p></li>
+<li><p>Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use <span class="math inline">\(Y=1.05 X + 0.2\)</span>, where <span class="math inline">\(X\)</span> was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., <span class="math inline">\(E(Y)\)</span> and <span class="math inline">\(V(Y)\)</span>)? Use the value for <span class="math inline">\(\hat{\beta}\)</span> that you computed in problem (7) and the properties derived in problem (4).</p></li>
+<li><p>Suppose that your sample only took two independent sensor readings from this population, <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>. What does this imply about <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span>? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing <span class="math inline">\(\text{Corr}(X_1, X_2)\)</span> by setting up each of the required integrals and calculations. You do not need to evaluate the integrals, but rather show the setup and how the resulting quantities would be used to calculate the correlation. That is, show the process when you start with <span class="math inline">\(f_{X_1}(x_1)\)</span> and <span class="math inline">\(f_{X_2}(x_2)\)</span>. Recall that <span class="math display">\[\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}\]</span></p></li>
+<li><p>Derive the CDF of the exponential distribution using your value for <span class="math inline">\(\hat{\beta}\)</span> from problem (7) and use your CDF to calculate the probability of observing a sensor reading that is greater than 1.</p></li>
 </ol>
 
 

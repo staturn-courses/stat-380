@@ -5,16 +5,15 @@ date-format: "MMMM D, YYYY [by 5:00 p.m.]"
 published-title: "Due date"
 format: 
   html: default
-  pdf: default
 ---
 
 Thus far, we have discussed set theory and probability distributions. However, we have not talked about how to fit distributions to data, which is an important topic in statistics. For this midterm, you will take the skills you have learned and apply them to estimating distribution parameters. 
 
-Read the following article on Maximum Likelihood Estimation (MLE), which can be accessed through UNL's library. 
+Read the following article on Maximum Likelihood Estimation (MLE), which can be accessed through UNL's library website. 
 
 > Myung, In Jae. “Tutorial on Maximum Likelihood Estimation.” Journal of Mathematical Psychology, vol. 47, no. 1, Feb. 2003, pp. 90–100, https://doi.org/10.1016/S0022-2496(02)00028-7.
 
-Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. **No late submissions will be accepted**. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are **not** allowed to work on the midterm with your classmates or use AI tools. 
+Complete each of the following problems. To submit this midterm, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF on Canvas. **No late submissions will be accepted**. For each problem that requires calculations, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. Additionally, you are **not** allowed to work on the midterm with your classmates or use AI tools.
 
 ---
 
@@ -36,9 +35,9 @@ Complete each of the following problems. To submit this midterm, you must type y
 
 6. Suppose that your sample from above came from an exponential distribution. Write the log-likelihood function (using $\log_e$) for the observed sample and simplify the expression so that $\sum_{i=1}^n x_i$ is present in your solution.
 
-7. The MLE of $\beta$ is $\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i$, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of $\beta$ using the MLE?
+7. The MLE of $\beta$ is $\hat{\beta}=\bar{x}=\frac1n\sum_{i=1}^n x_i$, the sample mean. Suppose that you took a sample of 10 sensor readings from the population. Given the following values, what is the estimate of $\beta$ using the MLE? Additionally, interpret your estimate in the context of the sensor readings. 
 
-    - 0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57
+    > 0.36, 1.67, 0.01, 0.37, 0.19, 7.26, 2.36, 1.69, 1.16, 0.57
 
   
 
@@ -51,11 +50,11 @@ cat(paste(y, collapse = ', '))
 ```
 
 
-8. Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use $Y=1.05 X + 0.2$, where $X$ was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., $E(Y)$ and $V(Y)$)? Use the value for $\hat{\beta}$ that you computed in problem (7) and properties derived in problem (4).
+8. Suppose that your classmate is collecting data from this population using a faulty sensor. To calibrate the sensor, they need to use $Y=1.05 X + 0.2$, where $X$ was previously defined. What is the expected value and variance of the data collected from the faulty sensor (i.e., $E(Y)$ and $V(Y)$)? Use the value for $\hat{\beta}$ that you computed in problem (7) and the properties derived in problem (4).
 
-9. An important assumption is that each element from our sample was independently drawn from the same population. Suppose that your sample only took two sensor readings from the population, $X_1$ and $X_2$. What does this imply about $\text{Corr}(X_1, X_2)$? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing $\text{Corr}(X_1, X_2)$ by setting up each of the required integrals and calculations. You do not need to compute this mathematically, but rather show the process when you start with $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$. Recall that $$\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}$$
+9. Suppose that your sample only took two independent sensor readings from this population, $X_1$ and $X_2$. What does this imply about $\text{Corr}(X_1, X_2)$? Briefly explain your answer using intuition (1-2 sentences), and show the mathematical process of computing $\text{Corr}(X_1, X_2)$ by setting up each of the required integrals and calculations. You do not need to evaluate the integrals, but rather show the setup and how the resulting quantities would be used to calculate the correlation. That is, show the process when you start with $f_{X_1}(x_1)$ and $f_{X_2}(x_2)$. Recall that $$\text{Corr}(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{V(X)V(Y)}}$$
 
-10. Derive the CDF of the exponential distribution using your value for $\hat{\beta}$ and use your CDF to calculate the probability of observing a sensor reading that is greater than 1. 
+10. Derive the CDF of the exponential distribution using your value for $\hat{\beta}$ from problem (7) and use your CDF to calculate the probability of observing a sensor reading that is greater than 1. 
 
 
 
