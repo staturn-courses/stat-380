@@ -49,7 +49,7 @@ $$
 Marginal of $Y$:
 
 $$
-f_Y(y) = \int_0^2 \frac{1}{4}(x + 2y)\,dx = \frac{1}{4}\left[\frac{x^2}{2} + 2yx\right]_0^2 = \frac{1}{4}(2 + 4y) = \frac{1}{2} + y;\quad 0<y<1
+f_Y(y) =y+\frac{1}{2};\quad 0<y<1
 $$
 
 Conditional distribution:
