@@ -1,0 +1,136 @@
+---
+title: "Midterm solutions"
+format: html
+---
+
+# Problem 1
+
+Answers will vary. Maximum likelihood estimation (MLE) estimates unknown population parameters using observed data.
+
+# Problem 2
+
+Answers will vary. The pdf, $f(y|w)$ is the distribution of observations given a fixed $w$. The likelihood, $L(w|y)$, treats the data as observed and lets $w$ vary.
+
+# Problem 3
+
+Answers will vary. Starting with a distribution and unknown parameters, calculate the joint distribution. Then, treat this as the likelihood (observe data and let $w$ vary). Take the natural log of the likelihood. Take derivatives and set to zero for each unknown parameter and solve jointly. 
+
+# Problem 4
+
+$E[X^2]$ computation
+
+$$
+E[X^2]=\int_0^\infty x^2\,\frac{1}{\beta}e^{-x/\beta}\,dx=\frac{1}{\beta}\int_0^\infty x^2\,e^{-x/\beta}dx
+$$
+
+Use integration by parts with $u=x^2$ and $dv=e^{-x/\beta}dx$, so $du=2x\,dx$ and $v=-\beta e^{-x/\beta}$:
+
+$$
+=\frac{1}{\beta}\Big[\Big[-x^2e^{-x/\beta}\Big]_0^\infty-\int_0^\infty -2x\beta e^{-x/\beta}\,dx\Big]
+$$
+
+The term $\Big[-x^2e^{-x/\beta}\Big]_0^\infty$ becomes zero. Move $2\beta$ outside the integral and $\frac{1}{\beta}$ inside the integral
+
+$$
+=2\beta\int_0^\infty x\,\frac{1}{\beta}e^{-x/\beta}\,dx=2\beta\,E[X]=2\beta\cdot\beta=2\beta^2 
+$$
+
+Variance computation:
+
+$$
+V(X)=E[X^2]-\big(E[X]\big)^2=2\beta^2-\beta^2=\beta^2
+$$
+
+# Problem 5
+
+Answers will vary. Since each $X_i$ is independent, the joint distribution is the product of the distribution functions. $P(A\cup B)=P(A)P(B)$ by the independence assumption.
+
+# Problem 6
+
+$$
+L(\beta \mid \mathbf{x})=\prod_{i=1}^{n}\frac{1}{\beta}e^{-x_i/\beta}
+=\beta^{-n}\exp\!\left(-\frac{1}{\beta}\sum_{i=1}^{n}x_i\right).
+$$
+
+$$
+\ell(\beta)=\ln L(\beta \mid \mathbf{x})
+=-n\ln\beta-\frac{1}{\beta}\sum_{i=1}^{n}x_i .
+$$
+
+# Problem 7
+
+The sample mean is 1.564, meaning that $\hat{\beta}=1.564$ 
+
+# Problem 8
+
+$$
+E[Y]=1.05\cdot E[X]+0.2=1.8422
+$$
+
+$$
+V[Y]=(1.05)^2\cdot V[X]=2.696821
+$$
+
+# Problem 9
+
+If the readings are truly independent, then the measurement of one does not depend on the other one. We also know that $Cov(X,Y)=0$ if $X$ and $Y$ are independent.
+
+To solve this problem, we need the joint distribution, marginal distributions, expectations of marginal distributions and $X_1X_2$
+
+Since $X_1$ and $X_2$ both come from the same exponential distribution, we already have their expectations and variances calculated.
+
+*Marginal means:*
+$$
+E[X_1]=\beta,\qquad
+E[X_2]=\beta
+$$
+
+*Marginal variances:*
+$$
+V(X_1)=\beta^2,\qquad
+V(X_2)=\beta^2
+$$
+
+To get the joint distribution, take the product of the two exponential distributions.
+
+*Joint distribution:*
+
+$$
+f(x_1,x_2)=f_{X_1}(x_1)\,f_{X_2}(x_2)=\frac{1}{\beta^2}e^{-(x_1+x_2)/\beta},\quad x_1,x_2>0 
+$$
+
+$E[X_1X_2]$ can be found by integrating over the product of $x_1x_2$ and the joint distribution.
+
+*Expected product:*
+$$
+E[X_1X_2]=\int_0^\infty\!\!\int_0^\infty x_1x_2\,f_{X_1}(x_1)f_{X_2}(x_2)\,dx_1\,dx_2 .
+$$
+
+Lastly,
+
+$$
+\text{Cov}(X_1,X_2)=E[X_1X_2]-E[X_1]\,E[X_2],
+\qquad
+\text{Corr}(X_1,X_2)=\frac{\text{Cov}(X_1,X_2)}{\sqrt{V(X_1)\,V(X_2)}} .
+$$
+
+# Problem 10
+
+$$
+P(X\le x)=\int_0^x\frac{1}{\beta}e^{-t/\beta}\,dt
+=\Big[-e^{-t/\beta}\Big]_0^x=1-e^{-x/\beta},
+$$
+
+$$
+F(x)=
+\begin{cases}
+0, & x < 0,\\
+1-e^{-x/\beta} & x\gt 0
+\end{cases}
+$$
+
+With $\hat{\beta}=1.564$, 
+
+$$
+P(X>1)=1-P(X\leq 1)=1-(1-e^{-1/1.564})=0.5276162
+$$
