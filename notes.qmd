@@ -10,11 +10,17 @@ A textbook is available for our course (Probability \& Statistics for Engineers 
 
 --- 
 
+:::{.columns}
+
+:::{.column}
+Reference slides
+
+- [Chapter 8](notes/chapter8.pptx)
+
 Handouts 4 and 5
 
 - [Discrete distributions](notes/handout4.pdf)
 - [Continuous distributions](notes/handout5.pdf)
-- [R for probability calculations](notes/intro-to-r.R)
 
 Handout 3
 
@@ -30,5 +36,16 @@ Handout 1
 
 - [Notes](notes/handout1.pdf)
 - For the sample variance formula, the RHS should read $\frac{\sum_{i=1}^n X_i^2-n\bar{X}^2}{n-1}$
+:::
 
+:::{.column}
+
+Code
+
+- R for probability calculations: [intro-to-r.R](notes/intro-to-r.R)
+- CLT Simulation: [clt-simulation.R](notes/clt-simulation.R)
+
+:::
+
+:::
 

@@ -8,6 +8,7 @@ project:
   resources:
     - "notes/*.pdf"
     - "*.pdf"
+    - "notes/*.pptx"
 website:
   title: "STAT 380"
   navbar:
