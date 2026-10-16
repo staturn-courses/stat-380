@@ -17,7 +17,7 @@ The written report should be 4-6 pages and contain the following sections:
 
 - **Introduction**: describe your distribution, the type of data it describes, history, etc.
 - **Mathematical description**: provide the mathematical definition of the probability function (you do not need to derive anything), as well as restrictions on the support of the RV and its parameters. Describe the mean and variance of the function (again, you do not need to derive this). Additionally, include a plot of the pmf/pdf, as well as how it changes with different parameters (e.g., the exponential distribution with $\beta=1,2,3$)
-- **R Implementation**: describe how to use this probability function in R (e.g., qnorm(), pnorm(), packages, etc.). If this function is not implemented in R, describe the process of how to write these functions for your distribution. 
+- **Software Implementation**: describe how this distribution is implemented in software. If no software implementations exist, describe how you would set up software for it.
 - **Applications**: describe 2-3 practical applications where your probability function would be used.
 - **Example**: provide a completed example of a practical application of the distribution from a published source. If you would like, you may also fit this distribution to data of your own choosing. 
 
@@ -28,12 +28,11 @@ The written report should be 4-6 pages and contain the following sections:
 During the last week of classes, you and your group will present your distribution to the class (approximately 4 groups/day). Your presentation should be between 7 and 10 minutes, and include the opportunities for the class to ask questions. At the minimum, you must include the following sections:
 
 - Introduction (including mathematical description)
-- R Implementation
+- Software Implementation
+- Applications
 - Example
 
 To ensure that each group has enough time to present, a portion of your grade is allocated to keeping your presentation to under 10 minutes. 
-
-In addition to presenting your distribution, you are also responsible for listening to your peers present. On Canvas, there is a quiz with one question per group. 
 
 ## Peer Review
 
