@@ -21,6 +21,8 @@ The written report should be 4-6 pages and contain the following sections:
 - **Applications**: describe 2-3 practical applications where your probability function would be used.
 - **Example**: provide a completed example of a practical application of the distribution from a published source. If you would like, you may also fit this distribution to data of your own choosing. 
 
+References should be properly cited. There is no limit to the number references, but you should aim to have at least three sources. 
+
 ## Presentation
 
 **Due date**: last week of classes
