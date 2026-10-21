@@ -1,0 +1,59 @@
+---
+title: "Project 3"
+date: "10/30/26"
+date-format: "MMMM D, YYYY [by 11:59 p.m.]"
+published-title: "Due date"
+format: 
+  html: default
+  pdf: default
+---
+
+Complete each of the following problems. To submit this project, you must type your solutions using your preferred software (e.g., Word, LaTeX, or Typst) and submit your work as a PDF. For each problem, you must show your work in order to receive credit. No credit will be received if you do not show your work. You may include scans of handwritten work, but the final solution must be typed. For problems requiring code, include both your code and output as part of your solution.
+
+---
+
+1. Let $X$ be a random variable that is normally distributed with mean 15 and variance 3. Let a sample be independently taken from this population with $n=20$. 
+
+    a. Identify the sampling distribution of $\bar{X}$.
+    b. What is the probability of $\bar{X}$ being within $2\sigma_{\bar{X}}$ of $\mu$? (i.e, $P(15-2\sigma_{\bar{X}} \leq \bar{X} \leq 15+2\sigma_{\bar{X}})$)
+    c. A sample was taken from this population and found to have $\bar{X}=16.1$ and $s=1.5$. Compute $z$ and $t$.
+    d. From your values computed in (c), compute $P(Z>z)$ and $P(T>t)$.
+
+
+2. Suppose that $X_1,X_2,X_3$ come from a distribution with mean $\mu$ and variance $\sigma^2$, and are independent. Let $\hat{\theta}_1=\frac{X_1+X_2+X_3}{3}$ and $\hat{\theta}_2=\frac{X_1+2X_2+X_3}{4}$.
+
+    a. Determine if $\hat{\theta}_1$ and $\hat{\theta}_2$ are unbiased estimators for $\mu$. 
+    b. Compute $V(\hat{\theta}_1)$ and $V(\hat{\theta}_2)$, and identify which of the two estimators is more efficient.
+
+3. Two independent random samples, each containing ten observations, were collected from normally distributed populations. Using R, manually compute the two-sided 95% confidence intervals for $\mu_1-\mu_2$ when (a) variances are equal, and (b) variances are unequal. For each interval, write a sentence to interpret the interval. Do not use the `t.test()` function (we will talk about this function later). Hint: many values need to be recalculated; save these into new objects to reuse.
+
+```{r}
+#| echo: false
+#| eval: false
+set.seed(380)
+x1 <- round(rnorm(10, mean=10, sd=2),1)
+x2 <- round(rnorm(10, mean=10, sd=2),1)
+dput(x1)
+dput(x2)
+```
+
+```{r}
+#| echo: true
+x1 <- c(10.5, 10, 8.7, 14.2, 7.8, 6.1, 8.5, 11, 8.9, 10.7)
+x2 <- c(10.5, 11, 8.1, 8.9, 10.1, 7.1, 11.3, 8.7, 11.6, 9.2)
+```
+
+Helper code snippets for Problem 3
+
+```{r}
+#| echo: true
+y <- c(1,2,3,4)
+
+# sample size, mean, variance, standard deviation.
+n <- length(y)
+xbar <- mean(y)
+s2 <- var(y)
+s <- sd(y)
+print(c(n, xbar, s2, s))
+```
+
