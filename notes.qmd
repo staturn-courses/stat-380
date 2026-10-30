@@ -45,6 +45,7 @@ Code
 - R for probability calculations: [intro-to-r.R](notes/intro-to-r.R)
 - CLT Simulation: [clt-simulation.R](notes/clt-simulation.R)
 - Difference of two means: [ci95-for-two-mus-with-known-variances.R](notes/code/ci95-for-two-mus-with-known-variances.R)
+- Power for one-sample z-test: [power-example.R](notes/code/power-example.R)
 
 :::
 
