@@ -1,0 +1,115 @@
+---
+title: "Project 3 – Solution Guide"
+subtitle: "STAT 380"
+format: pdf
+---
+
+# Problem 1
+
+$X \sim N(15, 3)$, $n = 20$.
+
+**(a)**
+$$\bar{X} \sim N\left(15, \tfrac{3}{20}\right)$$
+
+**(b)**
+$$P(\mu - 2\sigma_{\bar{X}} \le \bar{X} \le \mu + 2\sigma_{\bar{X}}) = P(-2 \le Z \le 2) = 0.9545$$
+
+```{r}
+pnorm(15+2*sqrt(3/20), mean = 15, sd=sqrt(3/20)) - 
+  pnorm(15-2*sqrt(3/20), mean = 15, sd=sqrt(3/20))
+```
+
+
+**(c)**
+$$z = \frac{16.1 - 15}{\sqrt{3/20}} = \frac{1.1}{0.3873} \approx 2.840$$
+
+```{r}
+z <- (16.1-15)/sqrt(3/20)
+z
+```
+
+$$t = \frac{16.1 - 15}{1.5/\sqrt{20}} = \frac{1.1}{0.3354} \approx 3.280$$
+
+```{r}
+t <- (16.1-15)/(1.5/sqrt(20))
+t
+```
+
+
+**(d)**
+$$P(Z > 2.840) \approx 0.00225$$
+
+```{r}
+pnorm(z, lower.tail = F)
+```
+
+
+$$P(T_{19} > 3.280) \approx 0.00197$$
+
+```{r}
+pt(t, df=20-1, lower.tail = F)
+```
+
+# Problem 2
+
+**(a)**
+$$E(\hat\theta_1) = \frac{3\mu}{3} = \mu \quad \Rightarrow \text{unbiased}$$
+$$E(\hat\theta_2) = \frac{\mu + 2\mu + \mu}{4} = \mu \quad \Rightarrow \text{unbiased}$$
+
+**(b)**
+$$V(\hat\theta_1) = \frac{3\sigma^2}{9} = \frac{\sigma^2}{3} \approx 0.3333\,\sigma^2$$
+$$V(\hat\theta_2) = \frac{\sigma^2 + 4\sigma^2 + \sigma^2}{16} = \frac{6\sigma^2}{16} = \frac{3\sigma^2}{8} = 0.375\,\sigma^2$$
+
+Both are unbiased and $V(\hat\theta_1) < V(\hat\theta_2)$, so $\hat\theta_1$ is more efficient.
+
+\newpage
+
+# Problem 3
+
+```{r}
+x1 <- c(10.5, 10, 8.7, 14.2, 7.8, 6.1, 8.5, 11, 8.9, 10.7)
+x2 <- c(10.5, 11, 8.1, 8.9, 10.1, 7.1, 11.3, 8.7, 11.6, 9.2)
+
+n1 <- length(x1); n2 <- length(x2)
+xbar1 <- mean(x1); xbar2 <- mean(x2)
+s2_1 <- var(x1); s2_2 <- var(x2)
+diff <- xbar1 - xbar2
+alpha <- 0.05
+
+c(n1, n2, xbar1, xbar2, s2_1, s2_2, diff)
+```
+
+**(a) Equal variances**
+
+```{r}
+df_eq <- n1 + n2 - 2
+sp2 <- ((n1 - 1) * s2_1 + (n2 - 1) * s2_2) / df_eq
+se_eq <- sqrt(sp2 * (1/n1 + 1/n2))
+tcrit_eq <- qt(1 - alpha/2, df_eq)
+
+lower_eq <- diff - tcrit_eq * se_eq
+upper_eq <- diff + tcrit_eq * se_eq
+c(sp2 = sp2, se = se_eq, tcrit = tcrit_eq, lower = lower_eq, upper = upper_eq)
+```
+
+95% CI: $(-1.770,\ 1.750)$
+
+We are 95% confident that the true difference in population means, $\mu_1 - \mu_2$, is between $-1.770$ and $1.750$. Since the interval contains 0, there is no evidence of a difference in means.
+
+**(b) Unequal variances**
+
+```{r}
+se_uneq <- sqrt(s2_1/n1 + s2_2/n2)
+df_uneq <- (s2_1/n1 + s2_2/n2)^2 /
+  ((s2_1/n1)^2/(n1 - 1) + (s2_2/n2)^2/(n2 - 1))
+tcrit_uneq <- qt(1 - alpha/2, df_uneq)
+
+lower_uneq <- diff - tcrit_uneq * se_uneq
+upper_uneq <- diff + tcrit_uneq * se_uneq
+c(se = se_uneq, df = df_uneq, tcrit = tcrit_uneq,
+  lower = lower_uneq, upper = upper_uneq)
+```
+
+95% CI: $(-1.787,\ 1.767)$ with $df \approx 15.82$
+
+We are 95% confident that the true difference in population means, $\mu_1 - \mu_2$, is between $-1.787$ and $1.767$. Since the interval contains 0, there is no evidence of a difference in means.
