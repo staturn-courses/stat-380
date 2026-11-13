@@ -83,6 +83,11 @@ pairs(emm, infer = c(T,T), adjust='scheffe')
 pairs(emm, infer = c(T,T), adjust='sidak')
 pairs(emm, infer = c(T,T), adjust='bonferroni')
 
+# Specific contrast: (µ1+µ2)/2 - (µ3+µ4)/2
+contrast(emm, list(
+  '(µ1+µ2)/2 - (µ3+µ4)/2' = c(1,1,-1,-1)/2 #R uses alphabetical order by default
+))
+
 #----- Simulate rejection rate for each of the above multiple comparisons -----
 
 # Allocate space for results
