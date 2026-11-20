@@ -1,0 +1,84 @@
+---
+title: "Rubric for Final"
+format: html
+---
+
+## Overview
+
+Your grade for the final is determined by the write-up, presentation, and peer evaluation. Each category for these components will be assessed on a 1-5 scale. If a borderline situation occurs, intermediate scores (e.g., 4.5) may be given.
+
+5: Excellent (100%)
+
+- Expectations were fully met and demonstrates strong understanding.
+- No errors or omissions.
+
+4: Good (75%)
+
+- Expectations were sufficiently met and demonstrates good understanding.
+- Few minor errors or omissions.
+
+3: Fair (50%)
+
+- Expectations were generally met and demonstrates adequate understanding.
+- Some minor errors or omissions.
+
+2: Poor (25%)
+
+- Expectations were not sufficiently met and demonstrates limited understanding.
+- Several errors, omissions, or insufficient explanations.
+
+1: Very Poor (0%)
+
+- Expectations were not met and demonstrates little understanding.
+- Major errors, substantial omissions, or incomplete material.
+
+## Write-up (40%)
+
+Rubric
+
+- Introduction (10%): Clearly describes the distribution and its purpose.
+- Mathematical Description (25%): Correctly describes the probability function, support, parameter restrictions, mean, and variance.
+- Visualization (10%): At least one appropriate figure of the distribution is included and interpreted. 
+- Software Implementation (10%): Describes available software implementation or explanation of how one could be implemented (you do not need to manually code its implementation).
+- Applications (10%): At least 2 meaningful applications are included and described in sufficient detail. Explains why your distribution is appropriate for these applications.
+- Example (20%): Provides a complete example based on a published source or an application to data.
+- Organization and references (15%): The document is clearly organized and well-written. At least two sources are appropriately cited.
+
+Deductions
+
+- Up to 100% for egregious AI usage. While you may use AI tools to assist in your understanding, do not use AI to complete this component. Some acceptable use cases include using AI to help create a visualization or understanding the software implementation. Including documentation and disclaimers will help prevent point deductions if you use AI as an assistant and not as a collaborator.
+- Up to 30% if submitted after noon on Friday, December 18th, and 100% if not submitted by Monday, December 21st. 
+- Up to 30% if your submitted report is excessively too short or too long. You should have 4-6 pages, although fewer or more pages will be accepted if all of the required content is present. For example, 7 pages is acceptable, but 20 pages is not. 
+
+## Presentation (40%)
+
+Rubric
+
+- Introduction (10%): Clearly introduces the distribution and its purpose.
+- Mathematical Description (20%): Clearly communicates the probability function, support, parameter restrictions, mean, and variance.
+- Software Implementation (20%): Clearly communicates at least one software implementation.
+- Applications (15%): Clearly communicates at least two practical applications.
+- Example (20%): Clearly communicates a completely worked example.
+- Communication and organization (15%): Presentation is neatly organized and communicated.
+
+Deductions
+
+- 10% for each minute over 10 minutes (excluding time for questions).
+- 10% for not presenting with your group (excused absences are allowed if communicated with your instructor before the class you are scheduled to present)
+- Up to 30% for not attending class to watch your peers present.
+- Up to 100% for the group not presenting in-class (excused group absences are allowed if communicated with your instructor if communicated by December 4th.)
+- Up to 100% for egregious AI usage. 
+
+## Peer Evaluation (20%)
+
+Rubric
+
+- Submission to Canvas (25%): Submit a peer evaluation on Canvas. This will consist of the following:
+    - Description of each member's contribution to the project (i.e., approximately what proportion of the project was done by each member)
+    - Description of each members reliability (e.g., showing up to meetings, getting work done on time, etc.)
+    - Description of each members collaboration (e.g., working constructively with group members)
+- Assessment of Peer Evaluation (75%): Instructor's assessment of the peer evaluation. 
+
+Note: not participating with your group can result in up to 100% deduction on the entire final. 
+
+
