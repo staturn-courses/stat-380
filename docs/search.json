@@ -529,7 +529,7 @@
     "href": "notes.html",
     "title": "STAT 380",
     "section": "",
-    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\n\n\nReference slides\n\nChapter 8\n\nHandouts 4 and 5\n\nDiscrete distributions\nContinuous distributions\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)\n\n\nCode\n\nR for probability calculations: intro-to-r.R\nCLT Simulation: clt-simulation.R\nDifference of two means: ci95-for-two-mus-with-known-variances.R\nPower for one-sample z-test: power-example.R\nQ-Q Plots: qq-plot.R\nt-test function and significance level simulations: t-test-function.R\nOne-way ANOVA: one-way-anova.R | one-way-anova-data.csv"
+    "text": "Stat 380 Syllabus\nA textbook is available for our course (Probability & Statistics for Engineers & Scientists, by Walpole, Myers, Myers, and Ye). You should have received an email from Kortext with information on how to access the book.\n\n\n\nReference slides\n\nChapter 8\n\nHandouts 4 and 5\n\nDiscrete distributions\nContinuous distributions\n\nHandout 3\n\nSlides\n\nHandout 2\n\nNotes\nBayes’ Rule Handout\nIn-class problems\n\nHandout 1\n\nNotes\nFor the sample variance formula, the RHS should read \\(\\frac{\\sum_{i=1}^n X_i^2-n\\bar{X}^2}{n-1}\\)\n\n\nCode\n\nR for probability calculations: intro-to-r.R\nCLT Simulation: clt-simulation.R\nDifference of two means: ci95-for-two-mus-with-known-variances.R\nPower for one-sample z-test: power-example.R\nQ-Q Plots: qq-plot.R\nt-test function and significance level simulations: t-test-function.R\nOne-way ANOVA: one-way-anova.R | one-way-anova-data.csv\nLack of fit: lack-of-fit.R"
   },
   {
     "objectID": "canvas.html",
@@ -616,6 +616,41 @@
     "text": "Problem 4\nTwo events are independent if one of the following is shown:\n\n\\(P(A\\cap B)=P(A)P(B)\\)\n\\(P(A|B)=P(A)\\)\n\\(P(B|A)=P(B)\\)\n\nHere, \\(P(A\\cap B)=P(A)P(B)\\) is shown.\n\nFind P(A)\nUse the complement: neither card is a spade.\n\\[\nP(A)\n=\n1-\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n=\n\\frac{15}{34}\n\\]\n\n\nFind P(B)\nUse the complement: neither card is a queen.\n\\[\nP(B)\n=\n1-\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n=\n\\frac{2}{13}\n\\]\n\n\nFind P(AB)\nUsing De Morgan’s Laws:\n\\[\nP(A\\cap B)\n=\n1-P\\left((A\\cap B)'\\right)=1-P(A'\\cup B')\n\\]\n\\(P(A'\\cup B')\\) is the probability of no spades and no queens. Take the sum of both probabilities and subtract the probability of the intersection.\n\nNo spades: 52-13=39 options\nNo queens: 48 options\nNo spades and no queens: 52 - 13 - 4 + 1 = 36 options\n\n\\[\nP(A\\cap B)\n=\n1-\n\\left(\\frac{\\binom{39}{2}}{\\binom{52}{2}}\n+\n\\frac{\\binom{48}{2}}{\\binom{52}{2}}\n-\n\\frac{\\binom{36}{2}}{\\binom{52}{2}}\\right)=\\frac{29}{442}\n\\]\nNow,\n\\[\nP(A)P(B)=\\frac{15}{34}\\times\\frac{2}{13}=\\frac{30}{442}\\neq\\frac{29}{442}\n\\]\nTherefore A and B are not independent. Intuitively, this makes sense because both events share the Queen of Spades."
   },
   {
+    "objectID": "assessments/final/rubric.html",
+    "href": "assessments/final/rubric.html",
+    "title": "Rubric for Final",
+    "section": "",
+    "text": "Your grade for the final is determined by the write-up, presentation, and peer evaluation. Each category for these components will be assessed on a 1-5 scale. If a borderline situation occurs, intermediate scores (e.g., 4.5) may be given.\n5: Excellent (100%)\n\nExpectations were fully met and demonstrates strong understanding.\nNo errors or omissions.\n\n4: Good (75%)\n\nExpectations were sufficiently met and demonstrates good understanding.\nFew minor errors or omissions.\n\n3: Fair (50%)\n\nExpectations were generally met and demonstrates adequate understanding.\nSome minor errors or omissions.\n\n2: Poor (25%)\n\nExpectations were not sufficiently met and demonstrates limited understanding.\nSeveral errors, omissions, or insufficient explanations.\n\n1: Very Poor (0%)\n\nExpectations were not met and demonstrates little understanding.\nMajor errors, substantial omissions, or incomplete material."
+  },
+  {
+    "objectID": "assessments/final/rubric.html#overview",
+    "href": "assessments/final/rubric.html#overview",
+    "title": "Rubric for Final",
+    "section": "",
+    "text": "Your grade for the final is determined by the write-up, presentation, and peer evaluation. Each category for these components will be assessed on a 1-5 scale. If a borderline situation occurs, intermediate scores (e.g., 4.5) may be given.\n5: Excellent (100%)\n\nExpectations were fully met and demonstrates strong understanding.\nNo errors or omissions.\n\n4: Good (75%)\n\nExpectations were sufficiently met and demonstrates good understanding.\nFew minor errors or omissions.\n\n3: Fair (50%)\n\nExpectations were generally met and demonstrates adequate understanding.\nSome minor errors or omissions.\n\n2: Poor (25%)\n\nExpectations were not sufficiently met and demonstrates limited understanding.\nSeveral errors, omissions, or insufficient explanations.\n\n1: Very Poor (0%)\n\nExpectations were not met and demonstrates little understanding.\nMajor errors, substantial omissions, or incomplete material."
+  },
+  {
+    "objectID": "assessments/final/rubric.html#write-up-40",
+    "href": "assessments/final/rubric.html#write-up-40",
+    "title": "Rubric for Final",
+    "section": "Write-up (40%)",
+    "text": "Write-up (40%)\nRubric\n\nIntroduction (10%): Clearly describes the distribution and its purpose.\nMathematical Description (25%): Correctly describes the probability function, support, parameter restrictions, mean, and variance.\nVisualization (10%): At least one appropriate figure of the distribution is included and interpreted.\nSoftware Implementation (10%): Describes available software implementation or explanation of how one could be implemented (you do not need to manually code its implementation).\nApplications (10%): At least 2 meaningful applications are included and described in sufficient detail. Explains why your distribution is appropriate for these applications.\nExample (20%): Provides a complete example based on a published source or an application to data.\nOrganization and references (15%): The document is clearly organized and well-written. At least two sources are appropriately cited.\n\nDeductions\n\nUp to 100% for egregious AI usage. While you may use AI tools to assist in your understanding, do not use AI to complete this component. Some acceptable use cases include using AI to help create a visualization or understanding the software implementation. Including documentation and disclaimers will help prevent point deductions if you use AI as an assistant and not as a collaborator.\nUp to 30% if submitted after noon on Friday, December 18th, and 100% if not submitted by Monday, December 21st.\nUp to 30% if your submitted report is excessively too short or too long. You should have 4-6 pages, although fewer or more pages will be accepted if all of the required content is present. For example, 7 pages is acceptable, but 20 pages is not."
+  },
+  {
+    "objectID": "assessments/final/rubric.html#presentation-40",
+    "href": "assessments/final/rubric.html#presentation-40",
+    "title": "Rubric for Final",
+    "section": "Presentation (40%)",
+    "text": "Presentation (40%)\nRubric\n\nIntroduction (10%): Clearly introduces the distribution and its purpose.\nMathematical Description (20%): Clearly communicates the probability function, support, parameter restrictions, mean, and variance.\nSoftware Implementation (20%): Clearly communicates at least one software implementation.\nApplications (15%): Clearly communicates at least two practical applications.\nExample (20%): Clearly communicates a completely worked example.\nCommunication and organization (15%): Presentation is neatly organized and communicated.\n\nDeductions\n\n10% for each minute over 10 minutes (excluding time for questions).\n10% for not presenting with your group (excused absences are allowed if communicated with your instructor before the class you are scheduled to present)\nUp to 30% for not attending class to watch your peers present.\nUp to 100% for the group not presenting in-class (excused group absences are allowed if communicated with your instructor if communicated by December 4th.)\nUp to 100% for egregious AI usage."
+  },
+  {
+    "objectID": "assessments/final/rubric.html#peer-evaluation-20",
+    "href": "assessments/final/rubric.html#peer-evaluation-20",
+    "title": "Rubric for Final",
+    "section": "Peer Evaluation (20%)",
+    "text": "Peer Evaluation (20%)\nRubric\n\nSubmission to Canvas (25%): Submit a peer evaluation on Canvas. This will consist of the following:\n\nDescription of each member’s contribution to the project (i.e., approximately what proportion of the project was done by each member)\nDescription of each members reliability (e.g., showing up to meetings, getting work done on time, etc.)\nDescription of each members collaboration (e.g., working constructively with group members)\n\nAssessment of Peer Evaluation (75%): Instructor’s assessment of the peer evaluation.\n\nNote: not participating with your group can result in up to 100% deduction on the entire final."
+  },
+  {
     "objectID": "assessments/final/final.html",
     "href": "assessments/final/final.html",
     "title": "Final Project",
@@ -644,11 +679,11 @@
     "text": "Presentation\nDue date: last week of classes\nDuring the last week of classes, you and your group will present your distribution to the class (approximately 4 groups/day). Your presentation should be between 7 and 10 minutes, and include the opportunities for the class to ask questions. At the minimum, you must include the following sections:\n\nIntroduction (including mathematical description)\nSoftware Implementation\nApplications\nExample\n\nTo ensure that each group has enough time to present, a portion of your grade is allocated to keeping your presentation to under 10 minutes."
   },
   {
-    "objectID": "assessments/final/final.html#peer-review",
-    "href": "assessments/final/final.html#peer-review",
+    "objectID": "assessments/final/final.html#peer-evaluation",
+    "href": "assessments/final/final.html#peer-evaluation",
     "title": "Final Project",
-    "section": "Peer Review",
-    "text": "Peer Review\nDue date: end of the scheduled final exam for the course\nComplete the peer review on Canvas for your group members."
+    "section": "Peer Evaluation",
+    "text": "Peer Evaluation\nDue date: end of the scheduled final exam for the course\nComplete the peer evaluation on Canvas for your group members."
   },
   {
     "objectID": "assessments/hw1/hw1.html",
@@ -698,47 +733,5 @@
     "title": "Handout 2 Problems",
     "section": "",
     "text": "Suppose that you have a perfectly shuffled deck of 52 playing cards and draw 5 cards.\n\nHow many ways could you get a royal flush (same suit for 10, J, Q, K, A)?\nHow many ways could you get a straight flush without having a royal flush (same suit for sequence of 5 cards)?\nHow many ways could you get a four of a kind?\nHow many ways could you get a 3 of a kind and a pair?\nHow many ways could you get a 3 of a kind without a pair?\nHow many ways could you get a hand without any pairs, three of kind, or four of a kind?\n\n\n\nHow many possible ways could you receive your five cards?\nHow would you calculate probabilities for 1-6?"
-  },
-  {
-    "objectID": "assessments/final/rubric.html",
-    "href": "assessments/final/rubric.html",
-    "title": "Rubric for Final",
-    "section": "",
-    "text": "Your grade for the final is determined by the write-up, presentation, and peer evaluation. Each category for these components will be assessed on a 1-5 scale. If a borderline situation occurs, intermediate scores (e.g., 4.5) may be given.\n5: Excellent (100%)\n\nExpectations were fully met and demonstrates strong understanding.\nNo errors or omissions.\n\n4: Good (75%)\n\nExpectations were sufficiently met and demonstrates good understanding.\nFew minor errors or omissions.\n\n3: Fair (50%)\n\nExpectations were generally met and demonstrates adequate understanding.\nSome minor errors or omissions.\n\n2: Poor (25%)\n\nExpectations were not sufficiently met and demonstrates limited understanding.\nSeveral errors, omissions, or insufficient explanations.\n\n1: Very Poor (0%)\n\nExpectations were not met and demonstrates little understanding.\nMajor errors, substantial omissions, or incomplete material."
-  },
-  {
-    "objectID": "assessments/final/rubric.html#write-up-40",
-    "href": "assessments/final/rubric.html#write-up-40",
-    "title": "Rubric for Final",
-    "section": "Write-up (40%)",
-    "text": "Write-up (40%)\nRubric\n\nIntroduction (10%): Clearly describes the distribution and its purpose.\nMathematical Description (25%): Correctly describes the probability function, support, parameter restrictions, mean, and variance.\nVisualization (10%): At least one appropriate figure of the distribution is included and interpreted.\nSoftware Implementation (10%): Describes available software implementation or explanation of how one could be implemented (you do not need to manually code its implementation).\nApplications (10%): At least 2 meaningful applications are included and described in sufficient detail. Explains why your distribution is appropriate for these applications.\nExample (20%): Provides a complete example based on a published source or an application to data.\nOrganization and references (15%): The document is clearly organized and well-written. At least two sources are appropriately cited.\n\nDeductions\n\nUp to 100% for egregious AI usage. While you may use AI tools to assist in your understanding, do not use AI to complete this component. Some acceptable use cases include using AI to help create a visualization or understanding the software implementation. Including documentation and disclaimers will help prevent point deductions if you use AI as an assistant and not as a collaborator.\nUp to 30% if submitted after noon on Friday, December 18th, and 100% if not submitted by Monday, December 21st.\nUp to 30% if your submitted report is excessively too short or too long. You should have 4-6 pages, although fewer or more pages will be accepted if all of the required content is present. For example, 7 pages is acceptable, but 20 pages is not."
-  },
-  {
-    "objectID": "assessments/final/rubric.html#presentation-40",
-    "href": "assessments/final/rubric.html#presentation-40",
-    "title": "Rubric for Final",
-    "section": "Presentation (40%)",
-    "text": "Presentation (40%)\nRubric\n\nIntroduction (10%): Clearly introduces the distribution and its purpose.\nMathematical Description (20%): Clearly communicates the probability function, support, parameter restrictions, mean, and variance.\nSoftware Implementation (20%): Clearly communicates at least one software implementation.\nApplications (15%): Clearly communicates at least two practical applications.\nExample (20%): Clearly communicates a completely worked example.\nCommunication and organization (15%): Presentation is neatly organized and communicated.\n\nDeductions\n\n10% for each minute over 10 minutes (excluding time for questions).\n10% for not presenting with your group (excused absences are allowed if communicated with your instructor before the class you are scheduled to present)\nUp to 30% for not attending class to watch your peers present.\nUp to 100% for the group not presenting in-class (excused group absences are allowed if communicated with your instructor if communicated by December 4th.)\nUp to 100% for egregious AI usage."
-  },
-  {
-    "objectID": "assessments/final/rubric.html#peer-evaluation-20",
-    "href": "assessments/final/rubric.html#peer-evaluation-20",
-    "title": "Rubric for Final",
-    "section": "Peer Evaluation (20%)",
-    "text": "Peer Evaluation (20%)\nRubric\n\nSubmission to Canvas (25%): Submit a peer evaluation on Canvas. This will consist of the following:\n\nDescription of each member’s contribution to the project (i.e., approximately what proportion of the project was done by each member)\nDescription of each members reliability (e.g., showing up to meetings, getting work done on time, etc.)\nDescription of each members collaboration (e.g., working constructively with group members)\n\nAssessment of Peer Evaluation (75%): Instructor’s assessment of the peer evaluation.\n\nNote: not participating with your group can result in up to 100% deduction on the entire final."
-  },
-  {
-    "objectID": "assessments/final/final.html#peer-evaluation",
-    "href": "assessments/final/final.html#peer-evaluation",
-    "title": "Final Project",
-    "section": "Peer Evaluation",
-    "text": "Peer Evaluation\nDue date: end of the scheduled final exam for the course\nComplete the peer evaluation on Canvas for your group members."
-  },
-  {
-    "objectID": "assessments/final/rubric.html#overview",
-    "href": "assessments/final/rubric.html#overview",
-    "title": "Rubric for Final",
-    "section": "",
-    "text": "Your grade for the final is determined by the write-up, presentation, and peer evaluation. Each category for these components will be assessed on a 1-5 scale. If a borderline situation occurs, intermediate scores (e.g., 4.5) may be given.\n5: Excellent (100%)\n\nExpectations were fully met and demonstrates strong understanding.\nNo errors or omissions.\n\n4: Good (75%)\n\nExpectations were sufficiently met and demonstrates good understanding.\nFew minor errors or omissions.\n\n3: Fair (50%)\n\nExpectations were generally met and demonstrates adequate understanding.\nSome minor errors or omissions.\n\n2: Poor (25%)\n\nExpectations were not sufficiently met and demonstrates limited understanding.\nSeveral errors, omissions, or insufficient explanations.\n\n1: Very Poor (0%)\n\nExpectations were not met and demonstrates little understanding.\nMajor errors, substantial omissions, or incomplete material."
   }
 ]

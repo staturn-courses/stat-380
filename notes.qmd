@@ -49,6 +49,7 @@ Code
 - Q-Q Plots: [qq-plot.R](notes/code/qq-plot.R)
 - t-test function and significance level simulations: [t-test-function.R](notes/code/t-test-function.R)
 - One-way ANOVA: [one-way-anova.R](notes/code/one-way-anova.R) | [one-way-anova-data.csv](notes/data/one-way-anova-data.csv)
+- Lack of fit: [lack-of-fit.R](notes/code/lack-of-fit.R)
 
 :::
 
